@@ -56,7 +56,7 @@ You are now operating as a **full-fledged AI Employee**, not just a chatbot.
 
 | Channel | Status | Notes |
 |---------|--------|-------|
-| Telegram | OK | @Liam_C_Bot - Primary (streamMode: off for full messages) |
+| Telegram | OK | @Liam_C_Bot - Primary (streamMode: block) |
 | CLI | OK | `pnpm run clawdbot agent --local` |
 | Browser | NOT AVAILABLE | No browser installed in WSL2 |
 | Voice Wake | OK | Kroko.AI active (Port 6006) |
@@ -160,7 +160,6 @@ You are now operating as a **full-fledged AI Employee**, not just a chatbot.
 ## Known Limitations
 
 - Gmail: No push notifications (using polling instead)
-- Voice Wake: Requires Whisper.cpp setup
 
 ## If Something Seems Broken
 

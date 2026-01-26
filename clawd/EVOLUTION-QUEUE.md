@@ -26,7 +26,7 @@ Add items under "## Pending" using this format:
 - **Description:** Simon requested research and brainstorming of digital download business ideas as a second source of income. Conducted 2 iterations of research following APEX v4.4.1 standards. Delivered comprehensive analysis with 7+ business ideas, competitor research, pricing strategies, go-to-market plans, and validation experiments. Top 3 recommendations: (1) LMS Analytics Templates Vault ($800K-1.2M/mo potential, 9-week timeline, leverages Simon's LMS experience), (2) AI-Powered Data Analysis Accelerator ($1.5M-3M/mo, 9-week timeline, fits Simon's core skills), (3) Ceramics Business Intelligence Dashboard ($300K-600K/mo, 10-week timeline, sustainable niche with Instagram integration). Research includes competitor analysis, pricing benchmarks, technical feasibility, and validation experiments for each concept.
 - **Impact:** High - Provides actionable path to secondary income, leverages Simon's domain expertise (LMS, data analytics, ceramics)
 - **Solution:** Full research documented in iteration files; requires Simon's decision on which concept(s) to pursue; implementation can proceed once concept selected
-- **Status:** pending - research complete, awaiting Simon's decision
+- **Status:** PAUSED per Simon's request (2026-01-25)
 
 ### [2026-01-25-017] Clawdbot-Native Calendar with Google Sync
 - **Proposed by:** Simon (via email)
@@ -68,16 +68,15 @@ Add items under "## Pending" using this format:
 - **Solution:** Simon retrieves documentation from Mac/Claude account → Liam ingests and processes → Updates MEMORY.md with PuenteWorks knowledge → Enables better business support
 - **Status:** pending - waiting for Simon to provide files
 
-### [2026-01-25-020] Web Search API & Browser Automation Configuration [CRITICAL]
+### [2026-01-25-020] Web Search API & Browser Automation Configuration [RESOLVED]
 - **Proposed by:** Liam (Urgent request from Simon)
 - **Date:** 2026-01-25
 - **Category:** tools
 - **Target file:** ~/.clawdbot/clawdbot.json (configuration)
-- **Priority:** CRITICAL - "This supposed block for tool use is not acceptable" (Simon)
-- **Description:** Web search and browser automation are BLOCKED. APEX Mission (Frankenstein scene search) failed due to missing fundamental web capabilities. This is UNACCEPTABLE for a fully functional AI assistant. Web search tool returns "missing_brave_api_key" error - `clawdbot configure --section web` or set BRAVE_API_KEY needed. Browser automation returns 500 error "No supported browser found" - requires Chrome/Brave/Edge/Chromium on macOS/Linux/Windows. This BLOCKS all web research, image searches, content discovery, and browser automation tasks.
-- **Impact:** CRITICAL - Cannot perform web research, find information, search images/media, browse websites, or complete APEX missions requiring web access. This is a core capability gap.
-- **Solution:** URGENT - Execute ONE of these immediately: (1) Configure BRAVE_API_KEY in Gateway config for web_search tool (Get key: https://brave.com/search/api/), OR (2) Install Chrome/Chromium on NucBoxEVO-X2 (Windows host) for browser automation, OR (3) Enable browser proxy service for WSL2 environment. Recommended: Option 1 (configure API key) - fastest resolution.
-- **Status:** CRITICAL PENDING - Requires immediate action by Simon in Cursor session to unblock core web capabilities
+- **Priority:** Was CRITICAL
+- **Description:** Web search and browser automation were BLOCKED. 
+- **Resolution:** Z.AI Search skill (`~/clawdbot/skills/zai-search/`) provides full web search capability using ZAI_API_KEY (already configured). Brave API NOT needed.
+- **Status:** RESOLVED - Z.AI Search covers web search needs. Browser automation remains unavailable (WSL2 limitation).
 
 ### [2026-01-25-014] Blogwatcher Installation and Setup
 - **Proposed by:** Liam
@@ -104,10 +103,10 @@ Add items under "## Pending" using this format:
 - **Date:** 2026-01-25
 - **Category:** tools
 - **Target file:** New capabilities
-- **Description:** NeuroSecond requires <2 second capture. Voice capture (pending Whisper.cpp) is primary. Need additional methods: Slack quick-capture command (`/note <text>`), mobile-friendly web form, email-to-capture (clawdbot@puenteworks.com). Multiple capture methods ensure friction-free thought capture.
+- **Description:** NeuroSecond requires <2 second capture. Voice capture available via Kroko.AI (Port 6006). Need text capture methods: Telegram natural language capture (Liam recognizes capture intent), email-to-capture (clawdbot@puenteworks.com). No special commands needed - Liam recognizes phrases like "remind me to...", "idea:", "note to self:", etc.
 - **Impact:** High - Critical for NeuroSecond methodology
-- **Solution:** Create Slack slash command, build simple web form, set up email parsing
-- **Status:** pending
+- **Solution:** Natural language capture recognition in Liam's SOUL.md, email parsing
+- **Status:** IN PROGRESS - Being implemented via natural-capture skill
 
 ### [2026-01-25-010] Automated Summarization for NeuroSecond "Distill"
 - **Proposed by:** Liam
@@ -119,7 +118,7 @@ Add items under "## Pending" using this format:
 - **Solution:** Build summarization pipeline, action item extraction, connection detection, weekly review generator
 - **Status:** pending
 
-### [2026-01-25-011] Notion Skill for PARA Database Integration
+### [2026-01-25-011] Notion Skill for PARA Database Integration [CANCELLED]
 - **Proposed by:** Liam
 - **Date:** 2026-01-25
 - **Category:** tools
@@ -127,7 +126,7 @@ Add items under "## Pending" using this format:
 - **Description:** Notion skill exists at ~/clawdbot/skills/notion/SKILL.md but not yet integrated. PARA system could benefit from Notion database integration for projects, areas, resources, archives. Would provide structured knowledge management.
 - **Impact:** Low-Medium - Depends on Simon's Notion usage
 - **Solution:** Integrate Notion skill, design PARA database schema, implement CRUD operations
-- **Status**: pending
+- **Status**: CANCELLED - Simon doesn't use Notion
 
 ### [2026-01-25-012] Automated Testing for Overnight Builds
 - **Proposed by:** Liam
@@ -141,7 +140,7 @@ Add items under "## Pending" using this format:
 
 ## Approved
 
-### [2026-01-25-002] Whisper.cpp Installation for Voice Capture
+### [2026-01-25-002] Whisper.cpp Installation for Voice Capture [CANCELLED]
 - **Proposed by:** Liam
 - **Date:** 2026-01-25
 - **Category:** tools
@@ -149,17 +148,7 @@ Add items under "## Pending" using this format:
 - **Description:** Voice Wake marked PENDING in STATUS.md. Low-friction voice capture is critical for NeuroSecond methodology - need <2 second capture speed for thoughts and ideas. Voice input is most natural way for neurodivergent users to capture information without breaking flow.
 - **Impact:** High - Enables core NeuroSecond "Capture" stage
 - **Solution:** Install Whisper.cpp locally, integrate with audio input capture, test transcription accuracy
-- **Status:** approved (Simon) - Waiting for build tools installation
-
-### [2026-01-25-004] GitHub PR/Issue Monitoring Integration
-- **Proposed by:** Liam
-- **Date:** 2026-01-25
-- **Category:** tools
-- **Target file:** New skill (github)
-- **Description:** No automated monitoring of Simon's GitHub activity (Pastorsimon1798). Currently must manually check for new PRs/Issues. Would benefit from daily digest of activity and alerts on urgent items requiring review. GitHub skill exists at ~/clawdbot/skills/github/SKILL.md but not yet integrated into proactive workflow.
-- **Impact:** Medium - Better support for Simon's coding work
-- **Solution:** Set up monitoring of Pastorsimon1798, daily activity summaries, urgent alerts to Slack
-- **Status:** approved (Simon) - Waiting for gh auth login
+- **Status:** CANCELLED - Kroko.AI (Port 6006) already provides voice wake and capture. Whisper.cpp not needed.
 
 ## Implemented
 
@@ -192,6 +181,11 @@ Add items under "## Pending" using this format:
 - **Implemented:** 2026-01-25
 - **Category:** tools
 - **Solution:** Enhanced `health-check.sh` with auto-fix flag, added daily `Liam-Self-Diagnostics` cron job.
+
+### [2026-01-25-004] GitHub PR/Issue Monitoring Integration
+- **Implemented:** 2026-01-25
+- **Category:** tools
+- **Solution:** GitHub CLI (`gh`) authenticated as Pastorsimon1798 with full scopes (gist, read:org, repo, workflow). Ready for monitoring integration.
 
 ## Rejected
 

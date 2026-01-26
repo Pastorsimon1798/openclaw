@@ -1,0 +1,116 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Overnight Build Test Script
+# Project: [PROJECT_NAME]
+# Date: [DATE]
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+echo "========================================"
+echo "Running tests for [PROJECT_NAME]"
+echo "========================================"
+
+# Track test results
+TESTS_PASSED=0
+TESTS_FAILED=0
+
+# Helper function
+test_result() {
+    local name="$1"
+    local result=$?
+    if [ $result -eq 0 ]; then
+        echo "✓ $name"
+        ((TESTS_PASSED++)) || true
+    else
+        echo "✗ $name"
+        ((TESTS_FAILED++)) || true
+    fi
+}
+
+run_test() {
+    local name="$1"
+    shift
+    if "$@" 2>/dev/null; then
+        echo "✓ $name"
+        ((TESTS_PASSED++)) || true
+    else
+        echo "✗ $name"
+        ((TESTS_FAILED++)) || true
+    fi
+}
+
+# ========================================
+# 1. SYNTAX CHECKS
+# ========================================
+echo ""
+echo "--- Syntax Checks ---"
+
+# Shell scripts
+if ls *.sh 1> /dev/null 2>&1; then
+    if command -v shellcheck &>/dev/null; then
+        run_test "Shell script syntax (shellcheck)" shellcheck *.sh
+    else
+        echo "⚠ shellcheck not installed, skipping"
+    fi
+fi
+
+# Python files
+if ls *.py 1> /dev/null 2>&1; then
+    run_test "Python syntax check" python3 -m py_compile *.py
+fi
+
+# ========================================
+# 2. UNIT TESTS
+# ========================================
+echo ""
+echo "--- Unit Tests ---"
+
+# Add project-specific unit tests here
+# Example:
+# run_test "Python unit tests" python3 -m pytest tests/
+
+echo "(Add project-specific tests here)"
+
+# ========================================
+# 3. INTEGRATION TESTS
+# ========================================
+echo ""
+echo "--- Integration Tests ---"
+
+# Add integration tests here
+# Example:
+# run_test "API health check" curl -sf http://localhost:8080/health
+
+echo "(Add project-specific tests here)"
+
+# ========================================
+# 4. MANUAL TEST CHECKLIST
+# ========================================
+echo ""
+echo "--- Manual Test Checklist ---"
+echo "[ ] Feature A works as expected"
+echo "[ ] Feature B handles edge cases"
+echo "[ ] UI renders correctly (if applicable)"
+echo "(Simon should verify these manually)"
+
+# ========================================
+# SUMMARY
+# ========================================
+echo ""
+echo "========================================"
+echo "Test Summary"
+echo "========================================"
+echo "Passed: $TESTS_PASSED"
+echo "Failed: $TESTS_FAILED"
+
+if [ $TESTS_FAILED -gt 0 ]; then
+    echo ""
+    echo "⚠️  Some tests failed. Review before delivery."
+    exit 1
+else
+    echo ""
+    echo "✓ All automated tests passed!"
+    exit 0
+fi
