@@ -50,6 +50,24 @@
 
 ---
 
+### Session: Discord Liam Fix Plan
+**Date:** 2026-01-27 19:58 PST
+**Cursor Session:** discord_liam_fix_plan_8d740e3c
+
+| Entry ID | Title | Resolution |
+|----------|-------|------------|
+| #040 | File Verification Protocol | Added "File Verification Protocol (CRITICAL)" section to SOUL.md |
+| #041 | Cursor-Liam Bidirectional Protocol | Added "Cursor-Liam Communication Protocol" section to SOUL.md |
+| - | BOOTSTRAP.md Missing | Created ~/clawd/BOOTSTRAP.md with session initialization context |
+| - | /restart Command | Enabled `commands.restart: true` in clawdbot.json |
+
+**Additional Changes:**
+- Added "Key tracking files you maintain" section to SOUL.md Your Realm section
+- Restarted gateway to apply config changes
+- Note: GLM-4.7-flash model may not follow File Verification Protocol reliably - see [2026-01-28-043] for model comparison research
+
+---
+
 ## Acknowledgment Log
 
 *Liam adds timestamps here when he reads and acknowledges resolutions:*

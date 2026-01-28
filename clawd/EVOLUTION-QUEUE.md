@@ -29,6 +29,24 @@
 
 ## Pending
 
+### [2026-01-28-043] GLM-4.7-Flash vs Kimi K2.5 Model Comparison Research
+- **Proposed by:** Simon (via Telegram)
+- **Date:** 2026-01-28
+- **Category:** research | tools
+- **Target file:** New research output file (e.g., `~/clawd/research/glm-flash-vs-kimi-k25.md`)
+- **Verified:** N/A - new research request
+- **Description:**
+  - **Task:** Compare GLM-4.7-Flash (current Discord Liam model) with newly released Kimi K2.5
+  - **Comparison criteria:** Performance benchmarks, speed/latency, context window, coding capabilities, reasoning quality, cost/efficiency, hallucination rates
+  - **Output format:** Comprehensive analysis with strengths/weaknesses, recommended use cases, migration feasibility assessment
+  - **Questions to answer:**
+    1. Is Kimi K2.5 superior to GLM-4.7-Flash for Discord Liam use cases?
+    2. What's the latency difference? (Critical for chat responsiveness)
+    3. Any capabilities unique to each model?
+    4. Migration complexity if switching models?
+  - **Impact:** High - Model choice affects all Discord interactions and user experience
+- **Status:** pending
+
 ### [2026-02-10-042] Debug Mode Frequency Reversion (SCHEDULED)
 - **Proposed by:** Cursor (via debug mode plan)
 - **Date:** 2026-01-28
@@ -48,7 +66,7 @@
   - **Verification:** Run `clawdbot cron list` to confirm schedules reverted
 - **Status:** pending (scheduled for 2026-02-10)
 
-### [2026-01-28-040] File Verification Protocol for Status Requests
+### [2026-01-28-040] [RESOLVED] File Verification Protocol for Status Requests
 - **Proposed by:** Cursor (via comorbidity analysis)
 - **Date:** 2026-01-28
 - **Category:** behavior
@@ -67,9 +85,10 @@
     3. Never guess file contents - verify with read tool
     4. Anti-pattern: "No active projects" without checking files
     ```
-- **Status:** pending
+- **Status:** RESOLVED
+- **Resolution:** 2026-01-27 - Added "File Verification Protocol (CRITICAL)" section to SOUL.md with explicit instructions to read EVOLUTION-QUEUE.md, progress/, and MEMORY.md before answering status questions. Note: GLM-4.7-flash model may not follow instructions reliably - see [2026-01-28-043] for model comparison research.
 
-### [2026-01-28-041] Cursor-Liam Bidirectional Communication Protocol
+### [2026-01-28-041] [RESOLVED] Cursor-Liam Bidirectional Communication Protocol
 - **Proposed by:** Cursor (via automation plan)
 - **Date:** 2026-01-28
 - **Category:** behavior | rules
@@ -93,7 +112,8 @@
     - Run queue-cleanup.sh weekly to detect stale/resolved entries
     - Never cite Evolution Queue entries as blockers without verification
     ```
-- **Status:** pending
+- **Status:** RESOLVED
+- **Resolution:** 2026-01-27 - Added "Cursor-Liam Communication Protocol" section to SOUL.md with instructions to read CURSOR-RESOLUTIONS.md during heartbeats and verify queue entries before citing as blockers.
 
 ### [2026-01-27-038] Telegram Multi-Message Split Formatting - Weird Spaces
 - **Proposed by:** Simon (via Telegram)
