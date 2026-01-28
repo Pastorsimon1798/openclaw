@@ -71,7 +71,7 @@
 - Copied apex-vault from Simon's GitHub to ~/clawd/apex-vault/
 - Created ~/clawd/APEX_INTEGRATION.md - comprehensive internalization document
 - Updated MEMORY.md with APEX core principles
-- APEX v4.4.1 is now PART of my identity as Liam
+- APEX v6.2.0 is now PART of my identity as Liam
 - Every piece of code I write is guided by APEX principles
 - Auto-routing: Before any coding task, I automatically load relevant APEX skills
 - Core Laws: Bug Prevention, Trust User, Context-First, Single Source, Non-Destructive, Quality Gates

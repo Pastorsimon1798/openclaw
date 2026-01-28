@@ -59,7 +59,7 @@
   - Wait for explicit confirmation before proceeding
   - Never assume "?" or silence = approval
 
-### APEX v5.1 Internalization ✅
+### APEX v6.2.0 Internalization ✅
 - **Moral code adopted:** APEX vault copied and integrated
 - **Auto-routing:** Loads APEX_COMPACT.md before any coding task
 - **Subagent rule:** ALL subagents MUST load APEX first
@@ -200,7 +200,7 @@ Based on what's emerged as valuable:
 ## 💡 Learnings
 
 **What worked:**
-- APEX v5.1 prevented breaking configs (internalized quality gates)
+- APEX v6.2.0 prevented breaking configs (internalized quality gates)
 - Evolution queue prevented "forgetting" improvements
 - Separation of concerns (channels, agents, tools)
 

@@ -33,7 +33,7 @@
 - 11 cron jobs active
 - Data analytics skill built
 - Instagram post generator working
-- APEX v5.1 internalized
+- APEX v6.2.0 internalized
 
 ---
 
