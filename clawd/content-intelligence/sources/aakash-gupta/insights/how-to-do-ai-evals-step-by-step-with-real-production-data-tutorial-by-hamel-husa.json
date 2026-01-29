@@ -1,0 +1,66 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "How to Do AI Evals Step-by-Step with Real Production Data | Tutorial by Hamel Husain and Shreya Shankar",
+  "source_url": "https://www.news.aakashg.com/p/hamel-shreya-podcast-2",
+  "slug": "how-to-do-ai-evals-step-by-step-with-real-production-data-tutorial-by-hamel-husa",
+  "insights": [
+    {
+      "insight": "Why Everyone Needs Evals (Even Loud Code)There’s been controversy. Some people say you don’t need evals if you just vibe check and dog food your product.That’s wrong.Everyone needs evals. Some people",
+      "action": "Use this approach in your work",
+      "framework": "key is",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Do AI Evals Step-by-Step with Real Producti",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Setting Up Observability (The Foundation)Before you can do evals, you need traces. Traces are logs of everything that happens in your AI application.What Goes in a TraceA complete trace includes:Syste",
+      "action": "Apply this approach in your work",
+      "framework": "Prompt from the PMThe",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Do AI Evals Step-by-Step with Real Producti",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The Error Analysis Process (The Secret Sauce)This is the step that separates teams shipping reliable AI from teams constantly firefighting bugs.Error analysis is the systematic process of reviewing tr",
+      "action": "Implement this approach in your work",
+      "framework": "The Rule",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Do AI Evals Step-by-Step with Real Producti",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Building LLM Judges That Don’t HallucinateOnce you know what to measure (from error analysis), you can build judges to measure it automatically.An LLM judge is an AI that evaluates other AI outputs. I",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Do AI Evals Step-by-Step with Real Producti",
+      "confidence": "medium"
+    },
+    {
+      "insight": "When to Use Workflows vs Agents vs CodeNot everything needs an LLM judge. Sometimes code-based evals work better.Understanding when to use AI agents versus traditional workflows is critical for buildi",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Do AI Evals Step-by-Step with Real Producti",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "key is",
+    "Prompt from the PMThe",
+    "The Rule"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.872431",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "The Ultimate Guide to ChatGPT Codex: OpenAI's Claude Code Killer",
+  "source_url": "https://www.news.aakashg.com/p/chatgpt-codex-guide",
+  "slug": "the-ultimate-guide-to-chatgpt-codex-openais-claude-code-killer",
+  "insights": [
+    {
+      "insight": "How to Get Started - The Non-Technical PM’s Guide to Codex CLIIf you’ve never touched a terminal, this is for you.1a. Open Codex in an IDECarl opens Cursor and shows files Codex creates in real-time.W",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to ChatGPT Codex: OpenAI's Clau",
+      "confidence": "medium"
+    },
+    {
+      "insight": "How to Handle Classic PM Tasks with CodexCodex shines at daily PM work.2a. File Analysis Without UploadingRun Codex from a folder, it accesses everything. No uploading.Carl has demo folder (Taskflow)",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to ChatGPT Codex: OpenAI's Clau",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Advanced Codex Techniques for Future Vibe EngineersThis is where Codex separates from the browser.3a. Design Systems with StorybookVibe coder problem: “Make title pink” → wrong shade → 20 iterations →",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to ChatGPT Codex: OpenAI's Clau",
+      "confidence": "medium"
+    },
+    {
+      "insight": "ChatGPT than the browser",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to ChatGPT Codex: OpenAI's Clau",
+      "confidence": "medium"
+    },
+    {
+      "insight": "ChatGPT Codex for PMs:Apple PodcastSpotifyThis might be the most important podcast you watch all yea",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to ChatGPT Codex: OpenAI's Clau",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.917722",
+  "extraction_method": "pattern_based"
+}

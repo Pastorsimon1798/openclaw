@@ -1,0 +1,35 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "I'm Speaking @ Friday 1145AM PST!",
+  "source_url": "https://www.sabrina.dev/p/im-speaking-friday-1145am-pst",
+  "slug": "im-speaking-friday-1145am-pst",
+  "insights": [
+    {
+      "insight": "AI to amplify myself as a content creator",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I'm Speaking @ Friday 1145AM PST!",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I’ll whiteboard through how I use AI to amplify myself as a content creator, thought leader, and solopreneur:My presentation: 11:45AM PST FridayLink to join: https://aiadvantagesummit",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I'm Speaking @ Friday 1145AM PST!",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 2,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 2,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.984216",
+  "extraction_method": "pattern_based"
+}

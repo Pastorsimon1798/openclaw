@@ -1,0 +1,64 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Stop Trusting Your Intuition When Evaluating AI",
+  "source_url": "https://theslowai.substack.com/p/evaluate-ai-correctness-completeness",
+  "slug": "stop-trusting-your-intuition-when-evaluating-ai",
+  "insights": [
+    {
+      "insight": "a prompt that separates correctness from completeness",
+      "action": "Use this approach in your work",
+      "framework": "repeatable method",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Stop Trusting Your Intuition When Evaluating AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt with your AI tool of choice:You are an expert in analysing textual similarity",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Stop Trusting Your Intuition When Evaluating AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt regularly for tasks with larger reference texts",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Stop Trusting Your Intuition When Evaluating AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the model had to reread",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Stop Trusting Your Intuition When Evaluating AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "impression and final decision",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Stop Trusting Your Intuition When Evaluating AI",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "repeatable method"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.688938",
+  "extraction_method": "pattern_based"
+}

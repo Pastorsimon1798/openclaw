@@ -1,0 +1,64 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "Advanced Guide to AI Prototyping with Sachin Rekhi (Reforge)",
+  "source_url": "https://www.news.aakashg.com/p/sachin-rekhi-podcast",
+  "slug": "advanced-guide-to-ai-prototyping-with-sachin-rekhi-reforge",
+  "insights": [
+    {
+      "insight": "Why AI Prototyping Changes EverythingMost companies can’t do product shaping.They prioritize problems first. Then they figure out solutions.Here’s the typical flow:You identify a customer problem → Pu",
+      "action": "Use this approach in your work",
+      "framework": "product shaping",
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from aakash-gupta article on Advanced Guide to AI Prototyping with Sachin Rekhi",
+      "confidence": "medium"
+    },
+    {
+      "insight": "(the AI prototyping tool built for PMs) with code BUILDToday’s EpisodeWhen you first start using AI",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from aakash-gupta article on Advanced Guide to AI Prototyping with Sachin Rekhi",
+      "confidence": "medium"
+    },
+    {
+      "insight": "me a CRM application” and boom a fully functioning app appears in 60 seconds",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from aakash-gupta article on Advanced Guide to AI Prototyping with Sachin Rekhi",
+      "confidence": "medium"
+    },
+    {
+      "insight": "ideating solutions → Design mockups → Build in productionThe issue is you’re committing to the probl",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from aakash-gupta article on Advanced Guide to AI Prototyping with Sachin Rekhi",
+      "confidence": "medium"
+    },
+    {
+      "insight": "prototypes for every customer problem they’re considering",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from aakash-gupta article on Advanced Guide to AI Prototyping with Sachin Rekhi",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "product shaping"
+  ],
+  "para_distribution": {
+    "projects": 5,
+    "areas": 0,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.879363",
+  "extraction_method": "pattern_based"
+}

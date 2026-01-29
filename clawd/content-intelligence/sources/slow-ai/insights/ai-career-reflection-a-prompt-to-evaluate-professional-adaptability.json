@@ -1,0 +1,62 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "AI Career Reflection: A Prompt to Evaluate Professional Adaptability",
+  "source_url": "https://theslowai.substack.com/p/ai-career-reflection-prompt",
+  "slug": "ai-career-reflection-a-prompt-to-evaluate-professional-adaptability",
+  "insights": [
+    {
+      "insight": "a prompt that supports reflection rather than forecasting",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on AI Career Reflection: A Prompt to Evaluate Profess",
+      "confidence": "medium"
+    },
+    {
+      "insight": "their skills with confidence",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on AI Career Reflection: A Prompt to Evaluate Profess",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt with your AI tool of choice:Guide me through a reflective exercise on my relationship wi",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on AI Career Reflection: A Prompt to Evaluate Profess",
+      "confidence": "medium"
+    },
+    {
+      "insight": "many different AI models but the prompt asked for a model that wouldn’t train on my data",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on AI Career Reflection: A Prompt to Evaluate Profess",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it offers thoughtful and careful responses and I don’t use it a lot",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on AI Career Reflection: A Prompt to Evaluate Profess",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.681800",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "2026: The Most Promising AI Startups",
+  "source_url": "https://www.neweconomies.co/p/2026s-most-promising-ai-startups",
+  "slug": "2026-the-most-promising-ai-startups",
+  "insights": [
+    {
+      "insight": "there are the vertical platforms tackling specific business functions like productivity",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026: The Most Promising AI Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Whether you’re a founder building the future, an operator scaling innovation, or an investor spotting opportunities, we deliver the insights that matter before they become obvious",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026: The Most Promising AI Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Download the report to learn how organizations are addressing this gap — and what early adopters are doing to stay ahead",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026: The Most Promising AI Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Source: CrunchbaseAmid this momentum, a new wave of AI startups is gaining impressive traction",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026: The Most Promising AI Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "They’re attracting top-tier talent, securing major partnerships, and proving that nimble, focused teams can compete with — and often outpace — established giants",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026: The Most Promising AI Startups",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.750145",
+  "extraction_method": "pattern_based"
+}

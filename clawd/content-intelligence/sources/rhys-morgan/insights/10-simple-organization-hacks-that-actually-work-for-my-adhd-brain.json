@@ -1,0 +1,65 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "10 simple organization hacks that actually work for my ADHD brain",
+  "source_url": "https://rhysmorgan.substack.com/p/10-simple-organization-hacks-that",
+  "slug": "10-simple-organization-hacks-that-actually-work-for-my-adhd-brain",
+  "insights": [
+    {
+      "insight": "Use “dumb” checklists for “smart” daysOn good brain days, I used to forget basic stuff like brushing my teeth or feeding myself. So now I use a daily checklist that includes everything — even the obvi",
+      "action": "Use this approach in your work",
+      "framework": "life using",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from rhys-morgan article on 10 simple organization hacks that actually work fo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "One basket per chaos zoneI gave up trying to stop clutter. Instead, I contain it.Now every surface that used to collect junk has a designated basket. Keys, receipts, chargers, sunglasses — they all ge",
+      "action": "Apply this approach in your work",
+      "framework": "neurotypical sense and started building",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from rhys-morgan article on 10 simple organization hacks that actually work fo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Timers = your best non-judgmental friendI don’t trust myself with time. 5 minutes becomes 2 hours. Or vice versa.So I use timers like a toddler learning to brush their teeth. Ten minutes for tidying.",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from rhys-morgan article on 10 simple organization hacks that actually work fo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Visual reminders over written onesSticky notes? I forget to read them.But putting my meds next to the kettle? That works.We ADHD brains are object permanence-challenged. If we don’t see it, it doesn’t",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from rhys-morgan article on 10 simple organization hacks that actually work fo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Pick your “launch pad”This one saved me from the daily panic of missing essentials.I now have a “launch pad” by the front door: keys, wallet, work bag, meds, umbrella. It’s all there, waiting like a f",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from rhys-morgan article on 10 simple organization hacks that actually work fo",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "neurotypical sense and started building",
+    "life using"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.835406",
+  "extraction_method": "pattern_based"
+}

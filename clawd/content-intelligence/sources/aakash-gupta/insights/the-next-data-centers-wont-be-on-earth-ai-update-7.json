@@ -1,0 +1,65 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "The Next Data Centers Won't Be on Earth: AI Update #7",
+  "source_url": "https://www.news.aakashg.com/p/data-centers-in-space",
+  "slug": "the-next-data-centers-wont-be-on-earth-ai-update-7",
+  "insights": [
+    {
+      "insight": "That’s 390x cheaper in 12 months.As product builders, we can continue to expect frontier-level performance to get cheaper and cheaper. There’s a million AI news articles, resources, tools, and fundrai",
+      "action": "Use this approach in your work",
+      "framework": "first principle",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on The Next Data Centers Won't Be on Earth: AI Update",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I researched the physics. I watched the Elon videos.And that’s today’s deep dive:The first-principles case for orbital data centersWhat the skeptics get right (and wrong)Inside Starcloud: what the pio",
+      "action": "Apply this approach in your work",
+      "framework": "Boltzmann law",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on The Next Data Centers Won't Be on Earth: AI Update",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The first-principles case for orbital data centersGavin Baker is one of the most respected technology investors of his generation. He ran Fidelity’s flagship technology fund, now leads Atreides Manage",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on The Next Data Centers Won't Be on Earth: AI Update",
+      "confidence": "medium"
+    },
+    {
+      "insight": "What the skeptics get right (and wrong)Not everyone is persuaded. When Patrick O’Shaughnessy posted Baker’s clip, the replies filled with physicists and engineers pointing out complications.Their core",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on The Next Data Centers Won't Be on Earth: AI Update",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Inside Starcloud: what the pioneers are buildingTo move beyond abstractions, I spoke with Philip Johnston, the founder of Starcloud, to understand how they see the physics and the business case.a. The",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on The Next Data Centers Won't Be on Earth: AI Update",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "Boltzmann law",
+    "first principle"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.887777",
+  "extraction_method": "pattern_based"
+}

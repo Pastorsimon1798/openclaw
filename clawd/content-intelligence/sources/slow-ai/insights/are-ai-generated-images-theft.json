@@ -1,0 +1,66 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Are AI-generated Images Theft?",
+  "source_url": "https://theslowai.substack.com/p/are-ai-generated-images-theft",
+  "slug": "are-ai-generated-images-theft",
+  "insights": [
+    {
+      "insight": "AI generated images of being theft",
+      "action": "Use this approach in your work",
+      "framework": "need law",
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from slow-ai article on Are AI-generated Images Theft?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI art tools constantly",
+      "action": "Apply this approach in your work",
+      "framework": "break the old rule",
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from slow-ai article on Are AI-generated Images Theft?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "an image for something like a Substack article",
+      "action": "Implement this approach in your work",
+      "framework": "this discussionA few shared principle",
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from slow-ai article on Are AI-generated Images Theft?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "actually adds something worth reading",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from slow-ai article on Are AI-generated Images Theft?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "when they build mood boards",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from slow-ai article on Are AI-generated Images Theft?",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "this discussionA few shared principle",
+    "break the old rule",
+    "need law"
+  ],
+  "para_distribution": {
+    "projects": 5,
+    "areas": 0,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.612977",
+  "extraction_method": "pattern_based"
+}

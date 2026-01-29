@@ -1,0 +1,64 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "The Moment It Clicked: My Late Diagnosis Story",
+  "source_url": "https://rhysmorgan.substack.com/p/the-moment-it-clicked-my-late-diagnosis",
+  "slug": "the-moment-it-clicked-my-late-diagnosis-story",
+  "insights": [
+    {
+      "insight": "there was zero dopamine in Ovid’s love poems or Cicero’s letters",
+      "action": "Use this approach in your work",
+      "framework": "often blind to unspoken rule",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Moment It Clicked: My Late Diagnosis Story",
+      "confidence": "medium"
+    },
+    {
+      "insight": "one day in an AA meeting",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Moment It Clicked: My Late Diagnosis Story",
+      "confidence": "medium"
+    },
+    {
+      "insight": "see themselves more clearly",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Moment It Clicked: My Late Diagnosis Story",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Meanwhile, in lessons, I was miles away, lost in daydreams because there was zero dopamine in Ovid’s love poems or Cicero’s letters",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Moment It Clicked: My Late Diagnosis Story",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The causes and consequences of the Industrial Revolution - who cared",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Moment It Clicked: My Late Diagnosis Story",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "often blind to unspoken rule"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.824619",
+  "extraction_method": "pattern_based"
+}

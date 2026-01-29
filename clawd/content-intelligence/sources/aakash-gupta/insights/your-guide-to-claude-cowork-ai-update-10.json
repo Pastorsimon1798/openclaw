@@ -1,0 +1,44 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "Your Guide to Claude Cowork: AI Update #10",
+  "source_url": "https://www.news.aakashg.com/p/guide-claude-cowork",
+  "slug": "your-guide-to-claude-cowork-ai-update-10",
+  "insights": [
+    {
+      "insight": "Key concept from 'Your Guide to Claude Cowork: AI Update #10...'",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on Your Guide to Claude Cowork: AI Update #10",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Review strategies discussed in this aakash-gupta article",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on Your Guide to Claude Cowork: AI Update #10",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Consider implications for your workflow",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on Your Guide to Claude Cowork: AI Update #10",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 3,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.918834",
+  "extraction_method": "pattern_based"
+}

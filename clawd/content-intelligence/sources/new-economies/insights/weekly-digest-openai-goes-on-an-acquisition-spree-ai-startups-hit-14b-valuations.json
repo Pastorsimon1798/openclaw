@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "Weekly Digest: OpenAI goes on an acquisition spree, AI startups hit $14B valuations, Andreessen Horowitz raises $15B, and $100M rounds become the new normal",
+  "source_url": "https://www.neweconomies.co/p/jan-tech-news",
+  "slug": "weekly-digest-openai-goes-on-an-acquisition-spree-ai-startups-hit-14b-valuations",
+  "insights": [
+    {
+      "insight": "a voice agent factory — the round was led by Flybridge Capital",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from new-economies article on Weekly Digest: OpenAI goes on an acquisition spree",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the therapies of tomorrow",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from new-economies article on Weekly Digest: OpenAI goes on an acquisition spree",
+      "confidence": "medium"
+    },
+    {
+      "insight": "digest of the year — sharing the latest startup and venture news that you may have missed",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from new-economies article on Weekly Digest: OpenAI goes on an acquisition spree",
+      "confidence": "medium"
+    },
+    {
+      "insight": "announces $40 million Series A led by Accel",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from new-economies article on Weekly Digest: OpenAI goes on an acquisition spree",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Subscribe nowWelcome to our first digest of the year — sharing the latest startup and venture news that you may have missed",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from new-economies article on Weekly Digest: OpenAI goes on an acquisition spree",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.763062",
+  "extraction_method": "pattern_based"
+}

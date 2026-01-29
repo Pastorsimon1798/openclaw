@@ -53,8 +53,8 @@
 **Started:** 2026-01-27  
 **Progress File:** `~/clawd/progress/nate-jones-monitoring.txt`
 
-**What:** AI/product newsletter (83K+ subscribers), track for insights + communication patterns  
-**Method:** Substack monitoring, extract frameworks for Simon's projects  
+**What:** AI coding tools + architecture — latest techniques for both of us  
+**Method:** Substack monitoring, extract frameworks and tooling insights  
 **Last Check:** 2026-01-27
 
 ---
@@ -64,8 +64,8 @@
 **Started:** 2026-01-27  
 **Progress File:** `~/clawd/progress/rhys-morgan-monitoring.txt`
 
-**What:** Track Rhys Morgan for potential partnership opportunities  
-**Method:** Same as above  
+**What:** EF coach best practices — learn how to be a better executive function partner for Simon  
+**Method:** YouTube/podcast monitoring, extract EF coaching techniques  
 **Last Check:** 2026-01-27
 
 ---

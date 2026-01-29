@@ -1,0 +1,64 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "How to Get Ahead of 99% of People (with AI)",
+  "source_url": "https://www.sabrina.dev/p/how-to-get-ahead-of-99-of-people-with-ai-sparring-partner",
+  "slug": "how-to-get-ahead-of-99-of-people-with-ai",
+  "insights": [
+    {
+      "insight": "Build Your AI Second BrainFirst, we lay the foundation. Start a new chat in ChatGPT. Use this prompt:I want you to understand ME. I’m a [Role] at [Your Business]. Ask me every question you need to tru",
+      "action": "Use this approach in your work",
+      "framework": "friend used this exact method",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How to Get Ahead of 99% of People (with AI)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Activate Your AI Sparring PartnerNow for the fun part!In the SAME chat, use this prompt:Based on everything you know about me, become my AI Sparring Partner. When I present an idea, your first respons",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How to Get Ahead of 99% of People (with AI)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Create Your ChatGPT ProjectNow we make this permanent. In the left sidebar, create a new Project called ‘AI Sparring Partner’ and move this conversation into the project. This keeps everything organiz",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How to Get Ahead of 99% of People (with AI)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Build Your Custom GPTAnecdotally, I’ve noticed higher quality personalized answers using a Custom GPT compared to Projects. However, BOTH options are now shareable with team members, clients, and frie",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How to Get Ahead of 99% of People (with AI)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "he could vibe code his idea for less than $100 in 2025)",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How to Get Ahead of 99% of People (with AI)",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "friend used this exact method"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.966539",
+  "extraction_method": "pattern_based"
+}

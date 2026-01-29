@@ -1,0 +1,44 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "The Ultimate Guide to n8n for PMs, with Pawel Huryn",
+  "source_url": "https://www.news.aakashg.com/p/pawel-huryn-podcast2",
+  "slug": "the-ultimate-guide-to-n8n-for-pms-with-pawel-huryn",
+  "insights": [
+    {
+      "insight": "AI Agents (and Get Paid $750K+)5 AI Agents Every PM Should Build",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to n8n for PMs, with Pawel Hury",
+      "confidence": "medium"
+    },
+    {
+      "insight": "n8nStep-by-step build of your first workflowHow to go from workflow to agentSecret n8n best practice",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to n8n for PMs, with Pawel Hury",
+      "confidence": "medium"
+    },
+    {
+      "insight": "workflowHow to go from workflow to agentSecret n8n best practicesMulti-Agent Systems Free Version Ha",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on The Ultimate Guide to n8n for PMs, with Pawel Hury",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 3
+  },
+  "extracted_at": "2026-01-28T22:53:14.876558",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,66 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Why every system you've tried has failed + grab the 90-minute guide to one that won't",
+  "source_url": "https://natesnewsletter.substack.com/p/grab-the-system-that-closes-open",
+  "slug": "why-every-system-youve-tried-has-failed-grab-the-90-minute-guide-to-one-that-won",
+  "insights": [
+    {
+      "insight": "again when life calms down",
+      "action": "Use this approach in your work",
+      "framework": "problem is that traditional",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Why every system you've tried has failed + grab th",
+      "confidence": "medium"
+    },
+    {
+      "insight": "with why this matters more now than it ever has before",
+      "action": "Apply this approach in your work",
+      "framework": "Twelve principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Why every system you've tried has failed + grab th",
+      "confidence": "medium"
+    },
+    {
+      "insight": "time in human history",
+      "action": "Implement this approach in your work",
+      "framework": "The rule",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Why every system you've tried has failed + grab th",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The whole thing quietly collapses, and you tell yourself you’ll try again when life calms down",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Why every system you've tried has failed + grab th",
+      "confidence": "medium"
+    },
+    {
+      "insight": "You don’t have to remember to use it—it just shows up",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Why every system you've tried has failed + grab th",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "The rule",
+    "problem is that traditional",
+    "Twelve principle"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.703205",
+  "extraction_method": "pattern_based"
+}

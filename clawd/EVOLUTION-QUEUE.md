@@ -102,18 +102,7 @@ Items with these statuses must be moved to `EVOLUTION-QUEUE-ARCHIVE.md`:
 
 ## Paused
 
-### [2026-01-28-043] GLM-4.7-Flash vs Kimi K2.5 Model Comparison [TESTED]
-- **Date:** 2026-01-28
-- **Description:** Compare models for Discord Liam.
-- **Testing Results (2026-01-28):**
-  - Kimi K2.5 Cloud successfully integrated and tested on Discord
-  - **Pros:** Advanced reasoning with visible "thinking", 256K context, multimodal (vision)
-  - **Cons:** Has baked-in "Your name is Kimi" identity that conflicts with SOUL.md
-  - Model correctly applies file precedence (SOUL.md > system prompt) but wastes tokens resolving conflict
-  - Free Ollama Cloud tier has undocumented rate limits
-- **Current config:** Discord uses `ollama/kimi-k2.5:cloud` with GLM fallbacks
-- **Recommendation:** Monitor for rate limit issues; consider switching to local GLM-4.7-Flash if identity conflict is problematic
-- **Status:** TESTED - monitoring
+*(No paused items)*
 
 ---
 

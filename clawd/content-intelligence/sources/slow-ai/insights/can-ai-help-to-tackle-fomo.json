@@ -1,0 +1,65 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Can AI Help to Tackle FOMO?",
+  "source_url": "https://theslowai.substack.com/p/can-ai-help-tackle-fomo",
+  "slug": "can-ai-help-to-tackle-fomo",
+  "insights": [
+    {
+      "insight": "a shared prompt to identify what fear of missing out is trying to protect or reveal",
+      "action": "Use this approach in your work",
+      "framework": "writing focus toward",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Can AI Help to Tackle FOMO?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI to surface what is pulling at your attention and why it carries weight",
+      "action": "Apply this approach in your work",
+      "framework": "speed as the organizing principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Can AI Help to Tackle FOMO?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt with your AI tool of choice:You are my most grounded companion",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Can AI Help to Tackle FOMO?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it to generate outputs",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Can AI Help to Tackle FOMO?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "tools that reflect ideologies they claim not to hold",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Can AI Help to Tackle FOMO?",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "speed as the organizing principle",
+    "writing focus toward"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.635762",
+  "extraction_method": "pattern_based"
+}

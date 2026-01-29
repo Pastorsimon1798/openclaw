@@ -1,0 +1,66 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "The 3 Laws of PM Behavioral Interviews (That Nobody Teaches You)",
+  "source_url": "https://www.news.aakashg.com/p/pm-behavioral-interviews",
+  "slug": "the-3-laws-of-pm-behavioral-interviews-that-nobody-teaches-you",
+  "insights": [
+    {
+      "insight": "The Mindset You Need to WinBefore we get into the questions and the laws though, we have to talk mindset. Because if you get your mindset wrong, you are hopeless to begin with.Here’s the mindset you n",
+      "action": "Use this approach in your work",
+      "framework": "scaffolding and",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The 3 Laws of PM Behavioral Interviews (That Nobod",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The 12 Questions You Must PrepareBefore we dive into the laws, you have to know what you’re up against. These are the tough questions you need to prepare for, ranked by prevalence:Tell me about yourse",
+      "action": "Apply this approach in your work",
+      "framework": "universal law",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The 3 Laws of PM Behavioral Interviews (That Nobod",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The 3 LawsThe rest of this piece is for paid subscribers only. I cover:The 3 laws, plus:Real question responses to the 12 most common questionsMy mega prompt + Claude skill for feedback on your transc",
+      "action": "Implement this approach in your work",
+      "framework": "govern your responsesApplying the law",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The 3 Laws of PM Behavioral Interviews (That Nobod",
+      "confidence": "medium"
+    },
+    {
+      "insight": "if you get your mindset wrong",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The 3 Laws of PM Behavioral Interviews (That Nobod",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this article by changing your frame",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The 3 Laws of PM Behavioral Interviews (That Nobod",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "govern your responsesApplying the law",
+    "scaffolding and",
+    "universal law"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.874698",
+  "extraction_method": "pattern_based"
+}

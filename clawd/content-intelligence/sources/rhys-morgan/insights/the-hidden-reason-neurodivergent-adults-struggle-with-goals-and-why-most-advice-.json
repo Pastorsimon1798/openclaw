@@ -1,0 +1,65 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "The hidden reason neurodivergent adults struggle with goals (and why most advice is useless).",
+  "source_url": "https://rhysmorgan.substack.com/p/the-hidden-reason-neurodivergent",
+  "slug": "the-hidden-reason-neurodivergent-adults-struggle-with-goals-and-why-most-advice-",
+  "insights": [
+    {
+      "insight": "Land the job by 25. Buy the house by 30. Married, kids, promotion… whatever the next checkbox is.These aren’t goals. They’re expectations.And they were never built with neurodivergent wiring in mind.F",
+      "action": "Use this approach in your work",
+      "framework": "step framework",
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The hidden reason neurodivergent adults struggle w",
+      "confidence": "medium"
+    },
+    {
+      "insight": "no matter how much effort you throw at it… the wheels keep spinning",
+      "action": "Apply this approach in your work",
+      "framework": "ve thrown the rule",
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The hidden reason neurodivergent adults struggle w",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the thing I need to do",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The hidden reason neurodivergent adults struggle w",
+      "confidence": "medium"
+    },
+    {
+      "insight": "seriously—how much of our “goal failure” is just masking and trying to be someone we’re not?Here’s t",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The hidden reason neurodivergent adults struggle w",
+      "confidence": "medium"
+    },
+    {
+      "insight": "building systems that fit us",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The hidden reason neurodivergent adults struggle w",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "step framework",
+    "ve thrown the rule"
+  ],
+  "para_distribution": {
+    "projects": 5,
+    "areas": 0,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.840260",
+  "extraction_method": "pattern_based"
+}

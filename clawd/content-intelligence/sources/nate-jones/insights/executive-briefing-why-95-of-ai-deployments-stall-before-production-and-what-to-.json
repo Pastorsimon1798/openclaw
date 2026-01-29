@@ -1,0 +1,64 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Executive Briefing: Why 95% of AI Deployments Stall Before Production (And What To Do About It)",
+  "source_url": "https://natesnewsletter.substack.com/p/executive-briefing-what-separates",
+  "slug": "executive-briefing-why-95-of-ai-deployments-stall-before-production-and-what-to-",
+  "insights": [
+    {
+      "insight": "The technology works. The capability to use it reliably doesn’t exist in most workforces.The missing layer is what I call the 201 skills—the applied judgment that turns AI tools into consistent produc",
+      "action": "Use this approach in your work",
+      "framework": "durable framework",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why 95% of AI Deployments Stal",
+      "confidence": "medium"
+    },
+    {
+      "insight": "they’ve invested in the wrong layer",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why 95% of AI Deployments Stal",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it reliably doesn’t exist in most workforces",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why 95% of AI Deployments Stal",
+      "confidence": "medium"
+    },
+    {
+      "insight": "cases across functions showing what 201-level work actually looks like",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why 95% of AI Deployments Stal",
+      "confidence": "medium"
+    },
+    {
+      "insight": "they’re left to figure out the hard part on their own",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why 95% of AI Deployments Stal",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "durable framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.711509",
+  "extraction_method": "pattern_based"
+}

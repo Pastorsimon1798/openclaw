@@ -1,0 +1,44 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "Claude Code v2.1 is insane: AI Update #9",
+  "source_url": "https://www.news.aakashg.com/p/how-to-use-claude-code-like-a-pro",
+  "slug": "claude-code-v21-is-insane-ai-update-9",
+  "insights": [
+    {
+      "insight": "Key concept from 'Claude Code v2.1 is insane: AI Update #9...'",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on Claude Code v2.1 is insane: AI Update #9",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Review strategies discussed in this aakash-gupta article",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on Claude Code v2.1 is insane: AI Update #9",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Consider implications for your workflow",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on Claude Code v2.1 is insane: AI Update #9",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 3,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.918310",
+  "extraction_method": "pattern_based"
+}

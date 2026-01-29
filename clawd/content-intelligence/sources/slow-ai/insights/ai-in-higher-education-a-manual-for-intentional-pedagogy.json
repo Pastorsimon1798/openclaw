@@ -1,0 +1,62 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "AI in Higher Education: A Manual for Intentional Pedagogy",
+  "source_url": "https://theslowai.substack.com/p/genai-higher-education-open-access-book",
+  "slug": "ai-in-higher-education-a-manual-for-intentional-pedagogy",
+  "insights": [
+    {
+      "insight": "them without scrutiny",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on AI in Higher Education: A Manual for Intentional P",
+      "confidence": "medium"
+    },
+    {
+      "insight": "with an overview of AI tools in higher education",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on AI in Higher Education: A Manual for Intentional P",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it has become the flashpoint",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on AI in Higher Education: A Manual for Intentional P",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the book is open access",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on AI in Higher Education: A Manual for Intentional P",
+      "confidence": "medium"
+    },
+    {
+      "insight": "chapters in professional development",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on AI in Higher Education: A Manual for Intentional P",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.620786",
+  "extraction_method": "pattern_based"
+}

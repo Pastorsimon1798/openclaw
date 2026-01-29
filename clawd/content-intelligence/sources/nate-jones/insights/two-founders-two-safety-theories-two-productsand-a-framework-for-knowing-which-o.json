@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Two founders, two safety theories, two products—and a framework for knowing which one matches your risk tolerance",
+  "source_url": "https://natesnewsletter.substack.com/p/two-ai-strategies-are-competing-for",
+  "slug": "two-founders-two-safety-theories-two-productsand-a-framework-for-knowing-which-o",
+  "insights": [
+    {
+      "insight": "It’s noise now. These companies aren’t competing on the same axis anymore. They’re building for different customers, solving different problems, optimizing for different outcomes. Asking which is “bet",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Two founders, two safety theories, two products—an",
+      "confidence": "medium"
+    },
+    {
+      "insight": "identify which AI world your work lives in",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Two founders, two safety theories, two products—an",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The AI discourse is stuck on a question that stopped being the useful one",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Two founders, two safety theories, two products—an",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Another “which one should you use",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Two founders, two safety theories, two products—an",
+      "confidence": "medium"
+    },
+    {
+      "insight": "They’re building for different customers, solving different problems, optimizing for different outcomes",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Two founders, two safety theories, two products—an",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.728448",
+  "extraction_method": "pattern_based"
+}

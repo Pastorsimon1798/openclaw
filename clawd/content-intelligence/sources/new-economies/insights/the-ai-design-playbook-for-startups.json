@@ -1,0 +1,66 @@
+{
+  "source_name": "new-economies",
+  "source_title": "The AI Design Playbook for Startups",
+  "source_url": "https://www.neweconomies.co/p/the-ai-product-design-playbook",
+  "slug": "the-ai-design-playbook-for-startups",
+  "insights": [
+    {
+      "insight": "AI (And When Not To)Early in my time at Amazon",
+      "action": "Use this approach in your work",
+      "framework": "left side of the",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The AI Design Playbook for Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "one or two options before giving up",
+      "action": "Apply this approach in your work",
+      "framework": "AI is rewriting the rule",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The AI Design Playbook for Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "thirty different couches in ten minutes and see exactly how each one would look in your room",
+      "action": "Implement this approach in your work",
+      "framework": "tested framework",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The AI Design Playbook for Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "to assess opportunities across two dimensions: whether you’re solving a genuine user problem",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The AI Design Playbook for Startups",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the technology enables it",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The AI Design Playbook for Startups",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "left side of the",
+    "AI is rewriting the rule",
+    "tested framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.800944",
+  "extraction_method": "pattern_based"
+}

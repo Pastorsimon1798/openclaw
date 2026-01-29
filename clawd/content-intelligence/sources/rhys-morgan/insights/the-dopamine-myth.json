@@ -1,0 +1,62 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "The Dopamine Myth",
+  "source_url": "https://rhysmorgan.substack.com/p/the-dopamine-myth",
+  "slug": "the-dopamine-myth",
+  "insights": [
+    {
+      "insight": "patterns feel like a warm hug from the universe",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Dopamine Myth",
+      "confidence": "medium"
+    },
+    {
+      "insight": "we’d tattoo on our foreheads (if we could sit still that long)",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Dopamine Myth",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the lights are too bright",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Dopamine Myth",
+      "confidence": "medium"
+    },
+    {
+      "insight": "that’s when the noise quiets and the fireworks start syncing with the beat",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Dopamine Myth",
+      "confidence": "medium"
+    },
+    {
+      "insight": "time someone tells you it’s “just a dopamine issue",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The Dopamine Myth",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.828346",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "The strange, frustrating, amazing truth about ADHD and goals",
+  "source_url": "https://rhysmorgan.substack.com/p/the-strange-frustrating-amazing-truth",
+  "slug": "the-strange-frustrating-amazing-truth-about-adhd-and-goals",
+  "insights": [
+    {
+      "insight": "I set themes instead of goalsInstead of “write 3 blog posts a week,” I picked a theme like create consistently. Gave me space to explore. No pressure.2. I used time blindness to my advantageDeadlines",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The strange, frustrating, amazing truth about ADHD",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I chased dopamine the right wayNo more boring to-do lists. I gamified everything.Points for sending emails. Rewards for staying off TikTok. I even named my to-do list “Boss Battle.”It sounds dumb. But",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The strange, frustrating, amazing truth about ADHD",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I quit goals that weren’t mineBiggest win ever.Turns out, I didn’t really want to run a marathon. I wanted to prove something.I stopped chasing goals that weren’t me.If you feel like you're failing...",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The strange, frustrating, amazing truth about ADHD",
+      "confidence": "medium"
+    },
+    {
+      "insight": "jobs i had over 30 years ago",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The strange, frustrating, amazing truth about ADHD",
+      "confidence": "medium"
+    },
+    {
+      "insight": "started working for me:1",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "projects",
+      "para_target": "stickers",
+      "rationale": "Extracted from rhys-morgan article on The strange, frustrating, amazing truth about ADHD",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 5,
+    "areas": 0,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.832513",
+  "extraction_method": "pattern_based"
+}

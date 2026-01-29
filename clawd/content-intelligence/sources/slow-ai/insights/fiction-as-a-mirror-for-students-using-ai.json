@@ -1,0 +1,66 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Fiction as a mirror for students using AI",
+  "source_url": "https://theslowai.substack.com/p/ai-fiction-student-reflection",
+  "slug": "fiction-as-a-mirror-for-students-using-ai",
+  "insights": [
+    {
+      "insight": "something inside recognises it",
+      "action": "Use this approach in your work",
+      "framework": "This method",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Fiction as a mirror for students using AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "fictional figures as partners for self inquiry",
+      "action": "Apply this approach in your work",
+      "framework": "Bringing that method",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Fiction as a mirror for students using AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI as a companion that helps students discover meaning rather than dismiss it",
+      "action": "Implement this approach in your work",
+      "framework": "This perspective reinforces the principle",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Fiction as a mirror for students using AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt with your AI tool of choice",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Fiction as a mirror for students using AI",
+      "confidence": "medium"
+    },
+    {
+      "insight": "these written reflections as the foundation for small group discussions",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Fiction as a mirror for students using AI",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "This method",
+    "This perspective reinforces the principle",
+    "Bringing that method"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.630967",
+  "extraction_method": "pattern_based"
+}

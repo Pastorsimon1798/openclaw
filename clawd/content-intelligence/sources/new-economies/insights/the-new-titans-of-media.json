@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "The New Titans of Media",
+  "source_url": "https://www.neweconomies.co/p/mediatitans",
+  "slug": "the-new-titans-of-media",
+  "insights": [
+    {
+      "insight": "Breaking Stories & Launch MomentsExclusive First Look: Give key creators early access to your product to generate controlled hype.Creator-Hosted Livestream: Let a creator run your launch countdown—rea",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Media",
+      "confidence": "medium"
+    },
+    {
+      "insight": "UGC That Doesn’t Feel Like AdsUGC Challenge: Invite your audience to show creative ways they use your product; highlight the best on your channels.Creator Remix: Send your product to micro-creators an",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Media",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Native Advertising That ConvertsIntegrated Placement: Have creators naturally feature your product inside their routine content.Creator Voiceover Ad: Let them narrate the ad in their own tone—higher t",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Media",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Storytelling That Explains, Not SellsBehind-the-Scenes Demo: A creator walks through how they genuinely use your product.Problem → Solution: A short, relatable narrative that highlights value without",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Media",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Reviews & Social ProofHonest Review Series: Transparency builds trust—even when there are small critiques.Before & After: Share progress over time—visually powerful and high-retention.6. Community Eng",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Media",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.742544",
+  "extraction_method": "pattern_based"
+}

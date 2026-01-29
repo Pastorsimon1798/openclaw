@@ -1,0 +1,62 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "If you want 2026 to be the best year of your life, use my AI Co-Founder MEGA Prompt",
+  "source_url": "https://www.sabrina.dev/p/if-you-want-2026-to-be-the-best-year",
+  "slug": "if-you-want-2026-to-be-the-best-year-of-your-life-use-my-ai-co-founder-mega-prom",
+  "insights": [
+    {
+      "insight": "I literally copy-pasted my massive TODO list from google doc into the prompt. What worked in 2025:[List marketing activities that drove actual ROI]What you’re considering for 2026:[Dump your entire ov",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from sabrina-ramonov article on If you want 2026 to be the best year of your life,",
+      "confidence": "medium"
+    },
+    {
+      "insight": "There’s always a million things I could be doing, but I need to know the 3 most important things that will multiply my current monthly revenue.",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from sabrina-ramonov article on If you want 2026 to be the best year of your life,",
+      "confidence": "medium"
+    },
+    {
+      "insight": "There’s always a million things I could be doing, but I need to know the 3 most important things that will multiply my current monthly revenue.",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from sabrina-ramonov article on If you want 2026 to be the best year of your life,",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Claude in Chrome to get work done[EVENT 1/23] Build Million Dollar Apps Q&A (apply to join my free W",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from sabrina-ramonov article on If you want 2026 to be the best year of your life,",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI community)Most entrepreneurs fail because they’re doing too much",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from sabrina-ramonov article on If you want 2026 to be the best year of your life,",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.948830",
+  "extraction_method": "pattern_based"
+}

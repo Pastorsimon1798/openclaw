@@ -1,0 +1,62 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "Create a high converting lead magnet (Lovable Cloud AI)",
+  "source_url": "https://www.sabrina.dev/p/create-high-converting-lead-magnet-lovable-cloud-ai",
+  "slug": "create-a-high-converting-lead-magnet-lovable-cloud-ai",
+  "insights": [
+    {
+      "insight": "Setup LovableIf you do not have an account, sign up for Lovable. It’s a terrific full-stack vibe coding tool for websites and web apps. It’s new feature “Lovable Cloud” allows AI to manage your databa",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Create a high converting lead magnet (Lovable Clou",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Setup SupabaseIf you do not have an account, sign up for Supabase. You can think of it as your database containing all your information, like a super fancy scalable spreadsheet.Connect Database to Lov",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Create a high converting lead magnet (Lovable Clou",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Vibe CodingInput the following prompt, instructing Lovable to build our interactive lead magnet - AI strategy audit with ROI calculator.Use the term “Lovable Cloud” in your prompt. This signals to Lov",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Create a high converting lead magnet (Lovable Clou",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Conserve CreditsThe 1st prompt can take ~5 minutes to complete as Lovable works on scaffolding the whole codebase, brainstorming questions, setting up the database, and implementing a nice  design sys",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Create a high converting lead magnet (Lovable Clou",
+      "confidence": "medium"
+    },
+    {
+      "insight": "TestingOnce Lovable is done updating the lead magnet, click to start the audit and simulate a lead responding to the questions.The interactive lead magnet should also capture the lead’s email address",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Create a high converting lead magnet (Lovable Clou",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.960340",
+  "extraction_method": "pattern_based"
+}

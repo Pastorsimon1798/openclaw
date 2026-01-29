@@ -1,0 +1,44 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Slow AI Curriculum 2026: The Critical Literacy Repository",
+  "source_url": "https://theslowai.substack.com/p/slow-ai-curriculum-2026-repository",
+  "slug": "slow-ai-curriculum-2026-the-critical-literacy-repository",
+  "insights": [
+    {
+      "insight": "Scholars should bookmark this page for use throughout the twelve-month programme. It contains the live webinar links, the syllabus archive, and key contact information.",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Slow AI Curriculum 2026: The Critical Literacy Rep",
+      "confidence": "medium"
+    },
+    {
+      "insight": "throughout the twelve-month programme",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Slow AI Curriculum 2026: The Critical Literacy Rep",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Scholars should bookmark this page for use throughout the twelve-month programme",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from slow-ai article on Slow AI Curriculum 2026: The Critical Literacy Rep",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 3,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.666592",
+  "extraction_method": "pattern_based"
+}

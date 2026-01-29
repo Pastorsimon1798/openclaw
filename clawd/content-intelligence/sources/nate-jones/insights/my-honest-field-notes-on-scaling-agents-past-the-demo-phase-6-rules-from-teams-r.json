@@ -1,0 +1,66 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "My honest field notes on scaling agents past the demo phase + 6 rules from teams running hundreds",
+  "source_url": "https://natesnewsletter.substack.com/p/why-dumb-agents-mean-smart-orchestration",
+  "slug": "my-honest-field-notes-on-scaling-agents-past-the-demo-phase-6-rules-from-teams-r",
+  "insights": [
+    {
+      "insight": "consensus says agents should collaborate like human teams",
+      "action": "Use this approach in your work",
+      "framework": "scaling problem the",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on scaling agents past the d",
+      "confidence": "medium"
+    },
+    {
+      "insight": "with what the Google-MIT researchers actually found",
+      "action": "Apply this approach in your work",
+      "framework": "built versus what the framework",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on scaling agents past the d",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the numbers are more specific—and more uncomfortable—than the headline suggests",
+      "action": "Implement this approach in your work",
+      "framework": "The scaling problem the framework",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on scaling agents past the d",
+      "confidence": "medium"
+    },
+    {
+      "insight": "They’re entities that need to coordinate, and coordination creates overhead that grows faster than capability",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on scaling agents past the d",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The industry consensus says agents should collaborate like human teams, share context, coordinate dynamically, operate continuously",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on scaling agents past the d",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "The scaling problem the framework",
+    "built versus what the framework",
+    "scaling problem the"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.695510",
+  "extraction_method": "pattern_based"
+}

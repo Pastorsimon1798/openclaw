@@ -1,0 +1,66 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "50 people ignored my tool recommendations + here's why their systems still worked (Second Brain follow-up)",
+  "source_url": "https://natesnewsletter.substack.com/p/50-people-ignored-my-tool-recommendations",
+  "slug": "50-people-ignored-my-tool-recommendations-heres-why-their-systems-still-worked-s",
+  "insights": [
+    {
+      "insight": "AI systems from people who get stuck and give up",
+      "action": "Use this approach in your work",
+      "framework": "There are four principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on 50 people ignored my tool recommendations + here's",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the same system in completely different ways",
+      "action": "Apply this approach in your work",
+      "framework": "The four principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on 50 people ignored my tool recommendations + here's",
+      "confidence": "medium"
+    },
+    {
+      "insight": "taught me more about how building actually works in 2026 than anything I could have figured out on m",
+      "action": "Implement this approach in your work",
+      "framework": "start with the principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on 50 people ignored my tool recommendations + here's",
+      "confidence": "medium"
+    },
+    {
+      "insight": "There are four principles that separate people who successfully build AI systems from people who get stuck and give up",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on 50 people ignored my tool recommendations + here's",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I learned them last week from watching dozens of people build the same system in completely different ways",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on 50 people ignored my tool recommendations + here's",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "There are four principle",
+    "start with the principle",
+    "The four principle"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.730013",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Shopify's AI Memo Was a Filter, Not a Productivity Play. Grab the AI Leverage Audit I built after watching Duolingo fail and Shopify succeed.",
+  "source_url": "https://natesnewsletter.substack.com/p/my-honest-field-notes-on-how-the",
+  "slug": "shopifys-ai-memo-was-a-filter-not-a-productivity-play-grab-the-ai-leverage-audit",
+  "insights": [
+    {
+      "insight": "Role boundaries dissolving, new coordination roles emerging, compensation polarizing, and why the training gap is becoming a strategic liability.The filter is set. Now we find out who passes.Subscribe",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Shopify's AI Memo Was a Filter, Not a Productivity",
+      "confidence": "medium"
+    },
+    {
+      "insight": "is adopting the same metric—and not for the reasons the skeptics assumed",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Shopify's AI Memo Was a Filter, Not a Productivity",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Eight months after Tobi Lutke told Shopify to prove AI can’t do the work before hiring a human, the rest of the industry is adopting the same metric—and not for the reasons the skeptics assumed",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Shopify's AI Memo Was a Filter, Not a Productivity",
+      "confidence": "medium"
+    },
+    {
+      "insight": "By making AI usage a performance metric, Lutke wasn’t trying to make Shopify more efficient—he was reshaping who would want to work there and who would thrive once they arrived",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Shopify's AI Memo Was a Filter, Not a Productivity",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Just this week, Josh Miller at The Browser Company mentioned paying premiums for people who are “native to the Claude Code way of building",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Shopify's AI Memo Was a Filter, Not a Productivity",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.720256",
+  "extraction_method": "pattern_based"
+}

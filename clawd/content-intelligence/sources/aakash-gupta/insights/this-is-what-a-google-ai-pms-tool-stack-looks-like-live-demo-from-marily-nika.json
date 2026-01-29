@@ -1,0 +1,62 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "This is what a Google AI PM's Tool Stack Looks Like - Live Demo from Marily Nika",
+  "source_url": "https://www.news.aakashg.com/p/marily-nika-podcast",
+  "slug": "this-is-what-a-google-ai-pms-tool-stack-looks-like-live-demo-from-marily-nika",
+  "insights": [
+    {
+      "insight": "Marily’s 6 Tool AI PM StackMost PMs are tool hopping with dozens of apps. Marily has distilled it down to 6 tools she uses several times every single day:Google AI Studio - AI prototyping. Under 10 mi",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on This is what a Google AI PM's Tool Stack Looks Lik",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Marily’s 18-Month AI PM RoadmapIf somebody wants to become an AI product manager, what’s the 18-month roadmap to landing an AI PM job at a company like Google?Be Like a CrabMarily tells PMs they need",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on This is what a Google AI PM's Tool Stack Looks Lik",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI PM Interview Red FlagsMarily has probably been on both sides of the table for these AI PM interviews for years now. What are the biggest red flags?Red Flag 1 - Missing the PM CraftNumber one, you s",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on This is what a Google AI PM's Tool Stack Looks Lik",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI prototyping where under 10 minutes you have a fully functional app",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on This is what a Google AI PM's Tool Stack Looks Lik",
+      "confidence": "medium"
+    },
+    {
+      "insight": "she knew the input was gonna be a photo and the output was gonna be a collage of photos",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on This is what a Google AI PM's Tool Stack Looks Lik",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.904434",
+  "extraction_method": "pattern_based"
+}

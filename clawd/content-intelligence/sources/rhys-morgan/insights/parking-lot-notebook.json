@@ -1,0 +1,62 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "Parking Lot Notebook.",
+  "source_url": "https://rhysmorgan.substack.com/p/parking-lot-notebook-dfa",
+  "slug": "parking-lot-notebook",
+  "insights": [
+    {
+      "insight": "a “parking lot” notebook for racing thoughts",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Parking Lot Notebook.",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it today: Keep a small notebook or open a note on your phone",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Parking Lot Notebook.",
+      "confidence": "medium"
+    },
+    {
+      "insight": "time your brain interrupts you with “don’t forget to",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Parking Lot Notebook.",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Daily Tip: Use a “parking lot” notebook for racing thoughts",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Parking Lot Notebook.",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Instead of trying to wrestle them into silence (which never works), I grab my notebook and write them down",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Parking Lot Notebook.",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.817935",
+  "extraction_method": "pattern_based"
+}

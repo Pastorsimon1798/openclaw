@@ -1,0 +1,64 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "🧠 Flipping the script on “hating your ADHD”",
+  "source_url": "https://rhysmorgan.substack.com/p/flipping-the-script-on-hating-your",
+  "slug": "-flipping-the-script-on-hating-your-adhd",
+  "insights": [
+    {
+      "insight": "replacing “lazy” with “needs novelty”",
+      "action": "Use this approach in your work",
+      "framework": "made my own rule",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from rhys-morgan article on 🧠 Flipping the script on “hating your ADHD”",
+      "confidence": "medium"
+    },
+    {
+      "insight": "systems that don’t punish you for being you",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from rhys-morgan article on 🧠 Flipping the script on “hating your ADHD”",
+      "confidence": "medium"
+    },
+    {
+      "insight": "environments that reward your style",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from rhys-morgan article on 🧠 Flipping the script on “hating your ADHD”",
+      "confidence": "medium"
+    },
+    {
+      "insight": "maybe what’s “wrong” with you",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from rhys-morgan article on 🧠 Flipping the script on “hating your ADHD”",
+      "confidence": "medium"
+    },
+    {
+      "insight": "something weird happened",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from rhys-morgan article on 🧠 Flipping the script on “hating your ADHD”",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "made my own rule"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.813212",
+  "extraction_method": "pattern_based"
+}

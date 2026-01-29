@@ -1,0 +1,64 @@
+{
+  "source_name": "new-economies",
+  "source_title": "New Unicorns Landscape 2025",
+  "source_url": "https://www.neweconomies.co/p/new-unicorns-landscape-2025",
+  "slug": "new-unicorns-landscape-2025",
+  "insights": [
+    {
+      "insight": "To showcase the latest unicorns, we have categorized each one into when they publicly became a unicorn throughout 2025. Notable examples include: Clay is an AI-driven sales and marketing company that",
+      "action": "Use this approach in your work",
+      "framework": "collaborative AI that empowers law",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on New Unicorns Landscape 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Most promising future unicorns Discover 35+ future unicorns launched in the past year, each raising $10M+, plus this edition’s newest unicorns in full. *When you become an annual paid subscriber, you",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on New Unicorns Landscape 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "your startup on Framer — free for your first year",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on New Unicorns Landscape 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "to claim your free year -->New unicorns market map 2025 was a huge year for tech",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on New Unicorns Landscape 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Energy is an innovative energy company that simplifies gas and electricity management by providing a",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on New Unicorns Landscape 2025",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "collaborative AI that empowers law"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.777102",
+  "extraction_method": "pattern_based"
+}

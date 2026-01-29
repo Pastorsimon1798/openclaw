@@ -1,0 +1,62 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "10 Year Old Vibe Codes 2 Apps in 2 Hours (FULL Prompts + Tutorial)",
+  "source_url": "https://www.sabrina.dev/p/10-year-old-vibe-codes-2-apps",
+  "slug": "10-year-old-vibe-codes-2-apps-in-2-hours-full-prompts-tutorial",
+  "insights": [
+    {
+      "insight": "the barrier to entry is just too high",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on 10 Year Old Vibe Codes 2 Apps in 2 Hours (FULL Pro",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I framed it as a new fun thing to play with",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on 10 Year Old Vibe Codes 2 Apps in 2 Hours (FULL Pro",
+      "confidence": "medium"
+    },
+    {
+      "insight": "more complex products - you can certainly learn this too",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on 10 Year Old Vibe Codes 2 Apps in 2 Hours (FULL Pro",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it here! (password: chocolate)Here’s the exact prompt she started with:Build an online diary where o",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on 10 Year Old Vibe Codes 2 Apps in 2 Hours (FULL Pro",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it here!Here’s the exact prompt she used:make a language learning app",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on 10 Year Old Vibe Codes 2 Apps in 2 Hours (FULL Pro",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.970416",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,64 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "Sunset Sanity: How to End Your Day Without Spiraling Into Stress",
+  "source_url": "https://rhysmorgan.substack.com/p/sunset-sanity-how-to-end-your-day",
+  "slug": "sunset-sanity-how-to-end-your-day-without-spiraling-into-stress",
+  "insights": [
+    {
+      "insight": "a template—categories like “Work",
+      "action": "Use this approach in your work",
+      "framework": "Task Rule",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Sunset Sanity: How to End Your Day Without Spirali",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a clear “day’s over” cue",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Sunset Sanity: How to End Your Day Without Spirali",
+      "confidence": "medium"
+    },
+    {
+      "insight": "no one’s got time for spiraling",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Sunset Sanity: How to End Your Day Without Spirali",
+      "confidence": "medium"
+    },
+    {
+      "insight": "1 Dump the DayYour brain’s a hoarder—it holds onto everything",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Sunset Sanity: How to End Your Day Without Spirali",
+      "confidence": "medium"
+    },
+    {
+      "insight": "2 Signal the ShutdownTransitions are brutal when your brain doesn’t shift gears naturally",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on Sunset Sanity: How to End Your Day Without Spirali",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "Task Rule"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.838094",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,64 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "You've Been Vibe Coding the Hard Way (Do This Instead)",
+  "source_url": "https://www.sabrina.dev/p/stop-vibe-coding-the-hard-way",
+  "slug": "youve-been-vibe-coding-the-hard-way-do-this-instead",
+  "insights": [
+    {
+      "insight": "use their simple managed built-in backend or 2) connect your own Supabase database for full control.Con: You start managing more pieces especially if you are connecting your own database.When should y",
+      "action": "Use this approach in your work",
+      "framework": "clear simple framework",
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from sabrina-ramonov article on You've Been Vibe Coding the Hard Way (Do This Inst",
+      "confidence": "medium"
+    },
+    {
+      "insight": "If your app is more complex and/or you have technical background, you’ll probably want to start at Stage 3 or 4.Vibe Coding Mobile AppsI’ve tried a bunch of vibe coding tools for mobile apps.Unfortuna",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from sabrina-ramonov article on You've Been Vibe Coding the Hard Way (Do This Inst",
+      "confidence": "medium"
+    },
+    {
+      "insight": "that traction and conviction to eventually hire a full-time technical person to add new features",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from sabrina-ramonov article on You've Been Vibe Coding the Hard Way (Do This Inst",
+      "confidence": "medium"
+    },
+    {
+      "insight": "with depends on your technical background and app complexity",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from sabrina-ramonov article on You've Been Vibe Coding the Hard Way (Do This Inst",
+      "confidence": "medium"
+    },
+    {
+      "insight": "their simple managed built-in backend or 2) connect your own Supabase database for full control",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from sabrina-ramonov article on You've Been Vibe Coding the Hard Way (Do This Inst",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "clear simple framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.978034",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "The surprising truth about inattentive ADHD (that no one tells you)",
+  "source_url": "https://rhysmorgan.substack.com/p/the-surprising-truth-about-inattentive",
+  "slug": "the-surprising-truth-about-inattentive-adhd-that-no-one-tells-you",
+  "insights": [
+    {
+      "insight": "once you know what you’re working with…You can work with it",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The surprising truth about inattentive ADHD (that ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "forget what I was doing halfway through",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The surprising truth about inattentive ADHD (that ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "start again from scratch",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The surprising truth about inattentive ADHD (that ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Or I write them on my phone, forget I wrote them… then start again from scratch",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The surprising truth about inattentive ADHD (that ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "”Of failing before you even start",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on The surprising truth about inattentive ADHD (that ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.815379",
+  "extraction_method": "pattern_based"
+}

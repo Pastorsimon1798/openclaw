@@ -1,0 +1,65 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "The 8 AI Skills That Will Separate Winners From Losers in 2026",
+  "source_url": "https://www.sabrina.dev/p/8-ai-skills-learn-2026",
+  "slug": "the-8-ai-skills-that-will-separate-winners-from-losers-in-2026",
+  "insights": [
+    {
+      "insight": "SkepticismTrap: Believing what you hear. This often fuels “Shiny Object Syndrome” where you try every new tool or business model you just heard on Instagram. Jumping ship from vibe coding to automatio",
+      "action": "Use this approach in your work",
+      "framework": "key is to build AI",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on The 8 AI Skills That Will Separate Winners From Lo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Learn to Love LearningTrap: Stressed and afraid to learn new things, so when new AI tools come out you feel overwhelmed and resist learning. Putting too much pressure on yourself over making money rig",
+      "action": "Apply this approach in your work",
+      "framework": "know the rule",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on The 8 AI Skills That Will Separate Winners From Lo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Learn in PublicTrap: Avoiding posting content because you’re waiting until you’ve mastered an AI tool/skill, or finished building. Skill: Share your learnings, wins, and failures online transparently.",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on The 8 AI Skills That Will Separate Winners From Lo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Context EngineeringConcept: The more high-quality information and context about your situation, goals, what you’ve tried, what didn’t work, data, etc. you give AI, the higher-quality answers you get.",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on The 8 AI Skills That Will Separate Winners From Lo",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Sparring PartnersConcept: Stop using AI for surface-level answers. Use AI to understand what questions you should’ve been asking.Action: Tell AI to act as a critic or skeptic. For example, instead of",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on The 8 AI Skills That Will Separate Winners From Lo",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "know the rule",
+    "key is to build AI"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:15.000050",
+  "extraction_method": "pattern_based"
+}

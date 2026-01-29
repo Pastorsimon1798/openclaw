@@ -1,0 +1,64 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Executive Briefing: Why Your AI Strategy Has a Blind Spot (Literally)--The Case for Visual AI",
+  "source_url": "https://natesnewsletter.substack.com/p/executive-briefing-visual-ai-isnt",
+  "slug": "executive-briefing-why-your-ai-strategy-has-a-blind-spot-literally-the-case-for-",
+  "insights": [
+    {
+      "insight": "visual AI into their systems now will establish advantages that late adopters cannot easily match",
+      "action": "Use this approach in your work",
+      "framework": "fact that automated",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why Your AI Strategy Has a Bli",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The constraint that has quietly limited AI adoption for years—the fact that automated systems could not see and could not show—is dissolving",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why Your AI Strategy Has a Bli",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Why AI adoption has been systematically limited to text-centric processes—and how organizations designed around visual bottlenecks so instinctively they stopped noticing them",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why Your AI Strategy Has a Bli",
+      "confidence": "medium"
+    },
+    {
+      "insight": "How dissolving visual constraints compounds through bottleneck removal, data generation, trust calibration, and workflow integration to accelerate AI adoption broadly",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why Your AI Strategy Has a Bli",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Why organizations that build visual AI into their systems now will establish advantages that late adopters cannot easily match",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Executive Briefing: Why Your AI Strategy Has a Bli",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "fact that automated"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.718062",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,65 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "AI cannot be your friend",
+  "source_url": "https://theslowai.substack.com/p/ai-friendship-contradiction-curriculum",
+  "slug": "ai-cannot-be-your-friend",
+  "insights": [
+    {
+      "insight": "argue in ‘With Friends Like These: Love and Friendship with AI Agents’ that friendship requires caring for the good of another for their own sake. An AI agent lacks an internal good because it is a fu",
+      "action": "Use this approach in your work",
+      "framework": "humanities to synthetic",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on AI cannot be your friend",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Once filled, enrolment returns to £75. There will be no extension.Join the Slow AI CurriculumGo Slow.Sam",
+      "action": "Apply this approach in your work",
+      "framework": "It demonstrates our method",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on AI cannot be your friend",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it is a functional artifact defined by human utility",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on AI cannot be your friend",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the AI cannot reject the user or pursue its own interests",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on AI cannot be your friend",
+      "confidence": "medium"
+    },
+    {
+      "insight": "An AI agent lacks an internal good because it is a functional artifact defined by human utility",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on AI cannot be your friend",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "It demonstrates our method",
+    "humanities to synthetic"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.654194",
+  "extraction_method": "pattern_based"
+}

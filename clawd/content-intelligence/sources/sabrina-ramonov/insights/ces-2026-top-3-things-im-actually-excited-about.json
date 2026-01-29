@@ -1,0 +1,62 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "CES 2026 - Top 3 Things I'm Actually Excited About",
+  "source_url": "https://www.sabrina.dev/p/ces-2026-top-3-things-im-actually",
+  "slug": "ces-2026-top-3-things-im-actually-excited-about",
+  "insights": [
+    {
+      "insight": "There are specialized robots trained to just fold laundry, for example, but then they can’t do anything else… Expectations vs RealityLike I said, I won’t be back to CES anytime soon.Here are my though",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on CES 2026 - Top 3 Things I'm Actually Excited About",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Eight Sleep for temperature regulation but it’s NOT life changing",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on CES 2026 - Top 3 Things I'm Actually Excited About",
+      "confidence": "medium"
+    },
+    {
+      "insight": "my body relaxed within just a few minutes",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on CES 2026 - Top 3 Things I'm Actually Excited About",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it reminded me of my office chair experience",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on CES 2026 - Top 3 Things I'm Actually Excited About",
+      "confidence": "medium"
+    },
+    {
+      "insight": "cases:seniorsdisabilitiesrehab from injuryenjoying sports despite injurylong or steep hikes/bikes/wa",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on CES 2026 - Top 3 Things I'm Actually Excited About",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.996467",
+  "extraction_method": "pattern_based"
+}

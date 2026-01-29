@@ -1,0 +1,65 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Archival Silence: A Proof of Concept for the Slow AI Curriculum",
+  "source_url": "https://theslowai.substack.com/p/slow-ai-curriculum-archival-silence",
+  "slug": "archival-silence-a-proof-of-concept-for-the-slow-ai-curriculum",
+  "insights": [
+    {
+      "insight": "argue that data is an oligoptic resource, in other words it provides a fragmented, partial view of reality shaped by the socioeconomic biases of its original creators.The authors demonstrate that bias",
+      "action": "Use this approach in your work",
+      "framework": "humanities to synthetic",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Archival Silence: A Proof of Concept for the Slow ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Once filled, enrolment returns to £75. There will be no extension.Join the Slow AI CurriculumGo Slow.Sam",
+      "action": "Apply this approach in your work",
+      "framework": "It demonstrates our method",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Archival Silence: A Proof of Concept for the Slow ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a tone that is academic and authoritative",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Archival Silence: A Proof of Concept for the Slow ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "their records were better preserved and more accurately digitised",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Archival Silence: A Proof of Concept for the Slow ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the collective literacy required to navigate synthetic systems safely",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on Archival Silence: A Proof of Concept for the Slow ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "It demonstrates our method",
+    "humanities to synthetic"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.617741",
+  "extraction_method": "pattern_based"
+}

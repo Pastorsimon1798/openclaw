@@ -620,6 +620,8 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         # === STATIC FILES ===
         if path == '/' or path == '/index.html':
             self.send_file(TEMPLATES_DIR / 'index.html', 'text/html')
+        elif path == '/cis.html':
+            self.send_file(TEMPLATES_DIR / 'cis.html', 'text/html')
         elif path == '/static/style.css':
             self.send_file(STATIC_DIR / 'style.css', 'text/css')
         elif path == '/static/app.js':

@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "2026 Creator Economy M&A Report",
+  "source_url": "https://www.neweconomies.co/p/2026-creator-economy-m-and-a-report",
+  "slug": "2026-creator-economy-ma-report",
+  "insights": [
+    {
+      "insight": "Buyer demand surged as strategics and PE firms looked to enhance their capabilities, achieve greater scale, and strengthen their creator relationships. The result was an incredibly active market, whic",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026 Creator Economy M&A Report",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Buyers showed a stronger preference for domestic or regionally adjacent assets, perhaps due to regulatory complexity, integration risk, and macro uncertainty. Scale is still the goal, but proximity ma",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026 Creator Economy M&A Report",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Here are the largest transactions of the year.Target ProfilesSoftware businesses were most in demand, followed by agencies, media properties, and talent management firms.Geographic DistributionMore th",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026 Creator Economy M&A Report",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Demand for creator economy businesses continues to increase as the category grows and more companies mature into compelling acquisition targets.Creators ring the bellMore creator-founded companies wil",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026 Creator Economy M&A Report",
+      "confidence": "medium"
+    },
+    {
+      "insight": "their creator relationships",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 2026 Creator Economy M&A Report",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.738410",
+  "extraction_method": "pattern_based"
+}

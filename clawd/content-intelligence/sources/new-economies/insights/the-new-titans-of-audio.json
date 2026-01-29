@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "The New Titans of Audio",
+  "source_url": "https://www.neweconomies.co/p/the-new-titans-of-audio",
+  "slug": "the-new-titans-of-audio",
+  "insights": [
+    {
+      "insight": "as soon as possible to access",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Audio",
+      "confidence": "medium"
+    },
+    {
+      "insight": "NowWhy new media is an important trendIn the next few years",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Audio",
+      "confidence": "medium"
+    },
+    {
+      "insight": "web builder that helps startups launch fast",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Audio",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Framer is giving early-stage startups a full year of the Pro Plan — at no cost",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Audio",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Framer is the design-first web builder that helps startups launch fast",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on The New Titans of Audio",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.767870",
+  "extraction_method": "pattern_based"
+}

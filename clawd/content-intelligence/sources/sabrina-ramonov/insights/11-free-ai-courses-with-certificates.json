@@ -1,0 +1,64 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "11 FREE AI Courses with Certificates",
+  "source_url": "https://www.sabrina.dev/p/11-free-ai-courses-with-certificates",
+  "slug": "11-free-ai-courses-with-certificates",
+  "insights": [
+    {
+      "insight": "with Tony Robbins & Dean Graziosi:RSVP to the AI Advantage Summit (free & virtual)Stop paying for AI courses! I found 11 free AI courses that give you certificates. HOWEVER, some certificates require",
+      "action": "Use this approach in your work",
+      "framework": "and framework",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on 11 FREE AI Courses with Certificates",
+      "confidence": "medium"
+    },
+    {
+      "insight": "These are from Google, IBM, top universities, and trusted platforms, so you can add them to Linkedin and resume.I’ll tell you which ones teach real AI skills, which ones are beginner friendly, and whi",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on 11 FREE AI Courses with Certificates",
+      "confidence": "medium"
+    },
+    {
+      "insight": "IBM AI for Everyone: Master the BasicsThis is a 4-week beginner-friendly course introducing AI concepts, apps, and ethical issues without requiring technical background. Learn about AI, machine learni",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on 11 FREE AI Courses with Certificates",
+      "confidence": "medium"
+    },
+    {
+      "insight": "IBM Artificial Intelligence FundamentalsThis technical course has 6 required modules: Introduction to AI, Natural Language Processing and Computer Vision, Machine Learning and Deep Learning, Run AI Mo",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on 11 FREE AI Courses with Certificates",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Elements of AIThis is a university-accredited intro course by the University of Helsinki and it’s mildly technical. It’s available in 20+ languages and has 1.8M+ students already. The course has 2 par",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on 11 FREE AI Courses with Certificates",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "and framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.992377",
+  "extraction_method": "pattern_based"
+}

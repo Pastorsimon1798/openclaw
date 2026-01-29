@@ -1,0 +1,62 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "AI Summit Recap (fyi i'm not affiliated with their bootcamp)",
+  "source_url": "https://www.sabrina.dev/p/ai-summit-recap-fyi-im-not-affiliated",
+  "slug": "ai-summit-recap-fyi-im-not-affiliated-with-their-bootcamp",
+  "insights": [
+    {
+      "insight": "I do NOT want anyone to be left behind",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on AI Summit Recap (fyi i'm not affiliated with their",
+      "confidence": "medium"
+    },
+    {
+      "insight": "in my own videos / teaching style",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on AI Summit Recap (fyi i'm not affiliated with their",
+      "confidence": "medium"
+    },
+    {
+      "insight": "time… I went to the bathroom and noticed a pimple",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on AI Summit Recap (fyi i'm not affiliated with their",
+      "confidence": "medium"
+    },
+    {
+      "insight": "my face was bleeding so I sat outside applying pressure for 10 minutes with a tissue",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on AI Summit Recap (fyi i'm not affiliated with their",
+      "confidence": "medium"
+    },
+    {
+      "insight": "time using the “AI vibe board” (whiteboard)! I LOVED it and totally buying one",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on AI Summit Recap (fyi i'm not affiliated with their",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.988117",
+  "extraction_method": "pattern_based"
+}

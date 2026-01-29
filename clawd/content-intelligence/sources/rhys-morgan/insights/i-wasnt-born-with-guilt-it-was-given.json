@@ -1,0 +1,36 @@
+{
+  "actionable": [
+    {
+      "insight": "do \u201csimple\u201d things like fill out a form or return a damn text. It started early. As a kid I got in trou",
+      "context": "extracted from content",
+      "applicability": "personal"
+    },
+    {
+      "insight": "use I needed recovery, quiet, or space. So I did what a lot of us do. I blamed myself. I didn\u2019t know my",
+      "context": "extracted from content",
+      "applicability": "personal"
+    },
+    {
+      "insight": "use it gave me a script. It gave me something to hold onto in a world where I felt like a glitch in the",
+      "context": "extracted from content",
+      "applicability": "personal"
+    }
+  ],
+  "frameworks": [],
+  "takeaways": [
+    "Let me tell you something that wrecked me: I thought guilt was me",
+    "As a teen I got mocked for being awkward",
+    "As a kid I got in trouble for daydreaming too much",
+    "So I started believing I was all of that \u2014 and worse",
+    "And somewhere between my first meltdown and my last missed deadline"
+  ],
+  "resources": [],
+  "quotes": [],
+  "para_tags": [],
+  "topic_tags": [],
+  "source_file": "/home/liam/clawd/content-intelligence/sources/rhys-morgan/archive/i-wasnt-born-with-guilt-it-was-given.json",
+  "source_title": "\ud83e\udde8 I wasn\u2019t born with guilt \u2014 it was given to me",
+  "source_url": "https://rhysmorgan.substack.com/p/i-wasnt-born-with-guilt-it-was-given",
+  "extracted_at": "2026-01-28T22:14:42.215812",
+  "source_name": "rhys-morgan"
+}

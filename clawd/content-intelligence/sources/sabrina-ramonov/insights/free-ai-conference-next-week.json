@@ -1,0 +1,35 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "FREE AI Conference Next Week!",
+  "source_url": "https://www.sabrina.dev/p/free-ai-conference-next-week",
+  "slug": "free-ai-conference-next-week",
+  "insights": [
+    {
+      "insight": "week!! We’re expecting 500",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on FREE AI Conference Next Week!",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I’ll share how I used AI to grow from:0 to 1",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on FREE AI Conference Next Week!",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 2,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 2,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:15.001072",
+  "extraction_method": "pattern_based"
+}

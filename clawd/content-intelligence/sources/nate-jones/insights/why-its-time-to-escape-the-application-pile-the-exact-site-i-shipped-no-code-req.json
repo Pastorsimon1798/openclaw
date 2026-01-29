@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Why it's time to escape the application pile + the exact site I shipped (no code required!)",
+  "source_url": "https://natesnewsletter.substack.com/p/grab-the-fit-assessment-prompt-that",
+  "slug": "why-its-time-to-escape-the-application-pile-the-exact-site-i-shipped-no-code-req",
+  "insights": [
+    {
+      "insight": "AI to help you apply—but not too much or they’ll catch you",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on Why it's time to escape the application pile + the",
+      "confidence": "medium"
+    },
+    {
+      "insight": "everyone accepts the premise",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on Why it's time to escape the application pile + the",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the surface people encounter when they find you—something they can query",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on Why it's time to escape the application pile + the",
+      "confidence": "medium"
+    },
+    {
+      "insight": "let’s walk through why this approach actually works",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on Why it's time to escape the application pile + the",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Everyone applying for jobs in 2025 knows this",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on Why it's time to escape the application pile + the",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.733869",
+  "extraction_method": "pattern_based"
+}

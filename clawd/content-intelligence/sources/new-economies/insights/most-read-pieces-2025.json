@@ -1,0 +1,65 @@
+{
+  "source_name": "new-economies",
+  "source_title": "Most Read Pieces 2025",
+  "source_url": "https://www.neweconomies.co/p/most-read-pieces-2025",
+  "slug": "most-read-pieces-2025",
+  "insights": [
+    {
+      "insight": "as soon as possible to access — you don’t have long left",
+      "action": "Use this approach in your work",
+      "framework": "New Operating",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on Most Read Pieces 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "HereMost Read Pieces 2025Y Combinator S25: The Full BatchDiscover the 160+ YC S25 startups in full",
+      "action": "Apply this approach in your work",
+      "framework": "New Operating",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on Most Read Pieces 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI — the idea that AI is the newest rung in the review ladder: junior → senior → partner → AI… becau",
+      "action": "Implement this approach in your work",
+      "framework": "the next decade of law",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on Most Read Pieces 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a quick word from this week’s collaboration:Framer is giving early-stage startups a full year of the",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on Most Read Pieces 2025",
+      "confidence": "medium"
+    },
+    {
+      "insight": "web builder that helps startups launch fast",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on Most Read Pieces 2025",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "New Operating",
+    "the next decade of law"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.789558",
+  "extraction_method": "pattern_based"
+}

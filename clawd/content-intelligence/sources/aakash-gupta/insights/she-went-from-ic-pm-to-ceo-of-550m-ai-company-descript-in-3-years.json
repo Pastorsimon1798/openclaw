@@ -1,0 +1,64 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "She went from IC PM to CEO of $550M AI company Descript in 3 years",
+  "source_url": "https://www.news.aakashg.com/p/she-went-from-ic-pm-to-ceo-of-550m",
+  "slug": "she-went-from-ic-pm-to-ceo-of-550m-ai-company-descript-in-3-years",
+  "insights": [
+    {
+      "insight": "Building AI Tools That Users Keep Using1a. Pick Features Based on Real Pain PointsDescript understood their customers from years of watching people edit videos.When LLMs became available, they asked:",
+      "action": "Use this approach in your work",
+      "framework": "the eval framework",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on She went from IC PM to CEO of $550M AI company Des",
+      "confidence": "medium"
+    },
+    {
+      "insight": "A deep dive into Descript’s AI AgentEventually, Descript has rolled out an all-purpose agent. But it works in a very specific way that’s worth understanding.Their agent, Underlord, works across all De",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on She went from IC PM to CEO of $550M AI company Des",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Her IC to CEO Career Path3a. Earn Founder Trust Through CommandWhy should a founder trust you more than themselves? They built the first 7 versions by trusting their instincts. Andrew Mason, the found",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on She went from IC PM to CEO of $550M AI company Des",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Grab a spot early for a discount.Related ContentPodcasts:AI Product Leadership MasterclassConversation with the CEO and Founder of BoltThis $20M AI Founder Is Challenging Elon and Sam Altman | Roy Lee",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on She went from IC PM to CEO of $550M AI company Des",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this as a customer?” If yes",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from aakash-gupta article on She went from IC PM to CEO of $550M AI company Des",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "the eval framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.922635",
+  "extraction_method": "pattern_based"
+}

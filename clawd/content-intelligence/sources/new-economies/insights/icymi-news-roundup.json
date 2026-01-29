@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "ICYMI News Roundup",
+  "source_url": "https://www.neweconomies.co/p/icymi-news-roundup-ebf",
+  "slug": "icymi-news-roundup",
+  "insights": [
+    {
+      "insight": "Meet this week’s partner: Chrome CEP Security shouldn’t slow innovation",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on ICYMI News Roundup",
+      "confidence": "medium"
+    },
+    {
+      "insight": "two years to go from $1-100m",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on ICYMI News Roundup",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The startup ecosystem is evolving so much (and fast)The startup ecosystem is shifting fast",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on ICYMI News Roundup",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The AI bubble is in full swing, $100M ARR is the new badge of honor over unicorn status, startups are raising record rounds, new VC funds are emerging, and acquisitions are heating up",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on ICYMI News Roundup",
+      "confidence": "medium"
+    },
+    {
+      "insight": "💰 Startup funding newsAirwallex raised $330M at an $8B valuation and reached $1B ARR",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on ICYMI News Roundup",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.753997",
+  "extraction_method": "pattern_based"
+}

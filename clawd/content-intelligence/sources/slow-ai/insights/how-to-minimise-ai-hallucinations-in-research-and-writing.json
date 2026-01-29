@@ -1,0 +1,62 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "How to Minimise AI Hallucinations in Research and Writing",
+  "source_url": "https://theslowai.substack.com/p/minimise-genai-hallucinations",
+  "slug": "how-to-minimise-ai-hallucinations-in-research-and-writing",
+  "insights": [
+    {
+      "insight": "AI well without surrendering critical thinking",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from slow-ai article on How to Minimise AI Hallucinations in Research and ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the context is thin or the task is vague",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from slow-ai article on How to Minimise AI Hallucinations in Research and ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt with your AI tool of choice:You are a researcher learning learning how to minimise hallu",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from slow-ai article on How to Minimise AI Hallucinations in Research and ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the prompt for a topic that genuinely matters",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from slow-ai article on How to Minimise AI Hallucinations in Research and ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "cases for companion bots",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from slow-ai article on How to Minimise AI Hallucinations in Research and ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.666044",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "Weekly Digest: Nvidia doubles down on its ‘second home’ Israel, Lightspeed raises record $9B in fresh capital, and OpenAI is reportedly trying to raise $100B at an $830B valuation.",
+  "source_url": "https://www.neweconomies.co/p/icymi-december",
+  "slug": "weekly-digest-nvidia-doubles-down-on-its-second-home-israel-lightspeed-raises-re",
+  "insights": [
+    {
+      "insight": "Trade Republic has become Germany’s most valuable start-up after investors including Peter Thiel’s Founders Fund agreed to back the fintech at a €12.5bn valuation.TikTok has agreed to transfer signifi",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: Nvidia doubles down on its ‘second ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "just raised a $20M Seed round to build the largest bank in the world. The startup just crossed $30M in annual revenue, $1B in payment volume, and 1M users in under 12 months, with a team of six engine",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: Nvidia doubles down on its ‘second ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "as soon as possible to access",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: Nvidia doubles down on its ‘second ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "HereThe startup ecosystem is evolving so much (and fast)The startup ecosystem is shifting fast",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: Nvidia doubles down on its ‘second ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a new status game around building & using apps",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: Nvidia doubles down on its ‘second ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.784970",
+  "extraction_method": "pattern_based"
+}

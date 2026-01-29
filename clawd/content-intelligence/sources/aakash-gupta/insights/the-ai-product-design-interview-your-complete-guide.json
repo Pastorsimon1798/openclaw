@@ -1,0 +1,65 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "The AI Product Design Interview: Your Complete Guide",
+  "source_url": "https://www.news.aakashg.com/p/the-ai-product-design-interview-your",
+  "slug": "the-ai-product-design-interview-your-complete-guide",
+  "insights": [
+    {
+      "insight": "The Mock InterviewTo get you in the right mindset, let’s start with an example. I’ve recorded an end-to-end mock interview of what a good answer looks like for you.This is a question OpenAI has been a",
+      "action": "Use this approach in your work",
+      "framework": "step interview framework",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI Product Design Interview: Your Complete Gui",
+      "confidence": "medium"
+    },
+    {
+      "insight": "What They Are EvaluatingThis interview didn’t exist 18 months ago, so rubrics are in flux. But high level, companies are looking to see that you:Create and follow a structure Are very user-centric Com",
+      "action": "Apply this approach in your work",
+      "framework": "step framework",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI Product Design Interview: Your Complete Gui",
+      "confidence": "medium"
+    },
+    {
+      "insight": "for the CohortWe only have 19 seats left",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI Product Design Interview: Your Complete Gui",
+      "confidence": "medium"
+    },
+    {
+      "insight": "and follow a structure Are very user-centric Come up with prioritized creative solutions Demonstrate",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI Product Design Interview: Your Complete Gui",
+      "confidence": "medium"
+    },
+    {
+      "insight": "and deepest look into this new interview:Mock interviewWhat they are evaluatingThe companies asking",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI Product Design Interview: Your Complete Gui",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "step interview framework",
+    "step framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.924191",
+  "extraction_method": "pattern_based"
+}

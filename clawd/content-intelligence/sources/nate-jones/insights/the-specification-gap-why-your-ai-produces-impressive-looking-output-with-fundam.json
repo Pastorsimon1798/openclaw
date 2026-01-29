@@ -1,0 +1,44 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "The Specification Gap: Why Your AI Produces Impressive-Looking Output With Fundamental Problems + The Prompt Kit To Help You Fix It",
+  "source_url": "https://natesnewsletter.substack.com/p/tool-shaped-vs-colleague-shaped-ai",
+  "slug": "the-specification-gap-why-your-ai-produces-impressive-looking-output-with-fundam",
+  "insights": [
+    {
+      "insight": "Key concept from 'The Specification Gap: Why Your AI Produces Impressive-Looki...'",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The Specification Gap: Why Your AI Produces Impres",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Review strategies discussed in this nate-jones article",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The Specification Gap: Why Your AI Produces Impres",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Consider implications for your workflow",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The Specification Gap: Why Your AI Produces Impres",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 3,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.715829",
+  "extraction_method": "pattern_based"
+}

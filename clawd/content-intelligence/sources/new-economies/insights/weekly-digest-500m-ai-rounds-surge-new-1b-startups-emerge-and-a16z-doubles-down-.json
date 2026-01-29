@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "Weekly Digest: $500M+ AI rounds surge, new $1B startups emerge, and a16z doubles down on firm-building.",
+  "source_url": "https://www.neweconomies.co/p/weekly-digest-end-of-jan",
+  "slug": "weekly-digest-500m-ai-rounds-surge-new-1b-startups-emerge-and-a16z-doubles-down-",
+  "insights": [
+    {
+      "insight": "your startup on Framer — free for your first year",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: $500M+ AI rounds surge, new $1B sta",
+      "confidence": "medium"
+    },
+    {
+      "insight": "to claim your free year -->🔔 The latest trendWe recently had David Haber",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: $500M+ AI rounds surge, new $1B sta",
+      "confidence": "medium"
+    },
+    {
+      "insight": "moats that get stronger with scale",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: $500M+ AI rounds surge, new $1B sta",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Subscribe nowWelcome to this week’s digest — sharing the latest startup and venture news that you may have missed",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: $500M+ AI rounds surge, new $1B sta",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Build your startup on Framer — free for your first year",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Weekly Digest: $500M+ AI rounds surge, new $1B sta",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.780222",
+  "extraction_method": "pattern_based"
+}

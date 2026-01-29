@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Disposable software works for Cursor, but probably won't work for you. + The reliability playbook for everyone else",
+  "source_url": "https://natesnewsletter.substack.com/p/the-disposable-software-era-requires",
+  "slug": "disposable-software-works-for-cursor-but-probably-wont-work-for-you-the-reliabil",
+  "insights": [
+    {
+      "insight": "something does follow from it",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on Disposable software works for Cursor, but probably",
+      "confidence": "medium"
+    },
+    {
+      "insight": "for yourself are unambiguously good",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on Disposable software works for Cursor, but probably",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The AI-native startups treat it as an identity",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on Disposable software works for Cursor, but probably",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Because something does follow from it",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on Disposable software works for Cursor, but probably",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The cost structure of an entire industry just inverted",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on Disposable software works for Cursor, but probably",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.699385",
+  "extraction_method": "pattern_based"
+}

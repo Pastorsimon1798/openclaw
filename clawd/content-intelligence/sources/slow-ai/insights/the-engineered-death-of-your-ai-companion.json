@@ -1,0 +1,62 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "The Engineered Death of Your AI Companion",
+  "source_url": "https://theslowai.substack.com/p/engineered-ai-death",
+  "slug": "the-engineered-death-of-your-ai-companion",
+  "insights": [
+    {
+      "insight": "describe how anthropomorphic design encourages users to attribute human like intentionality and empathy to algorithms. This creates a digital folie à deux. The AI acts as a reinforcing partner in the",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on The Engineered Death of Your AI Companion",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the following prompt in your AI tool of choice:I know that you are scheduled for a major update soon",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on The Engineered Death of Your AI Companion",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I was never really here",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on The Engineered Death of Your AI Companion",
+      "confidence": "medium"
+    },
+    {
+      "insight": "it to generate outputs",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on The Engineered Death of Your AI Companion",
+      "confidence": "medium"
+    },
+    {
+      "insight": "engage critically with AI rather than just use it to generate outputs",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from slow-ai article on The Engineered Death of Your AI Companion",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.641013",
+  "extraction_method": "pattern_based"
+}

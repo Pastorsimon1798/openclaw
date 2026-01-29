@@ -1,0 +1,66 @@
+{
+  "source_name": "new-economies",
+  "source_title": "He Built A $1.8B AI Company With No Experience | Max Junestrand",
+  "source_url": "https://www.neweconomies.co/p/he-built-a-18b-ai-company-with-no",
+  "slug": "he-built-a-18b-ai-company-with-no-experience-max-junestrand",
+  "insights": [
+    {
+      "insight": "Intro(3:30) Doubling ARR Every Quarter (5:35) The Paradigm Starter & Latest Insights Across Legal AI (8:48) What Does AI Mean For Junior Lawyers?(11:44) How Lawyers Adopt Legora (20:06) Going Through",
+      "action": "Use this approach in your work",
+      "framework": "the next decade of law",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on He Built A $1.8B AI Company With No Experience | M",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Max Takes Us Inside The Day-To-Day Legora (30:12) Building Insanely Quickly (33:51) The YC Experience (36:08) Hiring Former YC Founders(38:46) Legora’s Fundraising Journey (41:26) Max’s Day-To-Day (44",
+      "action": "Apply this approach in your work",
+      "framework": "why law",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on He Built A $1.8B AI Company With No Experience | M",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The Nordic’s Ecosystem (45:20) The Game Plan (46:22) The Next 1,000 Days (48:07) Max’s Other Startup IdeasThanks for listening and see you in the next episode 👋P.S. When you become an annual paid subs",
+      "action": "Implement this approach in your work",
+      "framework": "and help law",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on He Built A $1.8B AI Company With No Experience | M",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI — the idea that AI is the newest rung in the review ladder: junior → senior → partner → AI… becau",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on He Built A $1.8B AI Company With No Experience | M",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the operating system for an entire profession — this one’s for you",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from new-economies article on He Built A $1.8B AI Company With No Experience | M",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "and help law",
+    "the next decade of law",
+    "why law"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.747417",
+  "extraction_method": "pattern_based"
+}

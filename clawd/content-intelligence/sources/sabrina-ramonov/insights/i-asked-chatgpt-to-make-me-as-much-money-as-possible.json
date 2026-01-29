@@ -1,0 +1,65 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "I Asked ChatGPT To Make Me As Much Money As Possible",
+  "source_url": "https://www.sabrina.dev/p/i-asked-chatgpt-to-make-me-money-prompt-chain",
+  "slug": "i-asked-chatgpt-to-make-me-as-much-money-as-possible",
+  "insights": [
+    {
+      "insight": "AI for generic advice and then wonder why they’re not making more money",
+      "action": "Use this approach in your work",
+      "framework": "key principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I Asked ChatGPT To Make Me As Much Money As Possib",
+      "confidence": "medium"
+    },
+    {
+      "insight": "an income stream that [Vague Goal]: helps small businesses",
+      "action": "Apply this approach in your work",
+      "framework": "really fun prompting framework",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I Asked ChatGPT To Make Me As Much Money As Possib",
+      "confidence": "medium"
+    },
+    {
+      "insight": "on each other within a single chat",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I Asked ChatGPT To Make Me As Much Money As Possib",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a VERY SIMPLE 90-day action plan that needs <$1",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I Asked ChatGPT To Make Me As Much Money As Possib",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this small win will energize you to keep going",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I Asked ChatGPT To Make Me As Much Money As Possib",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "key principle",
+    "really fun prompting framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.983458",
+  "extraction_method": "pattern_based"
+}

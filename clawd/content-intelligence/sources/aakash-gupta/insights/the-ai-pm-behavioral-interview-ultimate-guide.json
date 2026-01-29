@@ -1,0 +1,62 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "The AI PM Behavioral Interview: Ultimate Guide",
+  "source_url": "https://www.news.aakashg.com/p/the-ai-pm-behavioral-interview-ultimate",
+  "slug": "the-ai-pm-behavioral-interview-ultimate-guide",
+  "insights": [
+    {
+      "insight": "Why AI PM Behavioral Is DifferentRegular PM behavioral tests whether you can communicate, lead, and make decisions.AI PM behavioral tests all that plus four additional dimensions.1. Whether you’ve act",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI PM Behavioral Interview: Ultimate Guide",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Whether you can work with ML engineersThis is its own skill. ML development cycles are different. Model iteration is different. The PM-engineer dynamic is different. They want proof you’ve navigated t",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI PM Behavioral Interview: Ultimate Guide",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Whether you understand AI-specific tradeoffsAccuracy vs latency. Model complexity vs cost. Explainability vs performance. These decisions define AI PM work. You need stories that demonstrate you’ve ma",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI PM Behavioral Interview: Ultimate Guide",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Whether you can handle AI failures gracefullyModels break in production. Hallucinations happen. Bias surfaces. They want to know you’ve been through this and handled it well.The 3 Laws from Tuesday’s",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI PM Behavioral Interview: Ultimate Guide",
+      "confidence": "medium"
+    },
+    {
+      "insight": "For more: Podcast | CohortSubscribe nowAnnual subscribers get a free year of 9 premium products: Dovetail, Arize, Linear, Descript, Reforge Build, DeepSky, Relay",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on The AI PM Behavioral Interview: Ultimate Guide",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.844793",
+  "extraction_method": "pattern_based"
+}

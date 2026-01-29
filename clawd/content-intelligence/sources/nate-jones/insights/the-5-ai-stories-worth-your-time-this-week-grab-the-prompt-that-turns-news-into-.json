@@ -1,0 +1,44 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "The 5 AI stories worth your time this week + grab the prompt that turns news into a 14-day experiment",
+  "source_url": "https://natesnewsletter.substack.com/p/i-read-200-ai-announcements-so-you",
+  "slug": "the-5-ai-stories-worth-your-time-this-week-grab-the-prompt-that-turns-news-into-",
+  "insights": [
+    {
+      "insight": "is discovering what actually compounds",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The 5 AI stories worth your time this week + grab ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "” And buried in the noise, OpenAI started asking contractors to upload real work from their previous jobs",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The 5 AI stories worth your time this week + grab ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Read carefully, they’re all the same story: the AI industry is discovering what actually compounds, and it’s not what most people think",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The 5 AI stories worth your time this week + grab ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 3,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.701132",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "My honest field notes on the specificity principle + why vague requests get vague results (and the prompts that fix it)",
+  "source_url": "https://natesnewsletter.substack.com/p/claude-cowork-the-10-day-launch-that",
+  "slug": "my-honest-field-notes-on-the-specificity-principle-why-vague-requests-get-vague-",
+  "insights": [
+    {
+      "insight": "Why task queues replace chat interfaces, how verification becomes the scarce skill, and the second-order effects on junior roles that nobody’s thinking through yet.The chatbot was a transitional form.",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on the specificity principle",
+      "confidence": "medium"
+    },
+    {
+      "insight": "and ship Claude Cowork after they noticed something their product team wasn’t expecting: developers",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on the specificity principle",
+      "confidence": "medium"
+    },
+    {
+      "insight": "that’s where developers live",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on the specificity principle",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the underlying architecture—a sandboxed agent that could read files",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on the specificity principle",
+      "confidence": "medium"
+    },
+    {
+      "insight": "language models could generate text before they could reliably execute plans",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on My honest field notes on the specificity principle",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.714006",
+  "extraction_method": "pattern_based"
+}

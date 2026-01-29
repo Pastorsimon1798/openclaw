@@ -1,0 +1,65 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "You should be using Voice AI - so I've added it to my bundle",
+  "source_url": "https://www.news.aakashg.com/p/speechify-aakash-bundle",
+  "slug": "you-should-be-using-voice-ai-so-ive-added-it-to-my-bundle",
+  "insights": [
+    {
+      "insight": "Why Voice AI Is Changing PMProduct management is moving toward voice interfaces. Because it’s faster.The best PMs I know are already doing this:Dictating product memos during walksListening to user re",
+      "action": "Use this approach in your work",
+      "framework": "implications of this",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on You should be using Voice AI - so I've added it to",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Why Speechify Is Different (And Why I Replaced Wispr Flow With It)I was a heavy Wispr Flow user.Dictation tool. Fast. Clean. Purpose-built for typing with your voice.But Speechify does everything Wisp",
+      "action": "Apply this approach in your work",
+      "framework": "done using whatever method",
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on You should be using Voice AI - so I've added it to",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The Top 6 Use Cases of Voice AI for Product ManagersMost people treat voice AI tools like novelties instead of integrating them into their actual workflow.Here’s at least 6 uses cases for Speechify as",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on You should be using Voice AI - so I've added it to",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The Math on Time + Money Saved Using Voice AIHow does this all come together?If you save 30 minutes per day through faster writing and converted dead time into learning time, that’s 2.5 hours per week",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on You should be using Voice AI - so I've added it to",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The Top Mistakes PMs Make With Voice AI ToolsI’ve recommended several PMs to use voice AI tools. And they tend to come back to me with the same mistakes.Learn from their failures and avoid these patte",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from aakash-gupta article on You should be using Voice AI - so I've added it to",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "implications of this",
+    "done using whatever method"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.914303",
+  "extraction_method": "pattern_based"
+}

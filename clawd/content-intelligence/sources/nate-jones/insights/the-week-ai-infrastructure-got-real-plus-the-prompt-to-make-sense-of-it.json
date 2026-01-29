@@ -1,0 +1,35 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "The Week AI Infrastructure Got Real (Plus the Prompt to Make Sense of It)",
+  "source_url": "https://natesnewsletter.substack.com/p/ai-news-that-matters-for-builders",
+  "slug": "the-week-ai-infrastructure-got-real-plus-the-prompt-to-make-sense-of-it",
+  "insights": [
+    {
+      "insight": "into managed infrastructureOpenAI explicitly stated prompt injection is “unlikely to ever be fully s",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on The Week AI Infrastructure Got Real (Plus the Prom",
+      "confidence": "medium"
+    },
+    {
+      "insight": "week of 2026 has delivered one of the most consequential news cycles in recent memory: NVIDIA unveil",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from nate-jones article on The Week AI Infrastructure Got Real (Plus the Prom",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 2,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 2
+  },
+  "extracted_at": "2026-01-28T22:53:14.724563",
+  "extraction_method": "pattern_based"
+}

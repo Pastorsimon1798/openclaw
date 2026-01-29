@@ -1,0 +1,53 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Is AI Leaving Kids Behind?",
+  "source_url": "https://theslowai.substack.com/p/ai-education-critical-literacy",
+  "slug": "is-ai-leaving-kids-behind",
+  "insights": [
+    {
+      "insight": "it to generate outputs",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Is AI Leaving Kids Behind?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "engage critically with AI rather than just use it to generate outputs",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Is AI Leaving Kids Behind?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I would really recommend subscribing to Yaro on AI and Tech Trends, he is doing important work in helping to diversify and democratise AI use and development",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Is AI Leaving Kids Behind?",
+      "confidence": "medium"
+    },
+    {
+      "insight": "This twelve-month programme is for individuals who want to understand how to engage critically with AI rather than just use it to generate outputs",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Is AI Leaving Kids Behind?",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 4,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 4,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.683259",
+  "extraction_method": "pattern_based"
+}

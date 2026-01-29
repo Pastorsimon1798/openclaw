@@ -1,0 +1,44 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "5 Things to know about ADHD autism and substance misuse",
+  "source_url": "https://rhysmorgan.substack.com/p/5-things-to-know-about-adhd-autism",
+  "slug": "5-things-to-know-about-adhd-autism-and-substance-misuse",
+  "insights": [
+    {
+      "insight": "Key concept from '5 Things to know about ADHD autism and substance misuse...'",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from rhys-morgan article on 5 Things to know about ADHD autism and substance m",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Review strategies discussed in this rhys-morgan article",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from rhys-morgan article on 5 Things to know about ADHD autism and substance m",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Consider implications for your workflow",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "best-practices",
+      "rationale": "Extracted from rhys-morgan article on 5 Things to know about ADHD autism and substance m",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 3
+  },
+  "extracted_at": "2026-01-28T22:53:14.842810",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,62 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "How to Build ChatGPT Apps (The Next App Store?) | Live Demo by Colin Matthews",
+  "source_url": "https://www.news.aakashg.com/p/colin-matthews-podcast",
+  "slug": "how-to-build-chatgpt-apps-the-next-app-store-live-demo-by-colin-matthews",
+  "insights": [
+    {
+      "insight": "ChatGPT Apps courseVanta: Automate compliance",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Build ChatGPT Apps (The Next App Store?) | ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "of your first appAdvanced features that unlock distributionHow discovery really worksWhen to build (",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Build ChatGPT Apps (The Next App Store?) | ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "billion-dollar opportunity",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Build ChatGPT Apps (The Next App Store?) | ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "appAdvanced features that unlock distributionHow discovery really worksWhen to build (and when to wa",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Build ChatGPT Apps (The Next App Store?) | ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I spent four years building an iOS app in the early days of the App Store",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from aakash-gupta article on How to Build ChatGPT Apps (The Next App Store?) | ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.889323",
+  "extraction_method": "pattern_based"
+}

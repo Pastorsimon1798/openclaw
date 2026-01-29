@@ -1,0 +1,64 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "Grab the prompt kit I use when work feels inefficient but busy + specific experiments for each bottleneck",
+  "source_url": "https://natesnewsletter.substack.com/p/8-habits-worth-unlearning-in-the",
+  "slug": "grab-the-prompt-kit-i-use-when-work-feels-inefficient-but-busy-specific-experime",
+  "insights": [
+    {
+      "insight": "without getting fired",
+      "action": "Use this approach in your work",
+      "framework": "Not another framework",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Grab the prompt kit I use when work feels ineffici",
+      "confidence": "medium"
+    },
+    {
+      "insight": "I hear it over and over again from people trying to make sense of AI—the rate of change is so disorienting that it’s become difficult to tell what’s up and what’s down anymore",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Grab the prompt kit I use when work feels ineffici",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Building things required scarce hours from scarce people with scarce skills",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Grab the prompt kit I use when work feels ineffici",
+      "confidence": "medium"
+    },
+    {
+      "insight": "This made sense when the meeting to discuss a feature took less time than building it—you hold the meeting",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Grab the prompt kit I use when work feels ineffici",
+      "confidence": "medium"
+    },
+    {
+      "insight": "They’re not building a tool that helps engineers code faster; they’re building a tool that makes the act of coding less important than the judgment about what to build",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on Grab the prompt kit I use when work feels ineffici",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "Not another framework"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.707674",
+  "extraction_method": "pattern_based"
+}

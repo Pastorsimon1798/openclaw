@@ -1,0 +1,65 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "My honest take on what AI is structurally better at than your best architects (and where it still falls short)",
+  "source_url": "https://natesnewsletter.substack.com/p/my-honest-take-on-what-ai-is-structurally",
+  "slug": "my-honest-take-on-what-ai-is-structurally-better-at-than-your-best-architects-an",
+  "insights": [
+    {
+      "insight": "humans are structurally incapable of the kind of vigilance that architecture actually requires",
+      "action": "Use this approach in your work",
+      "framework": "more context and applying rule",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on My honest take on what AI is structurally better a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "architecture requires holistic thinking",
+      "action": "Apply this approach in your work",
+      "framework": "anywhere principle",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on My honest take on what AI is structurally better a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "is almost never bad judgment",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on My honest take on what AI is structurally better a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this thinking to product",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on My honest take on what AI is structurally better a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the context can’t be held at decision time",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on My honest take on what AI is structurally better a",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "more context and applying rule",
+    "anywhere principle"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.722435",
+  "extraction_method": "pattern_based"
+}

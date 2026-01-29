@@ -1,0 +1,62 @@
+{
+  "source_name": "slow-ai",
+  "source_title": "Slow AI Live: Why Pedagogy Should Replace Policing",
+  "source_url": "https://theslowai.substack.com/p/slow-ai-live-why-pedagogy-should",
+  "slug": "slow-ai-live-why-pedagogy-should-replace-policing",
+  "insights": [
+    {
+      "insight": "to trick students into admitting AI use",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Slow AI Live: Why Pedagogy Should Replace Policing",
+      "confidence": "medium"
+    },
+    {
+      "insight": "unreliable detection software",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Slow AI Live: Why Pedagogy Should Replace Policing",
+      "confidence": "medium"
+    },
+    {
+      "insight": "this prompt with an AI tool of your choice",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Slow AI Live: Why Pedagogy Should Replace Policing",
+      "confidence": "medium"
+    },
+    {
+      "insight": "spoken prompts need to be memorable and repeatable",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Slow AI Live: Why Pedagogy Should Replace Policing",
+      "confidence": "medium"
+    },
+    {
+      "insight": "replace the arms race of detection with the friction of conversation",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ef-coaching",
+      "rationale": "Extracted from slow-ai article on Slow AI Live: Why Pedagogy Should Replace Policing",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.645154",
+  "extraction_method": "pattern_based"
+}

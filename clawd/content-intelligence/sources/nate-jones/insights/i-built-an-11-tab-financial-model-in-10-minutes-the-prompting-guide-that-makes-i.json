@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "I built an 11-tab financial model in 10 minutes + the prompting guide that makes it repeatable",
+  "source_url": "https://natesnewsletter.substack.com/p/anthropic-just-put-claude-inside",
+  "slug": "i-built-an-11-tab-financial-model-in-10-minutes-the-prompting-guide-that-makes-i",
+  "insights": [
+    {
+      "insight": "better base models is approaching diminishing returns",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on I built an 11-tab financial model in 10 minutes + ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "phase of AI competition actually works",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on I built an 11-tab financial model in 10 minutes + ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "actually use this thing",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on I built an 11-tab financial model in 10 minutes + ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "The race to build better base models is approaching diminishing returns",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on I built an 11-tab financial model in 10 minutes + ",
+      "confidence": "medium"
+    },
+    {
+      "insight": "How to actually use this thing, with the specific language that gets results",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on I built an 11-tab financial model in 10 minutes + ",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.697657",
+  "extraction_method": "pattern_based"
+}

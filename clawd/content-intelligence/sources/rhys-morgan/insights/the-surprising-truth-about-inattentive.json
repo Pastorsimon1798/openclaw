@@ -1,0 +1,36 @@
+{
+  "actionable": [
+    {
+      "insight": "start stuff... then forget what I was doing halfway through. Lose keys. Miss appointments. Say \u201csorry I\u2019m",
+      "context": "extracted from content",
+      "applicability": "personal"
+    },
+    {
+      "insight": "do list for 4 hours zoning out while someone\u2019s talking to you feeling like you\u2019re not really \u201chere\u201d...",
+      "context": "extracted from content",
+      "applicability": "personal"
+    },
+    {
+      "insight": "do that later\u201d about 47 different things... and doing none This is inattentive ADHD . And it\u2019s sneaky.",
+      "context": "extracted from content",
+      "applicability": "personal"
+    }
+  ],
+  "frameworks": [],
+  "takeaways": [
+    "Behind \u201cshe\u2019s just a bit away with the fairies",
+    "ADHD doesn\u2019t always look like hyper kids and fidgeting Nope",
+    "Say \u201csorry I\u2019m late\u201d more than I said \u201cgood morning",
+    "My brain wasn\u2019t lazy\u2026 it was just overwhelmed Here\u2019s what no one tells you: It\u2019s not that we don\u2019t care",
+    "I didn\u2019t know I had ADHD\u2026 until I realised I was losing my life to it For years I thought I was lazy"
+  ],
+  "resources": [],
+  "quotes": [],
+  "para_tags": [],
+  "topic_tags": [],
+  "source_file": "/home/liam/clawd/content-intelligence/sources/rhys-morgan/archive/the-surprising-truth-about-inattentive.json",
+  "source_title": "The surprising truth about inattentive ADHD (that no one tells you)",
+  "source_url": "https://rhysmorgan.substack.com/p/the-surprising-truth-about-inattentive",
+  "extracted_at": "2026-01-28T22:14:42.217934",
+  "source_name": "rhys-morgan"
+}

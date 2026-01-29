@@ -1,0 +1,65 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "How I created these VIRAL POWERPOINTS 🥵🥵🥵",
+  "source_url": "https://www.sabrina.dev/p/viral-powerpoints-slides-free-notebooklm",
+  "slug": "how-i-created-these-viral-powerpoints-",
+  "insights": [
+    {
+      "insight": "stunning story-driven Powerpoint presentations in 5 minutes",
+      "action": "Use this approach in your work",
+      "framework": "step NotebookLM prompt framework",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on How I created these VIRAL POWERPOINTS 🥵🥵🥵",
+      "confidence": "medium"
+    },
+    {
+      "insight": "stunning Powerpoint slides (notebook link):And the best part?AI does the heavy lifting of research",
+      "action": "Apply this approach in your work",
+      "framework": "following these exact design principle",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on How I created these VIRAL POWERPOINTS 🥵🥵🥵",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a visually stunning VIRAL SLIDE DECK by following these exact design principles:VISUALS FIRST: Every",
+      "action": "Implement this approach in your work",
+      "framework": "following these exact design principle",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on How I created these VIRAL POWERPOINTS 🥵🥵🥵",
+      "confidence": "medium"
+    },
+    {
+      "insight": "SLIDESHOW icon:To create a new slide deck",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on How I created these VIRAL POWERPOINTS 🥵🥵🥵",
+      "confidence": "medium"
+    },
+    {
+      "insight": "a visually stunning VIRAL SLIDE DECK by following these exact design principles:# VISUALSTransform e",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from sabrina-ramonov article on How I created these VIRAL POWERPOINTS 🥵🥵🥵",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "step NotebookLM prompt framework",
+    "following these exact design principle"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.942091",
+  "extraction_method": "pattern_based"
+}

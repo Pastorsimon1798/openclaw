@@ -1,0 +1,35 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "I sit down with $20B Hubspot CMO and SVP AI!",
+  "source_url": "https://www.sabrina.dev/p/i-sit-down-with-20b-hubspot-cmo-and-svp",
+  "slug": "i-sit-down-with-20b-hubspot-cmo-and-svp-ai",
+  "insights": [
+    {
+      "insight": "I walk through an automation system to help you scale social media distribution via repurposing:BTW",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I sit down with $20B Hubspot CMO and SVP AI!",
+      "confidence": "medium"
+    },
+    {
+      "insight": "MASSIVE THANK YOU to everyone who replied to my post yesterday (aka journal entry) regarding the AI bootcamp",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on I sit down with $20B Hubspot CMO and SVP AI!",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 2,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 2,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.936600",
+  "extraction_method": "pattern_based"
+}

@@ -1,0 +1,66 @@
+{
+  "source_name": "aakash-gupta",
+  "source_title": "8 months of Claude Code Lessons in 80 minutes, with Carl Vellotti",
+  "source_url": "https://www.news.aakashg.com/p/carl-vellotti-podcast-2",
+  "slug": "8-months-of-claude-code-lessons-in-80-minutes-with-carl-vellotti",
+  "insights": [
+    {
+      "insight": "Why Claude Code Hit $1B ARR in 6 MonthsClaude Code reached $1 billion ARR on December 2nd, 2024.It had been available for 6 months.That makes it the fastest product ever to reach $1 billion ARR. Faste",
+      "action": "Use this approach in your work",
+      "framework": "token costThe Decision FrameworkWrong",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on 8 months of Claude Code Lessons in 80 minutes, wit",
+      "confidence": "medium"
+    },
+    {
+      "insight": "People started calling it AGI.“You can give it a task and walk away from your computer. It will just keep going. If it hits a block, it finds a way forward.”The rest of the industry is copying Anthrop",
+      "action": "Apply this approach in your work",
+      "framework": "ones building",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on 8 months of Claude Code Lessons in 80 minutes, wit",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Setting Up Your First MCP (2 Minutes)MCPs are Model Context Protocol. Anthropic invented it. It’s how LLMs connect to services.The first question PMs ask: “I’m working in Claude Code on my computer. H",
+      "action": "Implement this approach in your work",
+      "framework": "the token costThe Decision Framework",
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on 8 months of Claude Code Lessons in 80 minutes, wit",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Building the Complete PM WorkflowNow let's build a complete calendar integration feature from scratch. Our goal is to go from initial user research to engineering tickets ready for sprint planning.Let",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on 8 months of Claude Code Lessons in 80 minutes, wit",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Skills That Actually Save Hours4. Skills That Actually Save HoursSkills are the most powerful Claude Code feature most people don’t understand.A Skill is a pre-built template that Claude automatically",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "resources",
+      "para_target": "frameworks",
+      "rationale": "Extracted from aakash-gupta article on 8 months of Claude Code Lessons in 80 minutes, wit",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "ones building",
+    "the token costThe Decision Framework",
+    "token costThe Decision FrameworkWrong"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 0,
+    "resources": 5
+  },
+  "extracted_at": "2026-01-28T22:53:14.860738",
+  "extraction_method": "pattern_based"
+}

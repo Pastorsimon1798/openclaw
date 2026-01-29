@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "10+ Graphs That Picture 2026 & Beyond",
+  "source_url": "https://www.neweconomies.co/p/graphs-that-picture-2026-and-beyond",
+  "slug": "10-graphs-that-picture-2026-beyond",
+  "insights": [
+    {
+      "insight": "From 1910 onwards 3-year aggregate data is plotted against the mid-point in the range. For earlier time periods ranges are inconsistent but are plotted against the mid-point in the range.Source: U.K G",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 10+ Graphs That Picture 2026 & Beyond",
+      "confidence": "medium"
+    },
+    {
+      "insight": "as soon as possible to access — you don’t have long left",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 10+ Graphs That Picture 2026 & Beyond",
+      "confidence": "medium"
+    },
+    {
+      "insight": "HereThe GraphsA baby born today won’t join the workforce for two decades Global fertility decline th",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 10+ Graphs That Picture 2026 & Beyond",
+      "confidence": "medium"
+    },
+    {
+      "insight": "“AI efficiency” as their scapegoat instead of consultants",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 10+ Graphs That Picture 2026 & Beyond",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI voices for call centers — no call will go unanswered",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on 10+ Graphs That Picture 2026 & Beyond",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.758532",
+  "extraction_method": "pattern_based"
+}

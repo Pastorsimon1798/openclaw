@@ -1,0 +1,64 @@
+{
+  "source_name": "rhys-morgan",
+  "source_title": "adhd, autism, and household chores: 7 brutal strategies to survive the domestic apocalypse and how Greggs is a godsend.",
+  "source_url": "https://rhysmorgan.substack.com/p/adhd-autism-and-household-chores",
+  "slug": "adhd-autism-and-household-chores-7-brutal-strategies-to-survive-the-domestic-apo",
+  "insights": [
+    {
+      "insight": "embrace the chaos (but also name it)Let’s get this straight: your brain isn't lazy. It's just running a high-speed, low-control fireworks display of dopamine and dread.So instead of pretending we’re n",
+      "action": "Use this approach in your work",
+      "framework": "stop playing by neurotypical rule",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on adhd, autism, and household chores: 7 brutal strat",
+      "confidence": "medium"
+    },
+    {
+      "insight": "clean in rage burstsLook, your attention span is on a timer shorter than a TikTok. Don’t fight it—weaponize it.Set a 5-minute timer. Clean like you’re running from the cops. Then stop.That’s it. Rage",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on adhd, autism, and household chores: 7 brutal strat",
+      "confidence": "medium"
+    },
+    {
+      "insight": "use the \"object permanence pantry\" systemIf it’s out of sight, it’s dead to me.That includes groceries, mail, laundry, the cat. (if I had a cat)Solution? Everything visible, everything labeled, nothin",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on adhd, autism, and household chores: 7 brutal strat",
+      "confidence": "medium"
+    },
+    {
+      "insight": "avoid multi-step chore trapsThis one’s a classic ADHD fuck-you: “I’ll just do a quick load of laundry.”Thirty-seven steps later I’m knee-deep in a closet purge, crying about a shirt I wore once in 201",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on adhd, autism, and household chores: 7 brutal strat",
+      "confidence": "medium"
+    },
+    {
+      "insight": "chore charts are not for kids. they’re for unhinged adults with memory holesI used to scoff at chore charts. Then I forgot to take the trash out for 3 weeks and birthed a fruit fly colony that could u",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from rhys-morgan article on adhd, autism, and household chores: 7 brutal strat",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "stop playing by neurotypical rule"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.810472",
+  "extraction_method": "pattern_based"
+}

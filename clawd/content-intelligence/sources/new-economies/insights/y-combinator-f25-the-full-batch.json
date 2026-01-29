@@ -1,0 +1,62 @@
+{
+  "source_name": "new-economies",
+  "source_title": "Y Combinator F25: The Full Batch",
+  "source_url": "https://www.neweconomies.co/p/y-combinator-f25-the-full-batch",
+  "slug": "y-combinator-f25-the-full-batch",
+  "insights": [
+    {
+      "insight": "It’s a trend we expect to continue as more students skip university to build. Other trends include: 13% of the batch are building dev tools.Notable sectors include: FinTech, Healthcare, Marketing & Sa",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Y Combinator F25: The Full Batch",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI Agents Research Machine Learning VoiceCoding & Dev Tools Consumer Social & Commerce Privacy & Sec",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Y Combinator F25: The Full Batch",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the program even if they are not actively advising this batch",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Y Combinator F25: The Full Batch",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Ask any founder or investor, and they have undoubtedly heard of Y Combinator — one of the world’s most renowned startup accelerators, with a mighty track record",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Y Combinator F25: The Full Batch",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Throughout that time, they have achieved some incredible stats, including:$800B in combined market value has been created",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Y Combinator F25: The Full Batch",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.773620",
+  "extraction_method": "pattern_based"
+}

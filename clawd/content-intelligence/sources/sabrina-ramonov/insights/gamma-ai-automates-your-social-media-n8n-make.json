@@ -1,0 +1,62 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "Gamma AI AUTOMATES your Social Media (n8n & Make)",
+  "source_url": "https://www.sabrina.dev/p/gamma-ai-automation-carousels-social-media",
+  "slug": "gamma-ai-automates-your-social-media-n8n-make",
+  "insights": [
+    {
+      "insight": "Sign up for:Gamma.appCloudConvert.comBlotato.com2. Generate API Keys:Gamma API Key: https://gamma.app/settings/api-keysCloudConvert API Key: https://cloudconvert.com/dashboard/api/v2/keysBlotato API K",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Gamma AI AUTOMATES your Social Media (n8n & Make)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Ensure you have “Verified Community Nodes” enabled in your n8n Admin Panel4. Open n8n Settings and install nodes: @blotato/n8n-nodes-blotato@gammatech/n8n-nodes-gamma@cloudconvert/n8n-nodes-cloudconve",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Gamma AI AUTOMATES your Social Media (n8n & Make)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Create CREDENTIALS for Blotato, Gamma, and CloudConvert6. Connect your Google Drive to n8nSetup Workflow1. Copy this sample Google Sheet … and configure SETUP 1. Do NOT change columns, unless you know",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Gamma AI AUTOMATES your Social Media (n8n & Make)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "SETUP 2: Connect Gamma credential & input Gamma template ID3. SETUP 3: Connect CloudConvert credential4. SETUP 4: Connect Blotato credential and select social media account to post to5. Execute workfl",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Gamma AI AUTOMATES your Social Media (n8n & Make)",
+      "confidence": "medium"
+    },
+    {
+      "insight": "another browserYou can now use Gamma to create presentations and social media carousels",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on Gamma AI AUTOMATES your Social Media (n8n & Make)",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.962691",
+  "extraction_method": "pattern_based"
+}

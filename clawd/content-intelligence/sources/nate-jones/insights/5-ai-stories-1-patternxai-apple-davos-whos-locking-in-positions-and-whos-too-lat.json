@@ -1,0 +1,44 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "5 AI Stories, 1 Pattern—xAI, Apple, Davos: Who's Locking In Positions (and Who's Too Late)",
+  "source_url": "https://natesnewsletter.substack.com/p/this-week-in-ai-news-xai-got-20b",
+  "slug": "5-ai-stories-1-patternxai-apple-davos-whos-locking-in-positions-and-whos-too-lat",
+  "insights": [
+    {
+      "insight": "Gemini as the foundation for next-gen SiriDeepSeek published Engram",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on 5 AI Stories, 1 Pattern—xAI, Apple, Davos: Who's L",
+      "confidence": "medium"
+    },
+    {
+      "insight": "This week, two leading AGI-lab CEOs sat on the same stage and warned: timelines may be shorter than the public expects, and entry-level white-collar roles could be hit hard within years",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on 5 AI Stories, 1 Pattern—xAI, Apple, Davos: Who's L",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Apple is partnering with Google to catch up rather than building from scratch",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from nate-jones article on 5 AI Stories, 1 Pattern—xAI, Apple, Davos: Who's L",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 3,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 3,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.709327",
+  "extraction_method": "pattern_based"
+}

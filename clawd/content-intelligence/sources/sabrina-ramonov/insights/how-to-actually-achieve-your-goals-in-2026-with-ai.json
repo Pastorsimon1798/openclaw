@@ -1,0 +1,64 @@
+{
+  "source_name": "sabrina-ramonov",
+  "source_title": "How To Actually Achieve Your Goals in 2026 (With AI)",
+  "source_url": "https://www.sabrina.dev/p/how-to-actually-achieve-your-goals",
+  "slug": "how-to-actually-achieve-your-goals-in-2026-with-ai",
+  "insights": [
+    {
+      "insight": "you’re drowning in Maintenance Mode",
+      "action": "Use this approach in your work",
+      "framework": "we apply the Pareto Principle",
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How To Actually Achieve Your Goals in 2026 (With A",
+      "confidence": "medium"
+    },
+    {
+      "insight": "AI to finally get clarity? To identify the one thing that actually matters…Today",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How To Actually Achieve Your Goals in 2026 (With A",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the Pareto Principle (the 80/20 rule)",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How To Actually Achieve Your Goals in 2026 (With A",
+      "confidence": "medium"
+    },
+    {
+      "insight": "get clarity? To identify the one thing that actually matters…Today",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How To Actually Achieve Your Goals in 2026 (With A",
+      "confidence": "medium"
+    },
+    {
+      "insight": "StepsThe next hard part is having the courage to ignore the other 999+ things on your list",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from sabrina-ramonov article on How To Actually Achieve Your Goals in 2026 (With A",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "we apply the Pareto Principle"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.980171",
+  "extraction_method": "pattern_based"
+}

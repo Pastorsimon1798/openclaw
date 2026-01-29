@@ -1,0 +1,66 @@
+{
+  "source_name": "new-economies",
+  "source_title": "Festive Reading: The Latest Books",
+  "source_url": "https://www.neweconomies.co/p/our-book-recommendations",
+  "slug": "festive-reading-the-latest-books",
+  "insights": [
+    {
+      "insight": "better habits — and break bad ones — through simple",
+      "action": "Use this approach in your work",
+      "framework": "festive season",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Festive Reading: The Latest Books",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the Future We Want by Emily M",
+      "action": "Apply this approach in your work",
+      "framework": "authors equip readers with practical",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Festive Reading: The Latest Books",
+      "confidence": "medium"
+    },
+    {
+      "insight": "of AI can dramatically expand human capability",
+      "action": "Implement this approach in your work",
+      "framework": "Blending law",
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Festive Reading: The Latest Books",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Thrive in a Career You Actually Love by Bill Gurley Runnin’ Down a Dream by Bill Gurley is a candid guide to building a career driven by curiosity",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Festive Reading: The Latest Books",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Fight Big Tech’s Hype and Create the Future We Want by Emily M",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "business-strategy",
+      "rationale": "Extracted from new-economies article on Festive Reading: The Latest Books",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [
+    "Blending law",
+    "festive season",
+    "authors equip readers with practical"
+  ],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.806755",
+  "extraction_method": "pattern_based"
+}

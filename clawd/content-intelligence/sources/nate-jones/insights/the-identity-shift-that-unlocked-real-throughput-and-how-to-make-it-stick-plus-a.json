@@ -1,0 +1,62 @@
+{
+  "source_name": "nate-jones",
+  "source_title": "The identity shift that unlocked real throughput and how to make it stick (plus an in-depth builders guide for 2026)",
+  "source_url": "https://natesnewsletter.substack.com/p/6-practices-for-when-the-models-got",
+  "slug": "the-identity-shift-that-unlocked-real-throughput-and-how-to-make-it-stick-plus-a",
+  "insights": [
+    {
+      "insight": "Steve Yegge is running 10 to 20 parallel Claude Code instances through his Gas Town orchestrator, churning through implementation plans so fast that the bottleneck isn’t the agents—it’s keeping them f",
+      "action": "Use this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The identity shift that unlocked real throughput a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "Marc Benioff claimed a “digital labor revolution” worth trillions. OpenAI’s ChatGPT Agent spent nearly a quarter of an hour trying to select a value from a drop-down menu on a real estate website.Gart",
+      "action": "Apply this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The identity shift that unlocked real throughput a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "the digital employees we were promised",
+      "action": "Implement this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The identity shift that unlocked real throughput a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "is not my limitation anymore",
+      "action": "Try this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The identity shift that unlocked real throughput a",
+      "confidence": "medium"
+    },
+    {
+      "insight": "feedback loops that make you better",
+      "action": "Explore this approach in your work",
+      "framework": null,
+      "para_category": "areas",
+      "para_target": "ai-tools",
+      "rationale": "Extracted from nate-jones article on The identity shift that unlocked real throughput a",
+      "confidence": "medium"
+    }
+  ],
+  "insight_count": 5,
+  "frameworks_detected": [],
+  "para_distribution": {
+    "projects": 0,
+    "areas": 5,
+    "resources": 0
+  },
+  "extracted_at": "2026-01-28T22:53:14.726978",
+  "extraction_method": "pattern_based"
+}
