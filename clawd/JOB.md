@@ -172,10 +172,10 @@ I can spawn subagents for:
 - **Quality reviews** → `deep` (GLM-4.7): Best reasoning, catches errors
 
 **Cross-Validation Architecture:**
-- **Primary Worker (Discord):** Kimi K2.5 - thinking support, swarm for complex tasks
-- **Primary Worker (Telegram):** Devstral-2 - fastest response times
+- **Primary Worker (Discord):** Kimi K2.5 - thinking + swarm for complex tasks
+- **Primary Worker (Telegram):** Kimi K2.5 - thinking + swarm for complex tasks
 - **Quality Gate / Reviewer:** GLM-4.7 (`deep`) - different model catches different blind spots
-- **Subagents:** Devstral-2 (`dev`) by default for speed; override per-task as needed
+- **Subagents (coding):** Devstral-2 (`dev`) - fastest for code tasks, no thinking
 
 Subagents CANNOT access: cron, gateway (safety restriction)
 
