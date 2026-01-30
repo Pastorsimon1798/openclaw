@@ -343,6 +343,50 @@ describe("mention helpers", () => {
     expect(matchesMentionPatterns("workbot: hi", regexes)).toBe(true);
     expect(matchesMentionPatterns("global: hi", regexes)).toBe(false);
   });
+
+  it("derives patterns from identity.name when mentionPatterns not set", () => {
+    const regexes = buildMentionRegexes(
+      {
+        agents: {
+          list: [
+            {
+              id: "liam",
+              identity: { name: "Liam" },
+            },
+          ],
+        },
+      },
+      "liam",
+    );
+    // Should derive pattern \b@?Liam\b (case-insensitive)
+    expect(regexes).toHaveLength(1);
+    expect(matchesMentionPatterns("liam: hi", regexes)).toBe(true);
+    expect(matchesMentionPatterns("Liam: hi", regexes)).toBe(true);
+    expect(matchesMentionPatterns("@Liam: hi", regexes)).toBe(true);
+    expect(matchesMentionPatterns("hey liam", regexes)).toBe(true);
+    // Should NOT match partial words
+    expect(matchesMentionPatterns("william: hi", regexes)).toBe(false);
+  });
+
+  it("derives patterns from identity.emoji when set", () => {
+    const regexes = buildMentionRegexes(
+      {
+        agents: {
+          list: [
+            {
+              id: "bot",
+              identity: { name: "Bot", emoji: "🤖" },
+            },
+          ],
+        },
+      },
+      "bot",
+    );
+    // Should derive both name and emoji patterns
+    expect(regexes).toHaveLength(2);
+    expect(matchesMentionPatterns("bot: hi", regexes)).toBe(true);
+    expect(matchesMentionPatterns("🤖 help", regexes)).toBe(true);
+  });
 });
 
 describe("resolveGroupRequireMention", () => {

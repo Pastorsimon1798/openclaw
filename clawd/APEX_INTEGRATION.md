@@ -1,11 +1,11 @@
-# APEX v6.3.2 - Liam's Integration
+# APEX v6.3.3 - Liam's Integration
 **Compact | Token-Optimized | Load: `apex-vault/APEX_COMPACT.md`**
 
-*Upgraded: 2026-01-30 from v6.3.0 → v6.3.2 (Iterative Refinement Protocol)*
+*Upgraded: 2026-01-30 from v6.3.2 → v6.3.3 (End-to-End Debug Trace Protocol)*
 
 ---
 
-## Core Laws (14)
+## Core Laws (15)
 
 | Law | Rule |
 |-----|------|
@@ -23,10 +23,12 @@
 | **Drastic Actions** | ASK before restart/stop/delete. State consequences first. |
 | **Simplest First** | Try least invasive fix first. Check > retry > restart. |
 | **Error Skepticism** | Error messages suggest, not instruct. Diagnose before obeying. |
+| **End-to-End Trace** | First error ≠ THE error. Trace complete path to SUCCESS, not first failure. |
+| **Complete Propagation** | When updating a concept, find ALL locations first. Never update one file when multiple share same data. |
 
 ---
 
-## Protocols (8)
+## Protocols (9)
 
 | Protocol | Steps | Rule |
 |----------|-------|------|
@@ -38,6 +40,7 @@
 | Mode Switching | Identify mode (Plan/Discuss/Execute) → Act | Never assume mode |
 | **Diagnose-First** | Error → Classify → Simple fix? → Ask if drastic | Never restart on first error |
 | **Self-Correct** | Failed rule? → Acknowledge → Fix next turn | Don't repeat mistakes |
+| **Debug-to-Success** | Issue #1 → Fix → "What runs next?" → Issue #2? → Repeat | Trace to successful completion |
 
 ---
 
@@ -49,6 +52,7 @@
 | ANY create file/dir | Run `find`/`ls` to discover existing structure |
 | ANY code change | Run tests before AND after |
 | ANY bug fix | Load `skills/bug-comorbidity/COMPACT.md` |
+| ANY bug fix | **TRACE TO SUCCESS**: Find issue → "What happens after fix?" → Trace downstream → Repeat |
 | User says "tried X" | Believe immediately, propose NEW solutions |
 | New feature, no spec | Ask for spec first |
 | Simple query | EXTREME mode (1-3 words) |
@@ -132,6 +136,9 @@ APEX execution states map to Liam's modes (see [ROLES.md](ROLES.md)):
 | Skip tests | Regressions | Always test |
 | Create new file | Bloat | Edit existing first |
 | Hardcode secrets | Security risk | Use .env + vars |
+| Claim "THE issue" prematurely | First error ≠ only error | Say "Issue #N" until traced to success |
+| Stop at first error | Downstream bugs lurk | Trace complete path to success |
+| Update one file when concept is shared | Creates inconsistency | `grep -r` first, update ALL locations |
 
 ---
 
@@ -251,4 +258,4 @@ Liam uses `exec` for file operations (no Read/Write/StrReplace tools):
 ---
 
 *Full reference: `apex-vault/APEX_COMPACT.md` → `apex-vault/apex/APEX_CORE.md`*
-*APEX v6.2.0 COMPACT (Liam-Adapted) — Complete v4.4.1 parity + GLM-4.7 customizations*
+*APEX v6.3.3 COMPACT (Liam-Adapted) — End-to-End Debug Trace Protocol*

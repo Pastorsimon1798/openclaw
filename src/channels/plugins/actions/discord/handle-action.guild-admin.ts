@@ -297,7 +297,8 @@ export async function tryHandleDiscordMessageActionGuildAdmin(params: {
   if (action === "voice-join") {
     const guildId = readStringParam(actionParams, "guildId", { required: true });
     const channelId = readStringParam(actionParams, "channelId", { required: true });
-    const userId = readStringParam(actionParams, "userId", { required: true });
+    // userId is optional - if not provided, bot joins without user context
+    const userId = readStringParam(actionParams, "userId", { required: false }) || "";
     return await handleDiscordAction(
       { action: "voiceJoin", accountId: accountId ?? undefined, guildId, channelId, userId },
       cfg,

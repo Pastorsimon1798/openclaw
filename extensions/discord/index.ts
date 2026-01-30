@@ -9,7 +9,7 @@ import {
   handleDiscordMessageForVoice,
   getVoiceSessionManager,
 } from "./src/voice-integration.js";
-import { getUserVoiceChannel } from "./src/voice-client.js";
+import { getUserVoiceChannel, getVoiceChannel } from "./src/voice-client.js";
 import { 
   registerVoiceProvider, 
   clearVoiceProvider,
@@ -68,17 +68,17 @@ const plugin = {
               throw new Error("Already in a voice channel in this server.");
             }
             
-            // Verify the channel is a voice channel and get voice config
-            const voiceChannel = getUserVoiceChannel(guildId, userId);
+            // Verify the channelId is a valid voice channel
+            const voiceChannel = getVoiceChannel(guildId, channelId);
             if (!voiceChannel) {
-              throw new Error("User is not in a voice channel.");
+              throw new Error(`Invalid voice channel: ${channelId} is not a voice channel or doesn't exist.`);
             }
             
             // Create and join voice session
             const session = await voiceSessionManager.createSession({
               guildId,
               channelId,
-              userId,
+              userId: userId || "", // userId is optional for bot-initiated joins
               idleTimeoutMs: discordConfig?.voice?.idleTimeoutMs || 60_000,
               interruptEnabled: discordConfig?.voice?.interruptEnabled ?? true,
             });

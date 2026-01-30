@@ -94,6 +94,23 @@ export function getUserVoiceChannel(
 }
 
 /**
+ * Validate that a channelId is a valid voice channel in the guild.
+ * Returns the channel if valid, null otherwise.
+ */
+export function getVoiceChannel(
+  guildId: string,
+  channelId: string,
+): GuildVoiceChannelResolvable | null {
+  const guild = getVoiceGuild(guildId);
+  if (!guild) return null;
+
+  const channel = guild.channels.cache.get(channelId);
+  if (!channel || !channel.isVoiceBased()) return null;
+
+  return channel as GuildVoiceChannelResolvable;
+}
+
+/**
  * Cleanup the voice client connection.
  */
 export async function destroyVoiceClient(): Promise<void> {

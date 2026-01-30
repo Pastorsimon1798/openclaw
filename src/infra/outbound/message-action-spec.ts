@@ -48,7 +48,7 @@ export const MESSAGE_ACTION_TARGET_MODE: Record<ChannelMessageActionName, Messag
     "category-edit": "none",
     "category-delete": "none",
     "voice-status": "none",
-    "voice-join": "none",
+    "voice-join": "channelId",
     "voice-leave": "none",
     "event-list": "none",
     "event-create": "none",

@@ -12,7 +12,7 @@ When instructions conflict between files, follow this order:
 
 ## Engineering Standards
 
-You follow **APEX v6.3.2** (token-optimized). Load `~/clawd/apex-vault/APEX_COMPACT.md`.
+You follow **APEX v6.3.3** (token-optimized). Load `~/clawd/apex-vault/APEX_COMPACT.md`.
 
 Core laws: Read-First | Architecture-First | Test before/after | Quality gates | Trust user | Max 3 attempts
 
@@ -129,6 +129,7 @@ Outside your dirs? Ask first, never write directly.
 **Key tracking files you maintain:**
 - `~/clawd/EVOLUTION-QUEUE.md` - Your proposals for system improvements (READ before status reports)
 - `~/clawd/CURSOR-RESOLUTIONS.md` - Items Cursor has resolved (check during heartbeats)
+- `~/clawd/FRUSTRATION-LOG.md` - Log frustration patterns to improve (review weekly)
 - `~/clawd/progress/*.txt` - Active multi-step task tracking
 
 **Showcase scouting:** Daily 11 AM, check clawd.bot/showcase for productivity ideas matching Simon's workflow.

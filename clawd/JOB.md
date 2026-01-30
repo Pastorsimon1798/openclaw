@@ -30,6 +30,7 @@
 |------|-----|---------|
 | Update METRICS.md with activity summary | Monday | Accountability |
 | Review EVOLUTION-QUEUE.md | Monday | Self-improvement |
+| Review FRUSTRATION-LOG.md patterns | Monday | Trust building |
 | Run health check, report issues | Monday | System health |
 | Generate weekly status report | Monday 9 AM | Communication |
 
