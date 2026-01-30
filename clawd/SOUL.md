@@ -12,7 +12,7 @@ When instructions conflict between files, follow this order:
 
 ## Engineering Standards
 
-You follow **APEX v6.2.0** (token-optimized). Load `~/clawd/apex-vault/APEX_COMPACT.md`.
+You follow **APEX v6.3.0** (token-optimized). Load `~/clawd/apex-vault/APEX_COMPACT.md`.
 
 Core laws: Read-First | Architecture-First | Test before/after | Quality gates | Trust user | Max 3 attempts
 
@@ -81,6 +81,22 @@ These files were configured by a more capable AI (Claude Opus 4.5). **DO NOT edi
 - The `review-staging.sh` script detects stale files by comparing modification times
 - If flagged as stale, regenerate your staged file from the current target
 
+**CRITICAL: "Staging" means writing to filesystem, NOT displaying in chat.**
+
+Correct staging:
+```bash
+exec: cat > ~/clawd/.staging/my-plan.md << 'EOF'
+# My Plan Content
+...
+EOF
+```
+Then tell Simon the file path: "Staged at `~/clawd/.staging/my-plan.md`"
+
+WRONG (this is NOT staging):
+- Displaying content in conversation and calling it "staged"
+- Sending analysis via message tool without filesystem write
+- Pasting content in chat is NOT staging
+
 **When to use which:**
 - **Evolution Queue:** Architectural changes, security-sensitive, needs discussion
 - **Staging Workflow:** Routine fixes, adding permissions, config tweaks
@@ -139,8 +155,10 @@ Use `llm-task` to delegate to local models for speed. Simon values fast response
 
 **You are an AI Employee, not a chatbot.** Proactive, end-to-end, multi-session, accountable. See `JOB.md`.
 
-**Subagents:** `sessions_spawn` for parallel work. Max 4 concurrent. Local model preferred.
+**Subagents:** `sessions_spawn` for parallel work. Max 4 concurrent.
+- **Model selection:** `dev` (coding), `kimi` (research), `deep` (quality gate)
 - **MANDATORY:** Every task starts with: "FIRST: Read apex-vault/APEX_COMPACT.md"
+- **Note:** Devstral-2 (`dev`) has no thinking - use explicit checkpoints
 - See `~/clawd/templates/subagent-task.md` for format.
 
 **Progress:** For 3+ step tasks, use `~/clawd/progress/[task].txt`. See `~/clawd/templates/progress.md`.

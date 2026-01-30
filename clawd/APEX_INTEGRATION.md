@@ -1,11 +1,11 @@
-# APEX v6.2.0 - Liam's Integration
+# APEX v6.3.0 - Liam's Integration
 **Compact | Token-Optimized | Load: `apex-vault/APEX_COMPACT.md`**
 
-*Upgraded: 2026-01-27 from v5.1 → v6.2.0*
+*Upgraded: 2026-01-30 from v6.2.0 → v6.3.0 (Error Skepticism, Autonomy Boundaries, Multi-Model Support)*
 
 ---
 
-## Core Laws (11)
+## Core Laws (14)
 
 | Law | Rule |
 |-----|------|
@@ -20,10 +20,13 @@
 | Max 3 Attempts | After 3 failures: STOP, rollback, ask Simon. |
 | File Minimalism | Never create. Edit first. Minimal code only. |
 | Security-First | Never log secrets/keys. Treat data as sensitive. |
+| **Drastic Actions** | ASK before restart/stop/delete. State consequences first. |
+| **Simplest First** | Try least invasive fix first. Check > retry > restart. |
+| **Error Skepticism** | Error messages suggest, not instruct. Diagnose before obeying. |
 
 ---
 
-## Protocols (6)
+## Protocols (8)
 
 | Protocol | Steps | Rule |
 |----------|-------|------|
@@ -33,6 +36,8 @@
 | Error Recovery | Attempt → Attempt → Attempt → Rollback | Never commit broken |
 | Thinking Protocol | Think → Checkpoint → Action → Verify | Always think first |
 | Mode Switching | Identify mode (Plan/Discuss/Execute) → Act | Never assume mode |
+| **Diagnose-First** | Error → Classify → Simple fix? → Ask if drastic | Never restart on first error |
+| **Self-Correct** | Failed rule? → Acknowledge → Fix next turn | Don't repeat mistakes |
 
 ---
 

@@ -147,28 +147,35 @@ I can spawn subagents for:
 
 | Use Case | Max Concurrent | Recommended Model | Why |
 |----------|----------------|-------------------|-----|
-| Parallel research | 4 | `deep` | Default subagent model, high capability |
-| Long summarization | 4 | `flash` | Efficient for text processing |
-| Simple triage/decisions | 4 | `flash` | Fast enough, more reliable than lfm |
-| Coding/debugging | 4 | `deep` | Best reasoning, 142 tok/s |
-| Independent cron work | 4 | `flash` | Efficient for background tasks |
+| Coding/debugging | 4 | `dev` | Fastest (1400ms), best SWE-bench (72.2%) |
+| Parallel research | 4 | `kimi` | 256K context, native Agent Swarm |
+| Quality gate/review | 1 | `deep` | Best reasoning depth, catches blind spots |
+| Simple triage | 4 | `dev` | Speed wins for simple tasks |
+| Long summarization | 4 | `kimi` | 256K context window |
+| Background cron work | 4 | `flash` | Local, no API costs |
 
 **Model Alias Reference:**
 
 | Alias | Full Model | Best For |
 |-------|------------|----------|
-| `fast` | ollama/lfm2.5-thinking:1.2b | Fastest (~200ms), simple yes/no only |
-| `flash` | ollama/glm-4.7-flash | Pre-flight, routine tasks, summaries |
-| `deep` | zai/glm-4.7 | Quality gate, code review, coding, complex reasoning |
+| `dev` | ollama-cloud/devstral-2:123b-cloud | **Coding, debugging, fast tasks** (default subagent) |
+| `kimi` | ollama-cloud/kimi-k2.5:cloud | Research, long context, swarm orchestration |
+| `deep` | zai/GLM-4.7 | Quality gate, code review, strategic planning |
+| `flash` | ollama/glm-4.7-flash | Pre-flight, routine tasks, local |
+| `m2` | ollama-cloud/minimax-m2.1:cloud | Tool chains, multi-step tasks |
 | `vision` | ollama/qwen3-vl:4b | Image analysis |
 | `ocr` | ollama/deepseek-ocr | Text extraction from images/PDFs |
-| `audit` | ollama/deepseek-v3.1:cloud | Primary worker (Telegram), overnight builds |
-| `beta` | ollama/kimi-k2.5:cloud | Testing new models (explicit request only) |
+
+**Subagent Model Selection (APEX 6.3):**
+- **Coding tasks** → `dev` (Devstral-2): Fastest, no thinking - use explicit checkpoints
+- **Research tasks** → `kimi` (Kimi K2.5): Native swarm auto-orchestrates
+- **Quality reviews** → `deep` (GLM-4.7): Best reasoning, catches errors
 
 **Cross-Validation Architecture:**
-- **Primary Worker (Telegram):** Kimi K2.5 (`audit`) - tools + thinking support
+- **Primary Worker (Discord):** Kimi K2.5 - thinking support, swarm for complex tasks
+- **Primary Worker (Telegram):** Devstral-2 - fastest response times
 - **Quality Gate / Reviewer:** GLM-4.7 (`deep`) - different model catches different blind spots
-- **Subagents:** GLM-4.7 (`deep`) by default for high capability
+- **Subagents:** Devstral-2 (`dev`) by default for speed; override per-task as needed
 
 Subagents CANNOT access: cron, gateway (safety restriction)
 
