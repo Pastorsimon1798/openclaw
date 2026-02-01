@@ -1,0 +1,22 @@
+{
+  "name": "Newsletter-Digest",
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 9 * * 2,5",
+    "tz": "America/Los_Angeles"
+  },
+  "sessionTarget": "isolated",
+  "wakeMode": "next-heartbeat",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Compile and send newsletter digest. Read ~/clawd/content-intelligence/config/sources.json, check for new articles in ~/clawd/content-intelligence/sources/*/insights/*.json, extract 2-5 key insights per high/medium priority source, and send formatted digest to Simon via Telegram. Include sections: AI/Tech, Self-Improvement, Business, Quick Links. Use action tags [Read] [Action] [Tool].",
+    "timeoutSeconds": 300,
+    "channel": "last",
+    "userId": "886031571"
+  },
+  "isolation": {
+    "postToMainPrefix": "Cron",
+    "postToMainMode": "summary",
+    "postToMainMaxChars": 8000
+  }
+}

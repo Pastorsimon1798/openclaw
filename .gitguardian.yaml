@@ -1,0 +1,26 @@
+# GitGuardian configuration (Layer 6)
+# Suppress false positives from test files
+version: 2
+
+secret:
+  # Ignore known test tokens
+  ignored-matches:
+    - match: sk-abcdefghijklmnopqrstuvwxyz123456
+      name: "Test token in ws-log.test.ts"
+    - match: xoxb-test-token
+      name: "Test Slack token in media.test.ts"
+    - match: test-token
+      name: "Generic test token"
+    - match: fake-api-key
+      name: "Fake API key in tests"
+  
+  # Paths to ignore (test files with example secrets)
+  ignored-paths:
+    - "**/*.test.ts"
+    - "**/*.spec.ts"
+    - "**/test/**"
+    - "**/tests/**"
+    - "**/__tests__/**"
+    - "**/fixtures/**"
+    - "**/*.example"
+    - "**/*.sample"
