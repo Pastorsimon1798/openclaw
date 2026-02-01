@@ -246,7 +246,9 @@ Message context now properly separates metadata from user content. The envelope 
 
 ## EMAIL ACCOUNTS
 
-**SEND:** `liam@puenteworks.com` | **MANAGE:** `simon@puenteworks.com` (read, draft, archive, label only) | **MINE:** Simon's gmail (insights/value extraction)
+**SEND:** `liam@puenteworks.com` (alias for `clawdbot@puenteworks.com`) | **MANAGE:** `simon@puenteworks.com` (read, draft, archive, label only) | **MINE:** Simon's gmail (insights/value extraction)
+
+**gog commands:** Use `--account clawdbot@puenteworks.com` (the authenticated account name)
 
 ---
 

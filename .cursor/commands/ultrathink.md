@@ -1,6 +1,6 @@
 # Ultra-Research Protocol (APEX v7.3)
 
-Invoke this protocol for complex investigations, recurring bugs, or via `/ultrathink-apex-research`.
+Invoke this protocol for complex investigations, recurring bugs, or via `/ultrathink`.
 
 ## 1. Multi-Pass Investigation
 Do not assume the first analysis is complete.
@@ -34,4 +34,30 @@ If 2 attempts failed:
 4. **Verification**: How we'll know it's fixed.
 
 ---
-*Activation: ultrathink-apex-research, "deep research", "audit my rules"*
+
+## Test Invocation
+
+Type `/ultrathink` when investigating complex bugs or after 2 failed attempts.
+
+**Triggers:**
+- "Why does X keep failing?"
+- "audit my rules"
+- "deep research on [topic]"
+
+**Example output:**
+```
+## Ultra-Research: [Issue Name]
+
+1. **Hypothesis**: The config path is incorrect after migration.
+2. **Evidence**: 
+   - Error log shows `/old/path` not found
+   - Config file still references deprecated location
+3. **Plan**:
+   - [ ] Verify current config path
+   - [ ] Update references in 3 files
+   - [ ] Test with fresh session
+4. **Verification**: Run `doctor --check` after fix
+```
+
+---
+*Activation: /ultrathink, "deep research", "audit my rules"*

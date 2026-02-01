@@ -41,4 +41,24 @@ Would you like me to address these?
 2. [Item 2] (~Y min)
 
 ---
+
+## Test Invocation
+
+Type `/comorbidity` after completing any task, or say "check for gaps" in your message.
+
+**Example output:**
+```
+### Gaps Identified
+| Gap | Impact | Recommendation |
+|-----|--------|----------------|
+| No unit tests for new function | MEDIUM | Add tests before merge |
+| README not updated | LOW | Document new flag |
+
+### Immediate Action Items
+Would you like me to address these?
+1. Add unit tests (~5 min)
+2. Update README (~2 min)
+```
+
+---
 *Activation: /comorbidity, "check for gaps", task complete*

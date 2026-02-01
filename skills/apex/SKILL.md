@@ -15,7 +15,7 @@ Invoke after task completion to identify gaps and blast radius.
 - You finish a complex task (Law 4.5)
 - You catch your own mistake (Success #6)
 
-## 2. Ultra-Research (`/ultrathink-apex-research`)
+## 2. Ultra-Research (`/ultrathink`)
 Invoke for complex investigations or when stuck.
 
 ### Steps:
@@ -25,7 +25,7 @@ Invoke for complex investigations or when stuck.
 4. **Statistical Audit**: If 2 tool calls fail, STOP and analyze why.
 
 ### Activation Triggers:
-- Simon says "ultrathink-apex-research"
+- Simon says "ultrathink"
 - Simon says "audit my rules"
 - You fail the same action 2 times (Cost Awareness Trigger)
 

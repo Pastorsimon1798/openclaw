@@ -429,11 +429,14 @@ done
 
 | Account | Services | You CAN | You CANNOT |
 |---------|----------|---------|------------|
-| `clawdbot@puenteworks.com` | calendar, gmail | Send emails, calendar ops, receive notifications | - |
+| `liam@puenteworks.com` | calendar, gmail | Send emails, calendar ops, receive notifications | - |
 | `simon@puenteworks.com` | gmail (delegated) | Read, archive, label, organize, draft replies | Send emails |
 
-**Sending an email? → `--account clawdbot@puenteworks.com`**
-**Managing Simon's inbox? → `--account simon@puenteworks.com`**
+**Note:** `liam@` is an alias for `clawdbot@`. gog is authenticated as `clawdbot@`.
+
+**gog commands use authenticated account name:**
+- **Sending an email? → `--account clawdbot@puenteworks.com`**
+- **Managing Simon's inbox? → `--account simon@puenteworks.com`**
 
 ## Working Hours
 

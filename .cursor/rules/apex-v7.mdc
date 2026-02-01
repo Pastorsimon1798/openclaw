@@ -33,13 +33,14 @@ Before ANY change, verify system works. After change, verify still works.
 ```
 
 ### 2. VERIFY FIRST
-**Prevents:** Patterns #5, #6, #7 (wrong analysis, ghost bugs)
+**Prevents:** Patterns #5, #6, #7, #14 (wrong analysis, ghost bugs, blaming external services)
 
 Before ANY action (edit, create, recommend), verify current state.
 ```
 [ ] Editing? Read the file first.
 [ ] Creating? Run find/ls to see what exists.
 [ ] Recommending? Check primary source, not memory.
+[ ] External service fails? Direct test (curl/API) FIRST, not logs.
 ```
 
 ### 3. TRACE TO SUCCESS
@@ -108,7 +109,7 @@ Every token costs money. Regressions burn budget.
 ```
 
 **Statistical Triggers (NEW v7.3):**
-- **Failure Trigger:** After 2 failed attempts at the same action → STOP. Invoke `ultrathink-apex-research`.
+- **Failure Trigger:** After 2 failed attempts at the same action → STOP. Invoke `/ultrathink`.
 - **Complexity Trigger:** If task touches >5 files → AUTOMATICALLY run `comorbidity` check at the end.
 - **Efficiency Trigger:** If session >50K tokens on one task → Propose `/clear` or model switch to Flash.
 
@@ -366,7 +367,7 @@ After task completion, run gap analysis:
 
 **Output format:** Table of gaps + impact + recommendation. Let user prioritize.
 
-**Activation:** `/comorbidity`, `ultrathink-apex-research`, "check for gaps"
+**Activation:** `/comorbidity`, `/ultrathink`, "check for gaps"
 
 ---
 
