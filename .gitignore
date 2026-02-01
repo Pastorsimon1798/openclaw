@@ -200,3 +200,8 @@ liminal/server/target/
 .bw_session
 .ssh/
 .config/Bitwarden CLI/
+
+# Separate workspaces
+clawd-liam-telegram/
+clawd-main/
+clawd/.tmp/
