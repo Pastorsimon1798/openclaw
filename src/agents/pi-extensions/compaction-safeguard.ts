@@ -20,6 +20,44 @@ const TURN_PREFIX_INSTRUCTIONS =
 const MAX_TOOL_FAILURES = 8;
 const MAX_TOOL_FAILURE_CHARS = 240;
 
+// Hallucination detection patterns (Joshua Incident 2026-02-01)
+// LLMs can fabricate paths from training data during summarization
+const HALLUCINATION_PATTERNS = [
+  { pattern: /\/Users\/\w+\/Desktop/g, reason: "macOS Desktop path on Linux system" },
+  { pattern: /\/Users\/\w+\/Documents/g, reason: "macOS Documents path on Linux system" },
+  { pattern: /C:\\Users\\/g, reason: "Windows path on Linux system" },
+  { pattern: /\/home\/(?!liam)\w+\//g, reason: "Unknown Linux user path" },
+];
+
+/**
+ * Detect and sanitize hallucinated paths in compaction summaries.
+ * Returns the sanitized summary and any warnings.
+ */
+function sanitizeHallucinatedPaths(summary: string): { sanitized: string; warnings: string[] } {
+  const warnings: string[] = [];
+  let sanitized = summary;
+
+  for (const { pattern, reason } of HALLUCINATION_PATTERNS) {
+    const matches = summary.match(pattern);
+    if (matches) {
+      for (const match of matches) {
+        warnings.push(`HALLUCINATION: ${reason} - "${match}"`);
+      }
+      // Replace hallucinated paths with marker
+      sanitized = sanitized.replace(pattern, "[path-possibly-hallucinated]");
+    }
+  }
+
+  if (warnings.length > 0) {
+    console.warn(`Compaction safeguard: Detected ${warnings.length} potential hallucination(s):`);
+    for (const w of warnings) {
+      console.warn(`  - ${w}`);
+    }
+  }
+
+  return { sanitized, warnings };
+}
+
 type ToolFailure = {
   toolCallId: string;
   toolName: string;
@@ -308,12 +346,21 @@ export default function compactionSafeguardExtension(api: ExtensionAPI): void {
       summary += toolFailureSection;
       summary += fileOpsSummary;
 
+      // Sanitize hallucinated paths before returning (Joshua Incident 2026-02-01)
+      const { sanitized, warnings } = sanitizeHallucinatedPaths(summary);
+      if (warnings.length > 0) {
+        // Log to help track hallucination patterns over time
+        console.warn(
+          `Compaction summary contained ${warnings.length} hallucinated path(s) - sanitized`,
+        );
+      }
+
       return {
         compaction: {
-          summary,
+          summary: sanitized,
           firstKeptEntryId: preparation.firstKeptEntryId,
           tokensBefore: preparation.tokensBefore,
-          details: { readFiles, modifiedFiles },
+          details: { readFiles, modifiedFiles, hallucinationsDetected: warnings.length },
         },
       };
     } catch (error) {
@@ -339,7 +386,9 @@ export const __testing = {
   formatToolFailuresSection,
   computeAdaptiveChunkRatio,
   isOversizedForSummary,
+  sanitizeHallucinatedPaths,
   BASE_CHUNK_RATIO,
   MIN_CHUNK_RATIO,
   SAFETY_MARGIN,
+  HALLUCINATION_PATTERNS,
 } as const;

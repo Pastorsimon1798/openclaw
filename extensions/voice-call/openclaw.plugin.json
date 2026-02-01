@@ -380,7 +380,7 @@
           },
           "provider": {
             "type": "string",
-            "enum": ["openai", "elevenlabs", "edge"]
+            "enum": ["openai", "elevenlabs", "edge", "groq"]
           },
           "summaryModel": {
             "type": "string"
@@ -524,6 +524,22 @@
                 "type": "integer",
                 "minimum": 1000,
                 "maximum": 120000
+              }
+            }
+          },
+          "groq": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "apiKey": {
+                "type": "string"
+              },
+              "voice": {
+                "type": "string",
+                "enum": ["troy", "austin", "daniel", "autumn", "diana", "hannah"]
+              },
+              "vocalDirection": {
+                "type": "string"
               }
             }
           },

@@ -56,21 +56,24 @@ import { describeUnknownError } from "./utils.js";
 type ApiKeyInfo = ResolvedProviderAuth;
 
 // Pre-flight context check constants
-// Lowered from 0.82 to 0.70 to trigger compaction earlier and prevent context explosion
-// Evidence: Session grew from 227K to 248K despite multiple "successful" compactions at 82%
-const PREFLIGHT_CONTEXT_THRESHOLD_RATIO = 0.7; // 70% triggers earlier, gives more room for compaction
+// Lowered from 0.70 to 0.50 to trigger compaction much earlier (2026-02-01)
+// Evidence: Context overflow incidents despite 70% threshold - need more aggressive early compaction
+// Joshua incident: Hallucinated paths appeared in compaction summaries at high utilization
+const PREFLIGHT_CONTEXT_THRESHOLD_RATIO = 0.5; // 50% - aggressive early compaction
 const CHARS_PER_TOKEN_ESTIMATE = 4; // Conservative estimate
 
 // Hard ceiling: refuse new operations when context is critically full
-// This prevents the cascade where context explodes past limits despite compaction attempts
-const CRITICAL_CONTEXT_RATIO = 0.9; // Refuse at 90% - last line of defense
+// Lowered from 0.9 to 0.75 to prevent cascade failures (2026-02-01)
+const CRITICAL_CONTEXT_RATIO = 0.75; // Refuse at 75% - earlier protection
 
 /**
  * Estimate tokens in a session file by reading the file and counting characters.
  * Returns 0 if the file doesn't exist or can't be read.
  */
 async function estimateSessionTokens(sessionFile: string | undefined): Promise<number> {
-  if (!sessionFile) return 0;
+  if (!sessionFile) {
+    return 0;
+  }
   try {
     const content = await fs.readFile(sessionFile, "utf-8");
     // Each line is a JSON object; estimate total characters
@@ -101,7 +104,9 @@ function scrubAnthropicRefusalMagic(prompt: string): string {
 const MESSAGE_ID_LINE_RE = /^\s*\[message_id:\s*[^\]]+\]\s*$/im;
 
 function stripMessageIdHints(prompt: string): string {
-  if (!prompt.includes("[message_id:")) return prompt;
+  if (!prompt.includes("[message_id:")) {
+    return prompt;
+  }
   const lines = prompt.split(/\r?\n/);
   const filtered = lines.filter((line) => !MESSAGE_ID_LINE_RE.test(line));
   return filtered.length === lines.length ? prompt : filtered.join("\n").trim();
