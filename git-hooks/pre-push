@@ -1,0 +1,93 @@
+#!/bin/bash
+# Layer 2: Pre-push hook - Warns about public repos, scans commits, requires confirmation
+set -e
+
+# Read push info from stdin
+while read local_ref local_sha remote_ref remote_sha; do
+  [ -z "$local_sha" ] && continue
+  
+  # Get remote URL
+  remote_url=$(git remote get-url "$1" 2>/dev/null || echo "unknown")
+  
+  # Detect if pushing to upstream (public) repo
+  is_public=false
+  if [[ "$remote_url" == *"openclaw/openclaw"* ]] || \
+     [[ "$1" == "upstream" ]]; then
+    is_public=true
+    echo ""
+    echo "⚠️  WARNING: Pushing to PUBLIC/UPSTREAM repository!"
+    echo "   Remote: $1 ($remote_url)"
+    echo ""
+  fi
+  
+  # Show what's being pushed
+  if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+    # New branch - show commits not on any remote
+    commits=$(git log --oneline "$local_sha" --not --remotes 2>/dev/null | head -20)
+  else
+    commits=$(git log --oneline "$remote_sha..$local_sha" 2>/dev/null | head -20)
+  fi
+  
+  if [ -n "$commits" ]; then
+    commit_count=$(echo "$commits" | wc -l | tr -d ' ')
+    echo "📦 Pushing $commit_count commit(s) to $1:"
+    echo "$commits" | head -10
+    [ "$commit_count" -gt 10 ] && echo "   ... and $((commit_count - 10)) more"
+    echo ""
+    
+    # Warn if many commits (like the 113 that caused the incident)
+    if [ "$commit_count" -gt 10 ]; then
+      echo "⚠️  WARNING: Large push ($commit_count commits)"
+      echo "   The 2026-02-01 incident involved pushing 113 local commits."
+      echo "   Please verify these are the intended commits."
+      echo ""
+    fi
+  fi
+  
+  # Scan commits being pushed for secrets
+  echo "🔐 Scanning commits for secrets..."
+  if command -v uvx >/dev/null 2>&1; then
+    [ -f ~/.bw_session ] && . ~/.bw_session 2>/dev/null
+    if [ -z "$GITGUARDIAN_API_KEY" ]; then
+      GITGUARDIAN_API_KEY=$(bw-get 'GitGuardian API' 2>/dev/null || true)
+    fi
+    
+    if [ -n "$GITGUARDIAN_API_KEY" ]; then
+      export GITGUARDIAN_API_KEY
+      if [ "$remote_sha" != "0000000000000000000000000000000000000000" ]; then
+        uvx ggshield secret scan commit-range "$remote_sha..$local_sha" 2>/dev/null || {
+          echo ""
+          echo "❌ SECRETS DETECTED IN COMMITS - PUSH BLOCKED"
+          exit 1
+        }
+      else
+        # New branch - scan last 20 commits
+        uvx ggshield secret scan commit-range HEAD~20..HEAD 2>/dev/null || {
+          echo ""
+          echo "❌ SECRETS DETECTED IN COMMITS - PUSH BLOCKED"
+          exit 1
+        }
+      fi
+      echo "✅ No secrets found in commits"
+    else
+      echo "⚠️  GitGuardian API key not available - skipping commit scan"
+    fi
+  fi
+  
+  # Interactive confirmation for public repos or large pushes
+  if [ "$is_public" = true ] || [ "${commit_count:-0}" -gt 10 ]; then
+    # Only prompt if we have a terminal
+    if [ -t 0 ]; then
+      echo ""
+      read -p "Type 'yes' to confirm push: " confirm < /dev/tty
+      if [ "$confirm" != "yes" ]; then
+        echo "Push cancelled."
+        exit 1
+      fi
+    else
+      echo "⚠️  Non-interactive mode - proceeding with push"
+    fi
+  fi
+done
+
+exit 0

@@ -1,0 +1,107 @@
+#!/bin/bash
+# Layer 4: Safe-push script - Maximum security checks before pushing
+set -euo pipefail
+
+echo "🛡️  SAFE PUSH - Maximum security checks"
+echo "========================================"
+echo ""
+
+# 1. Check current branch
+branch=$(git branch --show-current)
+echo "📍 Current branch: $branch"
+
+# 2. Check remote
+remote="${1:-origin}"
+remote_url=$(git remote get-url "$remote" 2>/dev/null || echo "unknown")
+echo "🌐 Remote: $remote ($remote_url)"
+
+# 3. Detect public repo
+if [[ "$remote_url" == *"openclaw/openclaw"* ]]; then
+  echo ""
+  echo "🚨 CRITICAL: This is the UPSTREAM PUBLIC repository!"
+  echo "   Are you sure you want to push here?"
+  echo "   Remember: The 2026-02-01 incident happened when pushing to upstream."
+  echo ""
+fi
+
+# 4. Show divergence from upstream
+if git remote | grep -q upstream; then
+  ahead=$(git rev-list --count upstream/main..HEAD 2>/dev/null || echo "?")
+  behind=$(git rev-list --count HEAD..upstream/main 2>/dev/null || echo "?")
+  echo ""
+  echo "📊 Divergence from upstream/main:"
+  echo "   Ahead: $ahead commits"
+  echo "   Behind: $behind commits"
+  
+  if [ "$ahead" != "?" ] && [ "$ahead" -gt 20 ]; then
+    echo ""
+    echo "⚠️  WARNING: You are $ahead commits ahead of upstream."
+    echo "   This is similar to the 2026-02-01 incident (113 commits)."
+    echo "   If contributing to upstream, create a fresh branch from upstream/main!"
+    echo ""
+  fi
+fi
+
+# 5. Show what would be pushed
+echo ""
+echo "📦 Commits that would be pushed:"
+if git rev-parse @{u} >/dev/null 2>&1; then
+  git log --oneline @{u}..HEAD 2>/dev/null | head -20
+  commit_count=$(git rev-list --count @{u}..HEAD 2>/dev/null || echo "0")
+else
+  git log --oneline -10
+  commit_count="unknown (no upstream tracking)"
+fi
+echo ""
+echo "   Total: $commit_count commits"
+
+# 6. Show files changed
+echo ""
+echo "📁 Files changed:"
+if git rev-parse @{u} >/dev/null 2>&1; then
+  git diff --stat @{u}..HEAD 2>/dev/null | tail -20
+else
+  git diff --stat HEAD~10..HEAD 2>/dev/null | tail -20
+fi
+echo ""
+
+# 7. Run full secret scan
+echo "🔐 Running secret scan on all changes..."
+[ -f ~/.bw_session ] && . ~/.bw_session 2>/dev/null
+if [ -z "${GITGUARDIAN_API_KEY:-}" ]; then
+  GITGUARDIAN_API_KEY=$(bw-get 'GitGuardian API' 2>/dev/null || true)
+fi
+
+if [ -n "${GITGUARDIAN_API_KEY:-}" ]; then
+  export GITGUARDIAN_API_KEY
+  if git rev-parse @{u} >/dev/null 2>&1; then
+    uvx ggshield secret scan commit-range @{u}..HEAD 2>/dev/null || {
+      echo "❌ SECRETS DETECTED - ABORTING"
+      exit 1
+    }
+  else
+    uvx ggshield secret scan commit-range HEAD~10..HEAD 2>/dev/null || {
+      echo "❌ SECRETS DETECTED - ABORTING"
+      exit 1
+    }
+  fi
+  echo "✅ No secrets detected"
+else
+  echo "⚠️  GitGuardian API key not available - skipping secret scan"
+  echo "   Set GITGUARDIAN_API_KEY or configure Bitwarden"
+fi
+echo ""
+
+# 8. Final confirmation
+echo "═══════════════════════════════════════"
+echo ""
+read -p "🚀 Push to $remote/$branch? Type 'push' to confirm: " confirm
+if [ "$confirm" != "push" ]; then
+  echo "Push cancelled."
+  exit 1
+fi
+
+echo ""
+git push "$remote" "$branch"
+echo ""
+echo "✅ Push complete!"
