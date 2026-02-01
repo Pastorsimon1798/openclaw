@@ -90,6 +90,18 @@ clawdbot.json
 .docker
 .bash_history
 
+# OpenClaw secrets (Layer 5 - 2026-02-01 incident prevention)
+.openclaw/
+client_secret.json
+.cursor/mcp.json
+
+# Additional secret patterns
+*.pem
+*.key
+**/secrets/
+**/credentials/
+**/.env.local
+
 # Cursor IDE (server-side)
 .cursor-server/
 .cursor/ide_state.json

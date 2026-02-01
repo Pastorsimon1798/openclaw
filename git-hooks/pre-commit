@@ -1,4 +1,35 @@
 #!/bin/sh
+set -e
 ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
 [ -z "$ROOT" ] && exit 0
+
+# 1. Format staged files (existing functionality)
 node "$ROOT/scripts/format-staged.js"
+
+# 2. SECRET SCAN - Block commit if secrets detected (Layer 1)
+echo "🔐 Scanning for secrets..."
+if command -v uvx >/dev/null 2>&1; then
+  # Try to load Bitwarden session for API key
+  [ -f ~/.bw_session ] && . ~/.bw_session 2>/dev/null
+  
+  # Get API key from Bitwarden or fall back to env var
+  if [ -z "$GITGUARDIAN_API_KEY" ]; then
+    GITGUARDIAN_API_KEY=$("$ROOT/scripts/bw-get" 'GitGuardian API' 2>/dev/null || true)
+  fi
+  
+  if [ -n "$GITGUARDIAN_API_KEY" ]; then
+    export GITGUARDIAN_API_KEY
+    uvx ggshield secret scan pre-commit || {
+      echo ""
+      echo "❌ SECRETS DETECTED - COMMIT BLOCKED"
+      echo "Review the output above and remove secrets before committing."
+      exit 1
+    }
+    echo "✅ No secrets found"
+  else
+    echo "⚠️  GitGuardian API key not available - skipping secret scan"
+    echo "   Set GITGUARDIAN_API_KEY or configure Bitwarden"
+  fi
+else
+  echo "⚠️  uvx not found - skipping secret scan"
+fi

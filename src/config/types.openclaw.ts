@@ -24,6 +24,22 @@ import type { PluginsConfig } from "./types.plugins.js";
 import type { SkillsConfig } from "./types.skills.js";
 import type { ToolsConfig } from "./types.tools.js";
 
+export type PrivacyConfig = {
+  /** Enable strict mode (100% local, no external network calls). */
+  strictMode?: boolean;
+  /** Resource limits for local model operations. */
+  resourceLimits?: {
+    /** Maximum concurrent LLM operations. Default: 1. */
+    maxConcurrentLLM?: number;
+    /** Maximum concurrent vision operations. Default: 1. */
+    maxConcurrentVision?: number;
+    /** Maximum concurrent STT operations. Default: 1. */
+    maxConcurrentSTT?: number;
+    /** Maximum concurrent TTS operations. Default: 1. */
+    maxConcurrentTTS?: number;
+  };
+};
+
 export type OpenClawConfig = {
   meta?: {
     /** Last OpenClaw version that wrote this config. */
@@ -31,6 +47,8 @@ export type OpenClawConfig = {
     /** ISO timestamp when this config was last written. */
     lastTouchedAt?: string;
   };
+  /** Privacy settings for Private Mode (100% local operation). */
+  privacy?: PrivacyConfig;
   auth?: AuthConfig;
   env?: {
     /** Opt-in: import missing secrets from a login shell environment (exec `$SHELL -l -c 'env -0'`). */

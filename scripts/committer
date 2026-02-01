@@ -92,6 +92,26 @@ if git diff --staged --quiet; then
   exit 1
 fi
 
+# Layer 3: Show diff for review and require confirmation
+echo ""
+echo "📋 Changes to be committed:"
+echo "─────────────────────────────"
+git diff --cached --stat
+echo ""
+echo "Files:"
+git diff --cached --name-only | while read f; do echo "  $f"; done
+echo ""
+
+# Check if running interactively
+if [ -t 0 ]; then
+  read -p "Commit these changes? [y/N] " confirm < /dev/tty
+  if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+    echo "Commit cancelled."
+    git restore --staged :/
+    exit 1
+  fi
+fi
+
 committed=false
 if run_git_commit; then
   committed=true
