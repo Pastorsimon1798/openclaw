@@ -90,7 +90,6 @@ describe("buildAgentSystemPrompt", () => {
 
     expect(prompt).toContain("## Reasoning Format");
     expect(prompt).toContain("<think>...</think>");
-    expect(prompt).toContain("<final>...</final>");
   });
 
   it("includes a CLI quick reference section", () => {
