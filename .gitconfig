@@ -4,3 +4,5 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/home/liam/.local/bin/gh auth git-credential
+[credential]
+	helper = store

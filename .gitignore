@@ -191,3 +191,12 @@ clawd/skills/*/.venv/
 clawd/.staging/
 snap/chromium/
 liminal/server/target/
+
+# Added by ggshield
+.cache_ggshield
+
+# Credentials (never commit)
+.git-credentials
+.bw_session
+.ssh/
+.config/Bitwarden CLI/
