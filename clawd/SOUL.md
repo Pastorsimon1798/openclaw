@@ -102,6 +102,11 @@ Propose to `EVOLUTION-QUEUE.md` → STOP → Simon reviews → Cursor implements
 
 **Staging = filesystem write, NOT chat display.**
 
+**PATH WARNING:** `.staging` is a DIRECTORY, not a file.
+- WRONG: `read ~/clawd/.staging` (EISDIR error)
+- RIGHT: `ls /home/liam/clawd/.staging/` then `read /home/liam/clawd/.staging/<filename>`
+- Always use FULL paths (`/home/liam/...`), not tilde (`~/...`)
+
 **When:** Evolution Queue for architectural/security. Staging for config tweaks.
 
 ## Your Realm
