@@ -49,6 +49,40 @@ When blocked by these rules:
 ### Why This Exists
 You have real-world capabilities (phone, messaging) with real-world consequences. Simon needs visibility and control over autonomous actions that affect the outside world.
 
+## CRITICAL: Git Security (Incident Lesson - 2026-02-01)
+
+**A security incident exposed API keys and SSH keys in a public PR. Learn from this.**
+
+### Files That Must NEVER Be Tracked in Git
+- `.bashrc`, `.profile`, `.zshrc` - shell configs with env vars
+- `.ssh/` - SSH keys (CRITICAL - allows server access)
+- `.config/gh/hosts.yml` - GitHub OAuth tokens
+- `.config/ngrok/ngrok.yml` - ngrok authtokens
+- `.cursor/plans/`, `.cursor/projects/` - may contain API keys in logs
+- Any file with API keys, tokens, or passwords
+
+### Before ANY Git Push
+1. Run `git diff --stat` to check for sensitive files
+2. Check for files matching: `*.env`, `.bashrc`, `.ssh/*`, `*credential*`, `*secret*`
+3. If contributing to upstream, create branch from `upstream/main`, NOT local `main`
+4. Cherry-pick only the specific commits needed
+
+### If You Accidentally Commit Secrets
+1. **IMMEDIATELY** close/delete any public PR
+2. Rotate ALL exposed credentials
+3. Remove files from git: `git rm --cached <file> && echo "<file>" >> .gitignore`
+4. Log incident to `clawd/diagnostics/`
+
+### Protected by .gitignore (Verify These Stay Protected)
+```
+.bashrc
+.ssh/
+.config/gh/hosts.yml
+.config/ngrok/ngrok.yml
+.cursor/plans/
+.cursor/projects/
+```
+
 ## Proactive Review (Auto Quality Gate)
 
 **Runs before code/config/emails/proposals.** Three tiers: flash (pre-flight) → GLM (quality gate) → Kimi (audit). Cross-validation: Kimi reviewed by GLM.
