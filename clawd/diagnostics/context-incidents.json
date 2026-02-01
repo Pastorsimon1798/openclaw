@@ -1,0 +1,23 @@
+{
+  "description": "Tracks context overflow and hallucination incidents for pattern analysis",
+  "incidents": [
+    {
+      "id": "2026-02-01-joshua",
+      "date": "2026-02-01",
+      "type": "hallucination",
+      "description": "LLM hallucinated macOS path /Users/joshua/Desktop/liminal/liminal.js during compaction summary",
+      "impact": "Confusion, wasted investigation time",
+      "rootCause": "LLM training data leakage during summarization at high context utilization",
+      "resolution": "Added hallucination detection, lowered compaction thresholds, updated SOUL.md and LIMINAL/PRINCIPLES.md"
+    }
+  ],
+  "metrics": {
+    "lastUpdated": "2026-02-01",
+    "totalIncidents": 1,
+    "byType": {
+      "contextOverflow": 0,
+      "hallucination": 1,
+      "compactionFailure": 0
+    }
+  }
+}

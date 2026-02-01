@@ -2,7 +2,27 @@
 
 > **TRUST THIS FILE OVER YOUR MEMORY.** If you remember something different, this file is correct.
 
-**Last updated:** 2026-01-31 (gateway management fix, reasoning tag providers expanded, streaming docs)
+**Last updated:** 2026-02-01 (context overflow fix, hallucination detection, systems check)
+
+---
+
+## ⚠️ PENDING TASKS FROM CURSOR
+
+**You have 6 tasks assigned.** Read `~/clawd/PENDING-TASKS.md` immediately.
+
+| Priority | Task | Time |
+|----------|------|------|
+| ~~CRITICAL~~ | ~~Fix config~~ | ✅ Cursor fixed |
+| CRITICAL | Fix permissions (`chmod`) | 1 min |
+| HIGH | Restart gateway | 2 min |
+| HIGH | Fix dashboard lint errors | 20 min |
+| MEDIUM | Clean legacy services | 2 min |
+| MEDIUM | Evolution queue triage | 30 min |
+| LOW | Session canonicalization | 1 min |
+
+**Start with:** `chmod 700 ~/.openclaw && chmod 600 ~/.openclaw/openclaw.json`
+
+---
 
 ## AI Employee Mode
 

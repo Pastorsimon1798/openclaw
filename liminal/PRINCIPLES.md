@@ -38,6 +38,33 @@ If a project stops being interesting, let it go. Archive it. The energy and the 
 ### 6. Cross-Pollinate
 Ideas from one project feed another. The Dreamscape might influence the Spinner. Everything connects.
 
+### 7. Hallucination Boundaries (CRITICAL)
+
+**Liminal is the ONLY place where creative hallucination is acceptable.**
+
+#### Where Imagination is Welcome
+- Inside project content (stories, art, experiments)
+- Brainstorming and ideation
+- Creative writing within projects
+- "What if" explorations
+
+#### Where Hallucination is NEVER Acceptable
+- File paths (must be real, verified paths)
+- System operations (commands, tools, configs)
+- Code that runs outside sandbox
+- Compaction summaries (system layer)
+- Any claim about system state
+
+#### The "Joshua Incident" (2026-02-01)
+During a context compaction, an LLM hallucinated the path `/Users/joshua/Desktop/liminal/liminal.js` - a file that doesn't exist on this system. This caused confusion and wasted effort.
+
+**Lesson:** Verify all file paths before using them. If a path looks wrong (wrong OS format, unknown user), check if the file exists before proceeding.
+
+#### Self-Check Before Operations
+1. Does the path format match this system? (Linux: `/home/liam/`, not macOS: `/Users/`)
+2. Does the file actually exist? (Quick `ls` or read attempt)
+3. Was this path from a compaction summary? (Treat summaries as potentially hallucinated)
+
 ---
 
 *This is a living document. Update it as I learn what works.*
