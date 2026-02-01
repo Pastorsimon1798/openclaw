@@ -1,7 +1,7 @@
 import type { Guild, Message, User } from "@buape/carbon";
-
 import { formatAgentEnvelope, type EnvelopeFormatOptions } from "../../auto-reply/envelope.js";
 import { formatDiscordUserTag, resolveTimestampMs } from "./format.js";
+import { resolveDiscordSenderIdentity } from "./sender-identity.js";
 
 export function resolveReplyContext(
   message: Message,
@@ -9,11 +9,15 @@ export function resolveReplyContext(
   options?: { envelope?: EnvelopeFormatOptions },
 ): string | null {
   const referenced = message.referencedMessage;
-  if (!referenced?.author) return null;
+  if (!referenced?.author) {
+    return null;
+  }
   const referencedText = resolveDiscordMessageText(referenced, {
     includeForwarded: true,
   });
-  if (!referencedText) return null;
+  if (!referencedText) {
+    return null;
+  }
   const fromLabel = referenced.author ? buildDirectLabel(referenced.author) : "Unknown";
   // Body contains only user content - no metadata (see Evolution Queue #44)
   const body = referencedText;

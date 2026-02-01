@@ -1,19 +1,12 @@
 import type { AgentEvent, AgentMessage } from "@mariozechner/pi-agent-core";
-import type { AssistantMessage } from "@mariozechner/pi-ai";
-
+import type { EmbeddedPiSubscribeContext } from "./pi-embedded-subscribe.handlers.types.js";
 import { parseReplyDirectives } from "../auto-reply/reply/reply-directives.js";
 import { emitAgentEvent } from "../infra/agent-events.js";
-import { isMinimaxModel, isMinimaxProvider } from "../utils/provider-utils.js";
+import { createInlineCodeState } from "../markdown/code-spans.js";
 import {
   isMessagingToolDuplicateNormalized,
   normalizeTextForComparison,
 } from "./pi-embedded-helpers.js";
-import {
-  hasMinimaxToolCallStart,
-  hasMinimaxToolCallEnd,
-  parseMinimaxToolCalls,
-} from "./minimax-tool-parser.js";
-import type { EmbeddedPiSubscribeContext } from "./pi-embedded-subscribe.handlers.types.js";
 import { appendRawStream } from "./pi-embedded-subscribe.raw-stream.js";
 import {
   extractAssistantText,
@@ -23,23 +16,27 @@ import {
   formatReasoningMessage,
   promoteThinkingTagsToBlocks,
 } from "./pi-embedded-utils.js";
-import { createInlineCodeState } from "../markdown/code-spans.js";
 
-/**
- * Check if the current context is using a MiniMax model.
- */
-function isMinimax(ctx: EmbeddedPiSubscribeContext): boolean {
-  const provider = ctx.params.provider;
-  const modelId = ctx.params.modelId;
-  return isMinimaxProvider(provider) || isMinimaxModel(modelId);
-}
+const stripTrailingDirective = (text: string): string => {
+  const openIndex = text.lastIndexOf("[[");
+  if (openIndex < 0) {
+    return text;
+  }
+  const closeIndex = text.indexOf("]]", openIndex + 2);
+  if (closeIndex >= 0) {
+    return text;
+  }
+  return text.slice(0, openIndex);
+};
 
 export function handleMessageStart(
   ctx: EmbeddedPiSubscribeContext,
   evt: AgentEvent & { message: AgentMessage },
 ) {
   const msg = evt.message;
-  if (msg?.role !== "assistant") return;
+  if (msg?.role !== "assistant") {
+    return;
+  }
 
   // KNOWN: Resetting at `text_end` is unsafe (late/duplicate end events).
   // ASSUME: `message_start` is the only reliable boundary for “new assistant message begins”.
@@ -56,7 +53,9 @@ export function handleMessageUpdate(
   evt: AgentEvent & { message: AgentMessage; assistantMessageEvent?: unknown },
 ) {
   const msg = evt.message;
-  if (msg?.role !== "assistant") return;
+  if (msg?.role !== "assistant") {
+    return;
+  }
 
   const assistantEvent = evt.assistantMessageEvent;
   const assistantRecord =
@@ -115,29 +114,6 @@ export function handleMessageUpdate(
     ctx.emitReasoningStream(extractThinkingFromTaggedStream(ctx.state.deltaBuffer));
   }
 
-  // MiniMax tool call detection: buffer XML tool calls for parsing
-  if (isMinimax(ctx)) {
-    const buffer = ctx.state.deltaBuffer;
-    if (hasMinimaxToolCallStart(buffer)) {
-      ctx.state.minimaxToolBuffering = true;
-    }
-    if (ctx.state.minimaxToolBuffering) {
-      ctx.state.minimaxToolBuffer = buffer;
-      // Check if we have a complete tool call block
-      if (hasMinimaxToolCallEnd(buffer)) {
-        ctx.state.minimaxToolBuffering = false;
-        // Parse and store detected tool calls for logging at message end
-        const toolCalls = parseMinimaxToolCalls(buffer);
-        if (toolCalls.length > 0) {
-          ctx.state.minimaxDetectedToolCalls.push(...toolCalls);
-          ctx.log.debug(
-            `MiniMax tool calls detected during streaming: ${toolCalls.map((t) => t.name).join(", ")}`,
-          );
-        }
-      }
-    }
-  }
-
   const next = ctx
     .stripBlockTags(ctx.state.deltaBuffer, {
       thinking: false,
@@ -145,20 +121,38 @@ export function handleMessageUpdate(
       inlineCode: createInlineCodeState(),
     })
     .trim();
-  if (next && next !== ctx.state.lastStreamedAssistant) {
-    const previousText = ctx.state.lastStreamedAssistant ?? "";
-    const { text: cleanedText, mediaUrls } = parseReplyDirectives(next);
-    const { text: previousCleanedText } = parseReplyDirectives(previousText);
-    if (cleanedText.startsWith(previousCleanedText)) {
-      const deltaText = cleanedText.slice(previousCleanedText.length);
-      ctx.state.lastStreamedAssistant = next;
+  if (next) {
+    const visibleDelta = chunk ? ctx.stripBlockTags(chunk, ctx.state.partialBlockState) : "";
+    const parsedDelta = visibleDelta ? ctx.consumePartialReplyDirectives(visibleDelta) : null;
+    const parsedFull = parseReplyDirectives(stripTrailingDirective(next));
+    const cleanedText = parsedFull.text;
+    const mediaUrls = parsedDelta?.mediaUrls;
+    const hasMedia = Boolean(mediaUrls && mediaUrls.length > 0);
+    const hasAudio = Boolean(parsedDelta?.audioAsVoice);
+    const previousCleaned = ctx.state.lastStreamedAssistantCleaned ?? "";
+
+    let shouldEmit = false;
+    let deltaText = "";
+    if (!cleanedText && !hasMedia && !hasAudio) {
+      shouldEmit = false;
+    } else if (previousCleaned && !cleanedText.startsWith(previousCleaned)) {
+      shouldEmit = false;
+    } else {
+      deltaText = cleanedText.slice(previousCleaned.length);
+      shouldEmit = Boolean(deltaText || hasMedia || hasAudio);
+    }
+
+    ctx.state.lastStreamedAssistant = next;
+    ctx.state.lastStreamedAssistantCleaned = cleanedText;
+
+    if (shouldEmit) {
       emitAgentEvent({
         runId: ctx.params.runId,
         stream: "assistant",
         data: {
           text: cleanedText,
           delta: deltaText,
-          mediaUrls: mediaUrls?.length ? mediaUrls : undefined,
+          mediaUrls: hasMedia ? mediaUrls : undefined,
         },
       });
       void ctx.params.onAgentEvent?.({
@@ -166,13 +160,13 @@ export function handleMessageUpdate(
         data: {
           text: cleanedText,
           delta: deltaText,
-          mediaUrls: mediaUrls?.length ? mediaUrls : undefined,
+          mediaUrls: hasMedia ? mediaUrls : undefined,
         },
       });
       if (ctx.params.onPartialReply && ctx.state.shouldEmitPartialReplies) {
         void ctx.params.onPartialReply({
           text: cleanedText,
-          mediaUrls: mediaUrls?.length ? mediaUrls : undefined,
+          mediaUrls: hasMedia ? mediaUrls : undefined,
         });
       }
     }
@@ -198,9 +192,11 @@ export function handleMessageEnd(
   evt: AgentEvent & { message: AgentMessage },
 ) {
   const msg = evt.message;
-  if (msg?.role !== "assistant") return;
+  if (msg?.role !== "assistant") {
+    return;
+  }
 
-  const assistantMessage = msg as AssistantMessage;
+  const assistantMessage = msg;
   promoteThinkingTagsToBlocks(assistantMessage);
 
   const rawText = extractAssistantText(assistantMessage);
@@ -234,12 +230,16 @@ export function handleMessageEnd(
   const shouldEmitReasoningBeforeAnswer =
     shouldEmitReasoning && ctx.state.blockReplyBreak === "message_end" && !addedDuringMessage;
   const maybeEmitReasoning = () => {
-    if (!shouldEmitReasoning || !formattedReasoning) return;
+    if (!shouldEmitReasoning || !formattedReasoning) {
+      return;
+    }
     ctx.state.lastReasoningSent = formattedReasoning;
     void onBlockReply?.({ text: formattedReasoning });
   };
 
-  if (shouldEmitReasoningBeforeAnswer) maybeEmitReasoning();
+  if (shouldEmitReasoningBeforeAnswer) {
+    maybeEmitReasoning();
+  }
 
   if (
     (ctx.state.blockReplyBreak === "message_end" ||
@@ -290,7 +290,9 @@ export function handleMessageEnd(
     }
   }
 
-  if (!shouldEmitReasoningBeforeAnswer) maybeEmitReasoning();
+  if (!shouldEmitReasoningBeforeAnswer) {
+    maybeEmitReasoning();
+  }
   if (ctx.state.streamReasoning && rawThinking) {
     ctx.emitReasoningStream(rawThinking);
   }
@@ -319,61 +321,6 @@ export function handleMessageEnd(
     }
   }
 
-  // Final MiniMax tool call detection at message end
-  if (isMinimax(ctx)) {
-    // Parse any remaining tool calls from the final text
-    const finalToolCalls = parseMinimaxToolCalls(rawText);
-    const allToolCalls = [...ctx.state.minimaxDetectedToolCalls];
-
-    // Add any newly detected calls that weren't caught during streaming
-    for (const call of finalToolCalls) {
-      const alreadyDetected = allToolCalls.some(
-        (existing) =>
-          existing.name === call.name &&
-          JSON.stringify(existing.arguments) === JSON.stringify(call.arguments),
-      );
-      if (!alreadyDetected) {
-        allToolCalls.push(call);
-      }
-    }
-
-    if (allToolCalls.length > 0) {
-      ctx.log.warn(
-        `MiniMax XML tool calls detected but not executed (${allToolCalls.length}): ${allToolCalls.map((t) => t.name).join(", ")}. ` +
-          `MiniMax tool execution requires the minimax-tool-parser integration.`,
-      );
-
-      // Emit event for observability
-      emitAgentEvent({
-        runId: ctx.params.runId,
-        stream: "minimax",
-        data: {
-          phase: "tool_calls_detected",
-          toolCalls: allToolCalls.map((t) => ({
-            name: t.name,
-            argumentKeys: Object.keys(t.arguments),
-          })),
-          count: allToolCalls.length,
-          warning: "Tool calls detected but not executed - MiniMax uses XML format",
-        },
-      });
-
-      void ctx.params.onAgentEvent?.({
-        stream: "minimax",
-        data: {
-          phase: "tool_calls_detected",
-          toolCalls: allToolCalls.map((t) => ({ name: t.name })),
-          count: allToolCalls.length,
-        },
-      });
-    }
-
-    // Reset MiniMax state
-    ctx.state.minimaxToolBuffer = "";
-    ctx.state.minimaxToolBuffering = false;
-    ctx.state.minimaxDetectedToolCalls = [];
-  }
-
   ctx.state.deltaBuffer = "";
   ctx.state.blockBuffer = "";
   ctx.blockChunker?.reset();
@@ -381,4 +328,5 @@ export function handleMessageEnd(
   ctx.state.blockState.final = false;
   ctx.state.blockState.inlineCode = createInlineCodeState();
   ctx.state.lastStreamedAssistant = undefined;
+  ctx.state.lastStreamedAssistantCleaned = undefined;
 }

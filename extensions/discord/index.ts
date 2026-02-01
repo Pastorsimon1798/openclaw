@@ -1,6 +1,5 @@
-import type { MoltbotPluginApi } from "clawdbot/plugin-sdk";
-import { emptyPluginConfigSchema } from "clawdbot/plugin-sdk";
-
+import type { OpenClawPluginApi } from "openclaw/plugin-sdk";
+import { emptyPluginConfigSchema } from "openclaw/plugin-sdk";
 import { discordPlugin } from "./src/channel.js";
 import { setDiscordRuntime } from "./src/runtime.js";
 import { 
@@ -20,7 +19,7 @@ const plugin = {
   name: "Discord",
   description: "Discord channel plugin with voice support",
   configSchema: emptyPluginConfigSchema(),
-  register(api: MoltbotPluginApi) {
+  register(api: OpenClawPluginApi) {
     api.logger.info("[discord-plugin] Register called");
     setDiscordRuntime(api.runtime);
     api.registerChannel({ plugin: discordPlugin });

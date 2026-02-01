@@ -1,11 +1,11 @@
 import type { AgentToolResult } from "@mariozechner/pi-agent-core";
+import type { ChannelMessageActionContext } from "../../types.js";
 import {
   readNumberParam,
   readStringArrayParam,
   readStringParam,
 } from "../../../../agents/tools/common.js";
 import { handleDiscordAction } from "../../../../agents/tools/discord-actions.js";
-import type { ChannelMessageActionContext } from "../../types.js";
 
 type Ctx = Pick<ChannelMessageActionContext, "action" | "params" | "cfg" | "accountId">;
 
@@ -366,7 +366,7 @@ export async function tryHandleDiscordMessageActionGuildAdmin(params: {
     const deleteMessageDays = readNumberParam(actionParams, "deleteDays", {
       integer: true,
     });
-    const discordAction = action as "timeout" | "kick" | "ban";
+    const discordAction = action;
     return await handleDiscordAction(
       {
         action: discordAction,

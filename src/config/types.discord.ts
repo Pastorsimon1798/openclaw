@@ -1,3 +1,4 @@
+import type { DiscordPluralKitConfig } from "../discord/pluralkit.js";
 import type {
   BlockStreamingCoalesceConfig,
   DmPolicy,
@@ -176,6 +177,8 @@ export type DiscordAccountConfig = {
   intents?: DiscordIntentsConfig;
   /** Voice channel configuration. */
   voice?: DiscordVoiceConfig;
+  /** PluralKit identity resolution for proxied messages. */
+  pluralkit?: DiscordPluralKitConfig;
 };
 
 export type DiscordConfig = {

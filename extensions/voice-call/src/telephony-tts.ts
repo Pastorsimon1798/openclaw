@@ -1,5 +1,5 @@
-import type { CoreConfig } from "./core-bridge.js";
 import type { VoiceCallTtsConfig } from "./config.js";
+import type { CoreConfig } from "./core-bridge.js";
 import { convertPcmToMulaw8k } from "./telephony-audio.js";
 import { GroqTTSProvider } from "./providers/tts-groq.js";
 
@@ -70,20 +70,21 @@ export function createTelephonyTtsProvider(params: {
   };
 }
 
-function applyTtsOverride(
-  coreConfig: CoreConfig,
-  override?: VoiceCallTtsConfig,
-): CoreConfig {
-  if (!override) return coreConfig;
+function applyTtsOverride(coreConfig: CoreConfig, override?: VoiceCallTtsConfig): CoreConfig {
+  if (!override) {
+    return coreConfig;
+  }
 
   const base = coreConfig.messages?.tts;
   const merged = mergeTtsConfig(base, override);
-  if (!merged) return coreConfig;
+  if (!merged) {
+    return coreConfig;
+  }
 
   return {
     ...coreConfig,
     messages: {
-      ...(coreConfig.messages ?? {}),
+      ...coreConfig.messages,
       tts: merged,
     },
   };
@@ -93,9 +94,15 @@ function mergeTtsConfig(
   base?: VoiceCallTtsConfig,
   override?: VoiceCallTtsConfig,
 ): VoiceCallTtsConfig | undefined {
-  if (!base && !override) return undefined;
-  if (!override) return base;
-  if (!base) return override;
+  if (!base && !override) {
+    return undefined;
+  }
+  if (!override) {
+    return base;
+  }
+  if (!base) {
+    return override;
+  }
   return deepMerge(base, override);
 }
 
@@ -105,7 +112,9 @@ function deepMerge<T>(base: T, override: T): T {
   }
   const result: Record<string, unknown> = { ...base };
   for (const [key, value] of Object.entries(override)) {
-    if (value === undefined) continue;
+    if (value === undefined) {
+      continue;
+    }
     const existing = (base as Record<string, unknown>)[key];
     if (isPlainObject(existing) && isPlainObject(value)) {
       result[key] = deepMerge(existing, value);
