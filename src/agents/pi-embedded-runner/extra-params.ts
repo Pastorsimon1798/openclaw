@@ -65,7 +65,7 @@ function createStreamFnWithExtraParams(
     return undefined;
   }
 
-  const streamParams: Partial<SimpleStreamOptions> = {};
+  const streamParams: Partial<SimpleStreamOptions> & { cacheRetention?: CacheRetention } = {};
   if (typeof extraParams.temperature === "number") {
     streamParams.temperature = extraParams.temperature;
   }
