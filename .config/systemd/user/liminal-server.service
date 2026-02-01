@@ -1,0 +1,17 @@
+[Unit]
+Description=Liminal Creative Space Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/liam/liminal/server/target/release/liminal-server
+WorkingDirectory=/home/liam/liminal/server
+Restart=always
+RestartSec=3
+NoNewPrivileges=no
+PrivateTmp=yes
+ProtectSystem=no
+ProtectHome=no
+
+[Install]
+WantedBy=default.target
