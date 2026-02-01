@@ -110,7 +110,11 @@ describe("runReplyAgent fallback reasoning tags", () => {
     runWithModelFallbackMock.mockReset();
   });
 
-  it("enforces <final> when the fallback provider requires reasoning tags", async () => {
+  // Note: Auto-enforcement of final tags for reasoning providers was removed.
+  // The simplified hint system only uses <think> tags now.
+  // These tests verify that enforceFinalTag is passed through from run config.
+
+  it("does not auto-enforce <final> for fallback providers (simplified hint uses <think> only)", async () => {
     runEmbeddedPiAgentMock.mockResolvedValueOnce({
       payloads: [{ text: "ok" }],
       meta: {},
@@ -126,10 +130,11 @@ describe("runReplyAgent fallback reasoning tags", () => {
     await createRun();
 
     const call = runEmbeddedPiAgentMock.mock.calls[0]?.[0] as EmbeddedPiAgentParams | undefined;
-    expect(call?.enforceFinalTag).toBe(true);
+    // enforceFinalTag is not auto-set for providers; it comes from run config
+    expect(call?.enforceFinalTag).toBeFalsy();
   });
 
-  it("enforces <final> during memory flush on fallback providers", async () => {
+  it("does not auto-enforce <final> during memory flush (simplified hint uses <think> only)", async () => {
     runEmbeddedPiAgentMock.mockImplementation(async (params: EmbeddedPiAgentParams) => {
       if (params.prompt === DEFAULT_MEMORY_FLUSH_PROMPT) {
         return { payloads: [], meta: {} };
@@ -158,6 +163,7 @@ describe("runReplyAgent fallback reasoning tags", () => {
         (params as EmbeddedPiAgentParams | undefined)?.prompt === DEFAULT_MEMORY_FLUSH_PROMPT,
     )?.[0] as EmbeddedPiAgentParams | undefined;
 
-    expect(flushCall?.enforceFinalTag).toBe(true);
+    // enforceFinalTag is not auto-set for memory flush; it comes from run config
+    expect(flushCall?.enforceFinalTag).toBeFalsy();
   });
 });

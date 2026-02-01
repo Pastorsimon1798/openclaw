@@ -6,7 +6,6 @@ import type { ReplyPayload } from "../types.js";
 import type { FollowupRun } from "./queue.js";
 import { getChannelDock } from "../../channels/dock.js";
 import { normalizeAnyChannelId, normalizeChannelId } from "../../channels/registry.js";
-import { isReasoningTagProvider } from "../../utils/provider-utils.js";
 import { estimateUsageCost, formatTokenCount, formatUsd } from "../../utils/usage-format.js";
 
 const BUN_FETCH_SOCKET_ERROR_RE = /socket connection was closed unexpectedly/i;

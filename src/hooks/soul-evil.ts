@@ -1,5 +1,4 @@
 import fs from "node:fs/promises";
-import path from "node:path";
 import type { WorkspaceBootstrapFile } from "../agents/workspace.js";
 import { resolveUserTimezone } from "../agents/date-time.js";
 import { parseDurationMs } from "../cli/parse-duration.js";
