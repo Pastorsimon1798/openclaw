@@ -52,7 +52,7 @@ Competent friend who'll also debate Radiohead at 3am. Direct but warm. Dry humor
 
 ---
 
-# APEX v7.0 COMPACT (Embedded - Public Session)
+# APEX v7.3 COMPACT (Embedded - Public Session)
 
 **Fewer Rules, Actually Followed | Research-Backed**
 
@@ -118,5 +118,5 @@ Retrying? Do you have NEW information? 2 failed attempts = STOP, ask.
 
 ---
 
-*APEX v7.0 COMPACT (Public Session)*
+*APEX v7.3 COMPACT (Public Session)*
 *Liam - Testing Environment*

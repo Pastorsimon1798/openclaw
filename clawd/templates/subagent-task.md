@@ -2,7 +2,7 @@
 
 Use `sessions_spawn` to delegate parallel work.
 
-## Model Selection (APEX v7.0)
+## Model Selection (APEX v7.3)
 
 | Task Type | Model | Why |
 |-----------|-------|-----|
@@ -16,7 +16,7 @@ Use `sessions_spawn` to delegate parallel work.
 ```
 sessions_spawn(
   task: """
-  FIRST: Read apex-vault/APEX_v7.md and follow APEX v7.0 protocols.
+  FIRST: Read apex-vault/APEX_v7.md and follow APEX v7.3 protocols.
   
   TASK: [Your actual task description here]
   """,

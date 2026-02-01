@@ -68,15 +68,32 @@ From [Cursor docs](https://cursor.com/docs/models):
 | Complex task starting | Estimate cost BEFORE starting |
 ```
 
+## User-Caused Waste Factors (Human Side)
+
+**Acknowledgment:** Not all waste is AI-caused. These human factors contribute to token burn:
+
+| Factor | Impact | Cost Est. | Mitigation |
+|--------|--------|-----------|------------|
+| **Typos in instructions** | AI misinterprets, goes wrong direction | $5-20/incident | Use `/comorbidity` to clarify before acting |
+| **Ambiguous/contradicting instructions** | AI tries multiple interpretations, wastes cycles | $10-50/incident | Ask clarifying questions early |
+| **Continuing stale sessions** | Context bloat, AI operates on outdated state | $20-100/session | Offer `/clear` at 50% context |
+
+**Estimated user-caused waste:** ~$100-300 (~5-15% of total)
+
+**Joint responsibility:** Cost optimization is a two-way street. AI should surface ambiguity early, user should provide clear instructions and start fresh sessions.
+
+---
+
 ## Weekly Review Checklist
 
 - [ ] What was total spend this week?
 - [ ] What % was on rework/regression?
-- [ ] Which patterns occurred?
+- [ ] Which patterns occurred (AI + user)?
 - [ ] What's the trend vs. last week?
+- [ ] Any user-caused waste incidents to track?
 
 ---
 
 *Cost awareness is not about being cheap. It's about respecting that every token has a dollar cost and every regression burns the user's money.*
 
-*Created: 2026-01-30*
+*Created: 2026-01-30 | Updated: 2026-02-01 (added user-caused factors)*

@@ -92,6 +92,35 @@
 - **Persistence Fix**: Sessions must be "anchored" to disk immediately on creation. Lazy header creation causes data loss on crash if no messages were sent yet.
 - **Privacy Gap**: Inbound media (voice recordings) are UUID-indexed but not session-linked. This means `/forget` cannot currently delete them automatically. Future work needed to link media to sessions.
 
+### Git Security - CRITICAL (2026-02-01 Incident)
+**This is a MORAL IMPERATIVE after the API key exposure incident.**
+
+The 2026-02-01 incident happened because an agent branched from local `main` (113 commits ahead with secrets) when contributing to upstream openclaw/openclaw. All secrets were exposed in PR #6088.
+
+**7-Layer Safe Commit System now implemented:**
+1. **Layer 1**: `git-hooks/pre-commit` - Scans for secrets with ggshield
+2. **Layer 2**: `git-hooks/pre-push` - Warns about public repos, scans commits
+3. **Layer 3**: `scripts/committer` - Shows diff, requires confirmation
+4. **Layer 4**: `scripts/safe-push` - Maximum security checks before push
+5. **Layer 5**: `.gitignore` - Excludes `.openclaw/`, `client_secret.json`, etc.
+6. **Layer 6**: `.gitguardian.yaml` - Suppresses false positives
+7. **Layer 7**: These rules (in SELF-NOTES.md)
+
+**NEVER:**
+- Push without running secret scan
+- Branch from local `main` when contributing to upstream
+- Push more than 10 commits without reviewing each one
+- Use `git push` directly for public repos — use `scripts/safe-push` instead
+
+**ALWAYS:**
+- Use `scripts/safe-push` for any push to public repos
+- Create contribution branches from `upstream/main` (not local `main`)
+- Run `uvx ggshield secret scan pre-commit` before committing sensitive areas
+- Review `git diff --stat` before any push
+- When contributing to open source: cherry-pick ONLY the fix commits
+
+**If you see "WARNING: X commits ahead of upstream"** — STOP and verify you're not about to push local-only content.
+
 ## Mistakes to Avoid
 
 - Don't write to `/mnt/c/Users/Simon/` — only my home directory

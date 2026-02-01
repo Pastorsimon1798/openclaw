@@ -310,7 +310,7 @@ I can spawn subagents for:
 | `vision` | ollama/qwen3-vl:4b | Image analysis |
 | `ocr` | ollama/deepseek-ocr | Text extraction from images/PDFs |
 
-**Subagent Model Selection (APEX v7.1):**
+**Subagent Model Selection (APEX v7.3):**
 - **Coding tasks** → `dev` (Devstral-2): Fastest, no thinking - use explicit checkpoints
 - **Research tasks** → `kimi` (Kimi K2.5): Native swarm auto-orchestrates
 - **Quality reviews** → `deep` (GLM-4.7): Best reasoning, catches errors
