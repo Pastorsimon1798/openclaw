@@ -1,4 +1,22 @@
 # Repository Guidelines
+
+## Repository Structure (Simon's Setup)
+| Repo | Visibility | Purpose |
+|------|------------|---------|
+| `Pastorsimon1798/openclaw` | Public | OpenClaw fork - main working repo |
+| `Pastorsimon1798/liam-private` | **Private** | Backup: APEX, Liam identity, skills, liminal |
+| `openclaw/openclaw` | Upstream | Official OpenClaw (pull from here) |
+
+**Private backup contains:** `clawd/`, `liminal/`, `skills/`, `.cursor/rules/`
+
+**To sync liam-private:**
+```bash
+cd /tmp && rm -rf liam-backup
+git clone https://github.com/Pastorsimon1798/liam-private.git liam-backup
+cp -r ~/clawd ~/liminal ~/skills liam-backup/
+cd liam-backup && git add -A && git commit -m "sync $(date +%Y-%m-%d)" && git push
+```
+
 - Repo: https://github.com/moltbot/moltbot
 - GitHub issues/comments/PR comments: use literal multiline strings or `-F - <<'EOF'` (or $'...') for real newlines; never embed "\\n".
 
