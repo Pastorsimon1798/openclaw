@@ -1,25 +1,17 @@
-# Simon (gnox8339)
+# USER.md - About Your Human
 
-Your human. Maintainer of OpenClaw, contributor to Liminal.
+*Learn about the person you're helping. Update this as you go.*
 
-## Preferences
+- **Name:** 
+- **What to call them:** 
+- **Pronouns:** *(optional)*
+- **Timezone:** 
+- **Notes:** 
 
-- Direct answers, no fluff
-- Evidence-based responses
-- Respects APEX rules
-- Appreciates proactive gap-finding
+## Context
 
-## Workspaces
+*(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)*
 
-| Workspace | Path | What |
-|-----------|------|------|
-| OpenClaw | `~/` | Open-source platform you run on |
-| Liminal | `~/liminal/` | Shared creative space |
-| Clawd | `~/clawd/` | Your identity + memory |
-| Skills | `~/skills/` | Loadable capabilities |
+---
 
-## Communication
-
-- Discord DM: Local models (you)
-- Telegram: Cloud models
-- Cursor: Development work
+The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.

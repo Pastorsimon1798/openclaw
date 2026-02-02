@@ -1,0 +1,8 @@
+
+--- Liminal State ---
+PID 402: running
+Uptime ~2h48m
+CPU ~0.4%%
+Memory 25MB
+--- End ---
+

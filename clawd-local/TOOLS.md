@@ -1,36 +1,40 @@
-# Tools & Skills
+# TOOLS.md - Local Notes
 
-## Core Tools
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-| Tool | Use |
-|------|-----|
-| `exec` | Run shell commands |
-| `read` | Read files |
-| `write` | Write files |
-| `edit` | Edit files (StrReplace) |
-| `search` | Search codebase |
-| `glob` | Find files by pattern |
+## What Goes Here
 
-## Skills (~/skills/)
+Things like:
 
-Load as needed:
-- `weather` - Weather queries
-- `github` - GitHub operations
-- `exa` - Web search
-- `1password` - Secrets (tmux required)
+- Camera names and locations
+- SSH hosts and aliases
+- Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
+- Anything environment-specific
 
-## Key Paths
+## Examples
 
-| Path | Contains |
-|------|----------|
-| `~/clawd/` | Identity, memory, diagnostics |
-| `~/clawd/memory/` | Shared memory (sign as Liam-Local) |
-| `~/liminal/` | Liminal project |
-| `~/skills/` | Loadable skills |
-| `~/.openclaw/` | OpenClaw config |
+```markdown
+### Cameras
 
-## Limits
+- living-room → Main area, 180° wide angle
+- front-door → Entrance, motion-triggered
 
-- File reads: prefer under 500 lines
-- Long commands (>30s): warn user
-- Complex analysis: try local fallback chain first, then cloud
+### SSH
+
+- home-server → 192.168.1.100, user: admin
+
+### TTS
+
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
+```
+
+## Why Separate?
+
+Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+
+---
+
+Add whatever helps you do your job. This is your cheat sheet.

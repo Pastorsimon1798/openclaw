@@ -1,0 +1,14 @@
+# Random Seed Numbers for Liminal Art Prompts
+
+This file contains ten randomly generated 4‑digit numbers that can be fed as seed values to Liminal’s art generation module.
+
+To generate a new set, run:
+
+```sh
+shuf -i 1000-9999 -n 10 > /home/liam/liminal/seed_numbers.txt
+```
+
+You can use these numbers directly as seeds for the visual prompt generator, e.g., `seed=1234`.
+
+---
+*Generated automatically on 2026-02-02.*

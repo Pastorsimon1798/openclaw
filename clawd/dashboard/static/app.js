@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchSkillData();
     setupFilterButtons();
     setupKeyboardShortcuts();
-    setupCaptureInput();
+    // setupCaptureInput(); // Function not implemented - commented out
     void connectActivityStream(); // Connect to gateway WebSocket for live activity
 
     // Auto-refresh
@@ -75,14 +75,19 @@ async function fetchSkillData() {
 function updateDashboard(data) {
     // Timestamp
     const ts = new Date(data.timestamp);
-    document.getElementById('timestamp').textContent = ts.toLocaleTimeString();
+    const tsEl = document.getElementById('timestamp') || document.getElementById('timestamp-badge');
+    if (tsEl) tsEl.textContent = ts.toLocaleTimeString();
 
     // Gateway status
-    const statusEl = document.getElementById('gateway-status');
-    const dot = statusEl.querySelector('.status-dot');
-    const text = statusEl.querySelector('.status-text');
-    dot.className = `status-dot ${data.gateway.status}`;
-    text.textContent = data.gateway.status.toUpperCase();
+    const statusEl = document.getElementById('gateway-status') || document.getElementById('gateway-status-badge');
+    if (statusEl) {
+        const dot = statusEl.querySelector('.status-dot');
+        const text = statusEl.querySelector('.status-text');
+        if (dot) dot.className = `status-dot ${data.gateway.status}`;
+        if (text) text.textContent = data.gateway.status.toUpperCase();
+        // Fallback if no children
+        if (!dot && !text) statusEl.textContent = data.gateway.status.toUpperCase();
+    }
 
     // Metrics
     updateMetric('cpu', data.resources.cpu_percent);
@@ -104,14 +109,16 @@ function updateMetric(name, value) {
     const valueEl = document.getElementById(`${name}-value`);
     const barEl = document.getElementById(`${name}-bar`);
 
-    valueEl.textContent = `${value}%`;
-    barEl.style.width = `${value}%`;
+    if (valueEl) valueEl.textContent = `${value}%`;
+    if (barEl) {
+        barEl.style.width = `${value}%`;
 
-    // Color coding
-    barEl.className = 'metric-fill';
-    if (value >= 80) barEl.classList.add('high');
-    else if (value >= 50) barEl.classList.add('medium');
-    else barEl.classList.add('low');
+        // Color coding
+        barEl.className = 'metric-fill';
+        if (value >= 80) barEl.classList.add('high');
+        else if (value >= 50) barEl.classList.add('medium');
+        else barEl.classList.add('low');
+    }
 }
 
 // === SESSIONS TABLE ===

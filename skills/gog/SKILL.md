@@ -36,6 +36,12 @@ Common commands
 
 - Gmail search: `gog gmail search 'newer_than:7d' --max 10`
 - Gmail messages search (per email, ignores threading): `gog gmail messages search "in:inbox from:ryanair.com" --max 20 --account you@example.com`
+- Gmail get full message: `gog gmail get <messageId> --account you@example.com` (returns full body + attachments)
+
+**Read Email Workflow:**
+1. Search: `gog gmail messages search "in:inbox" --max 5 --account you@example.com` → get message IDs
+2. Get full content: `gog gmail get <messageId> --account you@example.com` → returns body, attachments
+3. Download attachment: attachments are auto-extracted, check output for file paths
 - Gmail send (plain): `gog gmail send --to a@b.com --subject "Hi" --body "Hello"`
 - Gmail send (multi-line): `gog gmail send --to a@b.com --subject "Hi" --body-file ./message.txt`
 - Gmail send (stdin): `gog gmail send --to a@b.com --subject "Hi" --body-file -`

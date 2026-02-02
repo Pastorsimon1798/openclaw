@@ -3,10 +3,10 @@
   "safe_name": "slow-ai",
   "url": "https://theslowai.substack.com",
   "platform": "substack",
-  "created_at": "2026-01-30T22:02:44.150738",
+  "created_at": "2026-02-02T10:01:00.693980",
   "status": "active",
-  "last_harvest": "2026-01-30T22:02:44.150752",
-  "archive_count": 0,
+  "last_harvest": "2026-02-02T10:01:00.693989",
+  "archive_count": 1,
   "topic": "AI Implementation, Practical AI",
   "priority": "high",
   "frequency": "weekly"
