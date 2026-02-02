@@ -1,6 +1,7 @@
 import type { WebClient as SlackWebClient } from "@slack/web-api";
 import type { FetchLike } from "../../media/fetch.js";
 import type { SlackFile } from "../types.js";
+import { isBlockedHostname, isPrivateIpAddress } from "../../infra/net/ssrf.js";
 import { fetchRemoteMedia } from "../../media/fetch.js";
 import { saveMediaBuffer } from "../../media/store.js";
 
@@ -29,11 +30,21 @@ export async function fetchWithSlackAuth(url: string, token: string): Promise<Re
   }
 
   // Resolve relative URLs against the original
-  const resolvedUrl = new URL(redirectUrl, url).toString();
+  const resolvedUrl = new URL(redirectUrl, url);
+
+  // Security: Validate redirect target to prevent SSRF
+  // Attackers could potentially craft URLs that redirect to internal services
+  const redirectHost = resolvedUrl.hostname.toLowerCase();
+  if (isBlockedHostname(redirectHost)) {
+    throw new Error(`Blocked redirect to internal hostname: ${redirectHost}`);
+  }
+  if (isPrivateIpAddress(redirectHost)) {
+    throw new Error(`Blocked redirect to private IP: ${redirectHost}`);
+  }
 
   // Follow the redirect without the Authorization header
   // (Slack's CDN URLs are pre-signed and don't need it)
-  return fetch(resolvedUrl, { redirect: "follow" });
+  return fetch(resolvedUrl.toString(), { redirect: "follow" });
 }
 
 export async function resolveSlackMedia(params: {

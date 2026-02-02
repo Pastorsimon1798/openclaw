@@ -280,12 +280,16 @@ describe("browser tool snapshot labels", () => {
     expect(toolCommonMocks.imageResultFromFile).toHaveBeenCalledWith(
       expect.objectContaining({
         path: "/tmp/snap.png",
-        extraText: "label text",
+        extraText: expect.stringContaining("label text"),
       }),
     );
     expect(result).toEqual(imageResult);
     expect(result?.content).toHaveLength(2);
-    expect(result?.content?.[0]).toMatchObject({ type: "text", text: "label text" });
+    // Security: browser content is now wrapped with external content warnings
+    expect(result?.content?.[0]).toMatchObject({
+      type: "text",
+      text: expect.stringContaining("label text"),
+    });
     expect(result?.content?.[1]).toMatchObject({ type: "image" });
   });
 });

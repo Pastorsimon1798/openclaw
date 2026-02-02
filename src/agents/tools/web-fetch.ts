@@ -5,9 +5,12 @@ import type { AnyAgentTool } from "./common.js";
 import {
   closeDispatcher,
   createPinnedDispatcher,
+  isBlockedHostname,
+  isPrivateIpAddress,
   resolvePinnedHostname,
   SsrFBlockedError,
 } from "../../infra/net/ssrf.js";
+import { wrapExternalContent } from "../../security/external-content.js";
 import { stringEnum } from "../schema/typebox.js";
 import { jsonResult, readNumberParam, readStringParam } from "./common.js";
 import {
@@ -586,6 +589,17 @@ function resolveFirecrawlEndpoint(baseUrl: string): string {
   }
   try {
     const url = new URL(trimmed);
+    // Security: Validate Firecrawl base URL to prevent SSRF
+    // Attackers could set firecrawl.baseUrl to internal services
+    const hostname = url.hostname.toLowerCase();
+    if (isBlockedHostname(hostname)) {
+      console.warn(`[security] Firecrawl baseUrl blocked (hostname): ${hostname}`);
+      return `${DEFAULT_FIRECRAWL_BASE_URL}/v2/scrape`;
+    }
+    if (isPrivateIpAddress(hostname)) {
+      console.warn(`[security] Firecrawl baseUrl blocked (private IP): ${hostname}`);
+      return `${DEFAULT_FIRECRAWL_BASE_URL}/v2/scrape`;
+    }
     if (url.pathname && url.pathname !== "/") {
       return url.toString();
     }
@@ -647,7 +661,18 @@ export function createWebFetchTool(options?: {
         firecrawlStoreInCache: true,
         firecrawlTimeoutSeconds,
       });
-      return jsonResult(result);
+      // Security: Wrap external web content to prevent indirect prompt injection
+      const text = typeof result.text === "string" ? result.text : "";
+      const finalUrl = typeof result.finalUrl === "string" ? result.finalUrl : url;
+      const wrappedResult = {
+        ...result,
+        text: wrapExternalContent(text, {
+          source: "api",
+          sender: finalUrl,
+          includeWarning: true,
+        }),
+      };
+      return jsonResult(wrappedResult);
     },
   };
 }

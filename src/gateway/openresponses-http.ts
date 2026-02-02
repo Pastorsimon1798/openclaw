@@ -34,6 +34,7 @@ import {
   type InputImageSource,
 } from "../media/input-files.js";
 import { defaultRuntime } from "../runtime.js";
+import { detectSuspiciousPatterns } from "../security/external-content.js";
 import { authorizeGatewayConnect, type ResolvedGatewayAuth } from "./auth.js";
 import {
   readJsonBodyOrError,
@@ -483,6 +484,15 @@ export async function handleOpenResponsesHttpRequest(
   const toolChoiceContext = toolChoicePrompt?.trim();
 
   // Handle instructions + file context as extra system prompt
+  // Security: Detect potential prompt injection attempts in user-provided instructions
+  if (payload.instructions) {
+    const suspiciousPatterns = detectSuspiciousPatterns(payload.instructions);
+    if (suspiciousPatterns.length > 0) {
+      console.warn(
+        `[security] Suspicious patterns detected in API instructions (sessionKey=${sessionKey}): ${suspiciousPatterns.join(", ")}`,
+      );
+    }
+  }
   const extraSystemPrompt = [
     payload.instructions,
     prompt.extraSystemPrompt,

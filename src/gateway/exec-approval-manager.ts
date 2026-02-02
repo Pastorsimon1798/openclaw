@@ -66,11 +66,16 @@ export class ExecApprovalManager {
     if (!pending) {
       return false;
     }
+    // Security: Atomic delete BEFORE side effects to prevent double-resolve race
+    // If another call already deleted this entry, we lose the race and return false
+    const deleted = this.pending.delete(recordId);
+    if (!deleted) {
+      return false;
+    }
     clearTimeout(pending.timer);
     pending.record.resolvedAtMs = Date.now();
     pending.record.decision = decision;
     pending.record.resolvedBy = resolvedBy ?? null;
-    this.pending.delete(recordId);
     pending.resolve(decision);
     return true;
   }

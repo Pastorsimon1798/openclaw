@@ -23,6 +23,7 @@ import { resolveBrowserConfig } from "../../browser/config.js";
 import { DEFAULT_AI_SNAPSHOT_MAX_CHARS } from "../../browser/constants.js";
 import { loadConfig } from "../../config/config.js";
 import { saveMediaBuffer } from "../../media/store.js";
+import { wrapExternalContent } from "../../security/external-content.js";
 import { BrowserToolSchema } from "./browser-tool.schema.js";
 import { type AnyAgentTool, imageResultFromFile, jsonResult, readStringParam } from "./common.js";
 import { callGatewayTool } from "./gateway.js";
@@ -495,16 +496,23 @@ export function createBrowserTool(opts?: {
                 profile,
               });
           if (snapshot.format === "ai") {
+            // Security: Wrap browser content to prevent indirect prompt injection
+            // Malicious web pages could contain instructions that hijack the agent
+            const wrappedSnapshot = wrapExternalContent(snapshot.snapshot, {
+              source: "api",
+              sender: snapshot.url ?? "browser",
+              includeWarning: true,
+            });
             if (labels && snapshot.imagePath) {
               return await imageResultFromFile({
                 label: "browser:snapshot",
                 path: snapshot.imagePath,
-                extraText: snapshot.snapshot,
+                extraText: wrappedSnapshot,
                 details: snapshot,
               });
             }
             return {
-              content: [{ type: "text", text: snapshot.snapshot }],
+              content: [{ type: "text", text: wrappedSnapshot }],
               details: snapshot,
             };
           }

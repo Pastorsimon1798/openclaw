@@ -194,7 +194,7 @@ async function saveSessionStoreUnlocked(
   storePath: string,
   store: Record<string, SessionEntry>,
 ): Promise<void> {
-  // Invalidate cache on write to ensure consistency
+  // Invalidate cache at START to prevent using data cached before this write
   invalidateSessionStoreCache(storePath);
 
   normalizeSessionStore(store);
@@ -207,6 +207,8 @@ async function saveSessionStoreUnlocked(
   if (process.platform === "win32") {
     try {
       await fs.promises.writeFile(storePath, json, "utf-8");
+      // Invalidate cache AFTER write to prevent stale reads
+      invalidateSessionStoreCache(storePath);
     } catch (err) {
       const code =
         err && typeof err === "object" && "code" in err
@@ -226,6 +228,8 @@ async function saveSessionStoreUnlocked(
     await fs.promises.rename(tmp, storePath);
     // Ensure permissions are set even if rename loses them
     await fs.promises.chmod(storePath, 0o600);
+    // Invalidate cache AFTER write to prevent stale reads
+    invalidateSessionStoreCache(storePath);
   } catch (err) {
     const code =
       err && typeof err === "object" && "code" in err
@@ -239,6 +243,8 @@ async function saveSessionStoreUnlocked(
         await fs.promises.mkdir(path.dirname(storePath), { recursive: true });
         await fs.promises.writeFile(storePath, json, { mode: 0o600, encoding: "utf-8" });
         await fs.promises.chmod(storePath, 0o600);
+        // Invalidate cache AFTER write to prevent stale reads
+        invalidateSessionStoreCache(storePath);
       } catch (err2) {
         const code2 =
           err2 && typeof err2 === "object" && "code" in err2

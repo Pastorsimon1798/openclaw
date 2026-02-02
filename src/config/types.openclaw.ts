@@ -40,6 +40,21 @@ export type PrivacyConfig = {
   };
 };
 
+/**
+ * Budget configuration for cost control (Denial of Wallet prevention).
+ * When limits are exceeded, the agent logs warnings or stops processing.
+ */
+export type BudgetConfig = {
+  /** Daily spending limit in USD. Agent warns when exceeded. */
+  dailyLimitUsd?: number;
+  /** Per-session spending limit in USD. Agent warns when exceeded. */
+  sessionLimitUsd?: number;
+  /** Alert threshold as percentage of limit (0-100). Default: 80. */
+  alertThresholdPct?: number;
+  /** Action when limit exceeded: "warn" (log only) or "stop" (refuse requests). Default: "warn". */
+  actionOnExceed?: "warn" | "stop";
+};
+
 export type OpenClawConfig = {
   meta?: {
     /** Last OpenClaw version that wrote this config. */
@@ -98,6 +113,8 @@ export type OpenClawConfig = {
   nodeHost?: NodeHostConfig;
   agents?: AgentsConfig;
   tools?: ToolsConfig;
+  /** Budget limits to prevent Denial of Wallet attacks. */
+  budget?: BudgetConfig;
   bindings?: AgentBinding[];
   broadcast?: BroadcastConfig;
   audio?: AudioConfig;

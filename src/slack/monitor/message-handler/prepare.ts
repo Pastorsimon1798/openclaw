@@ -36,6 +36,7 @@ import { buildPairingReply } from "../../../pairing/pairing-messages.js";
 import { upsertChannelPairingRequest } from "../../../pairing/pairing-store.js";
 import { resolveAgentRoute } from "../../../routing/resolve-route.js";
 import { resolveThreadSessionKeys } from "../../../routing/session-key.js";
+import { detectSuspiciousPatterns } from "../../../security/external-content.js";
 import { reactSlackMessage } from "../../actions.js";
 import { sendMessageSlack } from "../../send.js";
 import { resolveSlackThreadContext } from "../../threading.js";
@@ -444,6 +445,15 @@ export async function prepareSlackMessage(params: {
     .filter((entry): entry is string => Boolean(entry))
     .filter((entry, index, list) => list.indexOf(entry) === index)
     .join("\n");
+  // Security: Detect suspicious patterns in channel topics/purposes (set by Slack users)
+  if (channelDescription) {
+    const suspiciousPatterns = detectSuspiciousPatterns(channelDescription);
+    if (suspiciousPatterns.length > 0) {
+      console.warn(
+        `[security] Suspicious patterns in Slack channel description (channel=${message.channel}): ${suspiciousPatterns.join(", ")}`,
+      );
+    }
+  }
   const systemPromptParts = [
     channelDescription ? `Channel description: ${channelDescription}` : null,
     channelConfig?.systemPrompt?.trim() || null,

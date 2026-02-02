@@ -28,6 +28,7 @@ import { readSessionUpdatedAt, resolveStorePath } from "../../config/sessions.js
 import { danger, logVerbose, shouldLogVerbose } from "../../globals.js";
 import { buildAgentSessionKey } from "../../routing/resolve-route.js";
 import { resolveThreadSessionKeys } from "../../routing/session-key.js";
+import { detectSuspiciousPatterns } from "../../security/external-content.js";
 import { truncateUtf16Safe } from "../../utils.js";
 import { reactMessageDiscord, removeReactionDiscord } from "../send.js";
 import { normalizeDiscordSlug } from "./allow-list.js";
@@ -138,6 +139,15 @@ export async function processDiscordMessage(ctx: DiscordMessagePreflightContext)
   const groupChannel = isGuildMessage && displayChannelSlug ? `#${displayChannelSlug}` : undefined;
   const groupSubject = isDirectMessage ? undefined : groupChannel;
   const channelDescription = channelInfo?.topic?.trim();
+  // Security: Detect suspicious patterns in channel topics (set by Discord users)
+  if (channelDescription) {
+    const suspiciousPatterns = detectSuspiciousPatterns(channelDescription);
+    if (suspiciousPatterns.length > 0) {
+      console.warn(
+        `[security] Suspicious patterns in Discord channel topic (channel=${channelInfo?.name || message.channelId}): ${suspiciousPatterns.join(", ")}`,
+      );
+    }
+  }
   const senderName = sender.isPluralKit
     ? (sender.name ?? author.username)
     : (data.member?.nickname ?? author.globalName ?? author.username);

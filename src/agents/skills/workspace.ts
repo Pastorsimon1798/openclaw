@@ -14,6 +14,7 @@ import type {
   SkillSnapshot,
 } from "./types.js";
 import { createSubsystemLogger } from "../../logging/subsystem.js";
+import { detectSuspiciousPatterns } from "../../security/external-content.js";
 import { CONFIG_DIR, resolveUserPath } from "../../utils.js";
 import { resolveBundledSkillsDir } from "./bundled-dir.js";
 import { shouldIncludeSkill } from "./config.js";
@@ -174,6 +175,14 @@ function loadSkillEntries(
     let frontmatter: ParsedSkillFrontmatter = {};
     try {
       const raw = fs.readFileSync(skill.filePath, "utf-8");
+      // Security: Detect suspicious patterns in skill files
+      // Attackers could inject malicious instructions via skill files
+      const suspiciousPatterns = detectSuspiciousPatterns(raw);
+      if (suspiciousPatterns.length > 0) {
+        skillsLogger.warn?.(
+          `Suspicious patterns in skill file ${skill.filePath}: ${suspiciousPatterns.join(", ")}`,
+        );
+      }
       frontmatter = parseFrontmatter(raw);
     } catch {
       // ignore malformed skills
