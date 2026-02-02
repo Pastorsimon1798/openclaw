@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupFilterButtons();
     setupKeyboardShortcuts();
     setupCaptureInput();
-    connectActivityStream(); // Connect to gateway WebSocket for live activity
+    void connectActivityStream(); // Connect to gateway WebSocket for live activity
 
     // Auto-refresh
     setInterval(fetchData, REFRESH_INTERVAL);

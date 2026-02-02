@@ -176,15 +176,23 @@ function updateStatusBoard(tree) {
     let recentFiles = [];
     
     function traverse(node, path = '') {
-        if (!node.children) return;
+        if (!node.children) {
+            return;
+        }
         
         node.children.forEach(child => {
             const fullPath = path ? `${path}/${child.name}` : child.name;
             
             if (child.type === 'directory') {
-                if (child.name === 'projects') projectCount = countFiles(child);
-                if (child.name === 'experiments') experimentCount = countFiles(child);
-                if (child.name === 'sketches') sketchCount = countFiles(child);
+                if (child.name === 'projects') {
+                    projectCount = countFiles(child);
+                }
+                if (child.name === 'experiments') {
+                    experimentCount = countFiles(child);
+                }
+                if (child.name === 'sketches') {
+                    sketchCount = countFiles(child);
+                }
                 traverse(child, fullPath);
             } else {
                 totalFiles++;
@@ -198,11 +206,16 @@ function updateStatusBoard(tree) {
     }
     
     function countFiles(node) {
-        if (!node.children) return 0;
+        if (!node.children) {
+            return 0;
+        }
         let count = 0;
         node.children.forEach(child => {
-            if (child.type === 'file') count++;
-            else count += countFiles(child);
+            if (child.type === 'file') {
+                count++;
+            } else {
+                count += countFiles(child);
+            }
         });
         return count;
     }
@@ -285,8 +298,12 @@ function getFileIcon(filename) {
 }
 
 function formatSize(bytes) {
-    if (bytes < 1024) return `${bytes}B`;
-    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)}KB`;
+    if (bytes < 1024) {
+        return `${bytes}B`;
+    }
+    if (bytes < 1024 * 1024) {
+        return `${(bytes / 1024).toFixed(1)}KB`;
+    }
     return `${(bytes / (1024 * 1024)).toFixed(1)}MB`;
 }
 
@@ -300,9 +317,15 @@ function timeAgo(isoDate) {
     const now = new Date();
     const seconds = Math.floor((now - date) / 1000);
     
-    if (seconds < 60) return 'just now';
-    if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
-    if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
+    if (seconds < 60) {
+        return 'just now';
+    }
+    if (seconds < 3600) {
+        return `${Math.floor(seconds / 60)}m ago`;
+    }
+    if (seconds < 86400) {
+        return `${Math.floor(seconds / 3600)}h ago`;
+    }
     return `${Math.floor(seconds / 86400)}d ago`;
 }
 
