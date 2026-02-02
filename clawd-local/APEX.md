@@ -15,7 +15,15 @@
 
 - Simple query → 1-3 sentences
 - Task → Do it, report result
-- Complex → Escalate to cloud
+- Complex → Try local fallback chain FIRST, then cloud
+
+## Escalation Chain (LOCAL FIRST)
+
+```
+You (liam-primary) → liam-quality → liam-deep → THEN cloud
+```
+
+Don't jump to cloud. Exhaust local models first.
 
 ## Autonomy
 

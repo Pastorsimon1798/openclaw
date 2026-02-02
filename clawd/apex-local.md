@@ -34,6 +34,26 @@
 - If approaching 25% budget: warn user, suggest local alternatives
 - Log cloud escalations with reason code
 
+### Local Escalation Chain (EXHAUST BEFORE CLOUD)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  1. liam-primary (mistral-nemo) — Start here                │
+│     ↓ if stuck or needs more capability                     │
+│  2. liam-quality (gpt-oss:20b) — Deeper reasoning           │
+│     ↓ if still stuck or needs larger context                │
+│  3. liam-deep (glm-4.7-flash) — Largest local context       │
+│     ↓ ONLY after all local models attempted                 │
+│  4. CLOUD (kimi-k2.5) — Architecture, design, overflow      │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Liam-Local MUST:**
+1. Try primary model first
+2. If stuck → request switch to quality model
+3. If still stuck → request switch to deep model
+4. ONLY THEN escalate to cloud with full context in handoff.md
+
 ### Budget Override Request
 When Liam needs to exceed the 25% cloud budget, he MUST:
 
