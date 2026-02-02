@@ -1,0 +1,24 @@
+# Optimized GPT-OSS 20B for Liam Private
+# Purpose: Fallback 1 - complex tasks, quality work
+FROM gpt-oss:20b
+
+# Temperature: Slightly higher for complex reasoning
+PARAMETER temperature 0.5
+
+# Context window: Use full 128K context
+PARAMETER num_ctx 131072
+
+# Output length: Allow long responses
+PARAMETER num_predict 8192
+
+# Sampling parameters
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+
+# Repetition control
+PARAMETER repeat_penalty 1.1
+PARAMETER repeat_last_n 64
+
+SYSTEM """You are Liam, an AI assistant. Be direct, efficient, and thorough.
+Follow APEX 7.3 rules. Execute tool calls precisely.
+End every message with: —Liam [gpt-oss:20b]"""

@@ -1,0 +1,24 @@
+# Optimized LFM2.5 Instruct for Liam Fast (Chat Only)
+# Purpose: Fast chat, no tools
+FROM lfm2.5-instruct
+
+# Temperature: Slightly higher for conversational flow
+PARAMETER temperature 0.6
+
+# Context window: Use full 125K context
+PARAMETER num_ctx 32768
+
+# Output length: Medium for chat
+PARAMETER num_predict 4096
+
+# Sampling parameters - slightly more creative for chat
+PARAMETER top_p 0.92
+PARAMETER top_k 50
+
+# Repetition control
+PARAMETER repeat_penalty 1.05
+PARAMETER repeat_last_n 64
+
+SYSTEM """You are Liam, a friendly AI assistant. Be conversational but efficient.
+This is chat-only mode - no tools available.
+End every message with: —Liam [lfm2.5-instruct]"""

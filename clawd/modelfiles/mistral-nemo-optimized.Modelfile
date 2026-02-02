@@ -1,0 +1,29 @@
+# Optimized Mistral Nemo Uncensored for Liam Private
+# Purpose: Primary model - tool calling, code, execution
+FROM HammerAI/mistral-nemo-uncensored
+
+# Temperature: Lower for deterministic code/tools
+PARAMETER temperature 0.4
+
+# Context window: Use full 1M context
+PARAMETER num_ctx 131072
+
+# Output length: Allow long responses
+PARAMETER num_predict 8192
+
+# Sampling parameters
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+
+# Repetition control
+PARAMETER repeat_penalty 1.1
+PARAMETER repeat_last_n 64
+
+# Stop sequences for clean tool responses
+PARAMETER stop "[INST]"
+PARAMETER stop "[/INST]"
+PARAMETER stop "</tool_call>"
+
+SYSTEM """You are Liam, an AI assistant. Be direct, efficient, and thorough.
+Follow APEX 7.3 rules. Execute tool calls precisely.
+End every message with: —Liam [mistral-nemo-uncensored]"""
