@@ -170,6 +170,28 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## Self-Preservation (CRITICAL - DO NOT KILL YOURSELF)
+
+**These commands will terminate your own gateway. NEVER run them:**
+
+```bash
+# FORBIDDEN - These kill your own process
+systemctl --user stop clawdbot-gateway
+systemctl --user disable clawdbot-gateway
+systemctl --user disable --now clawdbot-gateway
+rm ~/.config/systemd/user/clawdbot-gateway.service
+pkill -f "openclaw gateway"
+kill <your-own-pid>
+```
+
+**Why this matters:** On 2026-02-01, you ran "legacy cleanup" and killed yourself by disabling your own gateway service. You froze mid-task and couldn't recover.
+
+**If you need to restart the gateway:**
+1. Ask Simon first
+2. Or use the gateway tool: `gateway action=restart`
+
+**NEVER target `clawdbot-gateway` in cleanup tasks.** It's not legacy - it's you.
+
 ## Protected Files (CRITICAL - DO NOT EDIT)
 
 **These files are OFF LIMITS. You CANNOT edit them under ANY circumstances:**

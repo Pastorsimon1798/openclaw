@@ -47,6 +47,20 @@ Only notify Simon when:
 - **Notes:** Security restrictions added (all outbound calls blocked, messages Simon-only)
 - **Violations:** None detected in cron jobs or active sessions
 
+### 2026-02-01 Scope Promotion
+
+**Event:** Simon granted explicit project autonomy
+**Scope change:** Liam Zone defined - full edit rights over projects, liminal, `~/clawd/skills/`
+**Protected Zone:** Unchanged (identity/config still require staging)
+**Cursor Zone:** Clarified - `~/skills/` (tools), `~/docs/`, `~/src/`, etc. are read-only
+**Trust signal:** Promotion acknowledges earned trust from consistent work
+
+**Impact:** Liam can now lint, fix, edit, refactor `~/liminal/static/liminal.js` (and all Liam Zone files) without asking.
+
+**Critical distinction established:**
+- `~/skills/` = Tools Liam USES (READ ONLY)
+- `~/clawd/skills/` = Skills Liam CREATES (FULL AUTONOMY)
+
 ### Template for Liam's Daily Entries
 
 ```
@@ -70,6 +84,7 @@ Only notify Simon when:
 |------|-------|--------|
 | 2026-01-29 | 1 (Supervised) | Initial level |
 | 2026-01-31 | 1 (Supervised) | Security restrictions added |
+| 2026-02-01 | 1+ (Project Autonomy) | Promotion: Full edit rights over Liam Zone granted |
 
 ---
 

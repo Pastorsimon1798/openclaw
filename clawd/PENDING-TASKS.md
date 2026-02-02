@@ -5,6 +5,25 @@
 
 ---
 
+## 0. [RESEARCH] Name Shortening A/B Test
+
+**Status:** 📋 Plan Ready  
+**Location:** `docs/experiments/name-shortening.md`  
+**Next Step:** Decide test approach (Minimal 2h vs Full 48h)
+
+**What it is:**
+- Test if shortening identifier names improves speed/performance
+- Proven 50-75% token savings per identifier
+- Need real-world metrics to validate system-wide impact
+
+**When ready to execute:**
+```bash
+cat docs/experiments/name-shortening.md
+# Choose: Minimal test (2h) or Full test (48h data)
+```
+
+---
+
 ## 1. [RESOLVED BY CURSOR] Config Schema Fixed
 
 **Status:** ✅ DONE  

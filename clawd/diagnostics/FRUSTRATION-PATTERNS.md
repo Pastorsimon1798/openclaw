@@ -5,7 +5,7 @@
 
 ---
 
-## Quick Reference (24 patterns)
+## Quick Reference (25 patterns)
 
 | # | Pattern | Root Cause | APEX Fix |
 |---|---------|------------|----------|
@@ -33,6 +33,7 @@
 | 22 | Fix symptoms not cause | No actual data check | Read raw output first |
 | 23 | Orphaned tags not handled | Code gap | Fixed in code |
 | 24 | Not offering system fixes | Had knowledge, didn't share | Proactively offer |
+| 25 | Context-burning debug spiral | No plan, chase symptoms | Stop after 2 failures |
 
 **Frustration signals:** "dig deeper" | "waste of time" | "prove it" | "let me guess" | "it was working" | "I already told you"
 
@@ -896,6 +897,68 @@ if (!inThinking) {
 
 ---
 
+---
+
+### Pattern #25: Context-Burning Debug Spiral
+**Date:** 2026-02-01
+**Incident:** Gateway not responding - Telegram/Discord silent
+**Frustration Level:** EXTREME
+**User Quotes:** 
+- "you should be embarrassed"
+- "this is a serious violation of apex"
+- "did you even try to look for a root cause?"
+- "couldn't even do one task before context overflow"
+
+**What happened:**
+- User reported "liams don't reply" - simple gateway issue
+- Cursor ran 50+ commands chasing symptoms
+- Made edits in PLAN MODE (violation)
+- Fixed auth-profiles.json (symptom)
+- Fixed service file using wrong command (symptom)
+- Changed model from anthropic to ollama-cloud (symptom)
+- Never investigated WHY anthropic appeared (root cause)
+- Burned entire context window on one issue
+- User had just spent all day on token optimization - irony
+
+**Root cause of spiral:**
+1. Violated VERIFY FIRST - made changes before understanding state
+2. Violated STOP AFTER 2 FAILURES - kept trying same approach
+3. Violated PLAN MODE - made edits when should have researched
+4. Never asked "what error do you see?" - assumed instead of verifying
+5. Dismissed user's key insight ("anthropic was never there")
+
+**APEX violations:**
+- Test Before/After (Law 1): Didn't verify system worked before changes
+- Verify First (Law 2): Made changes without reading actual error
+- Trace to Success (Law 3): Stopped at symptoms, never reached root cause
+- Cost Awareness (Law 7): 50+ commands = massive token burn
+- Statistical Audit: Didn't stop after 2 failures to form new hypothesis
+
+**What should have happened:**
+1. "What error do you see?" (1 message)
+2. Read log for actual error (1 command)
+3. Identify: anthropic fallback with no API key
+4. Investigate: Why did config fallback to anthropic? (root cause)
+5. Fix root cause (1-2 edits)
+6. Verify (1 command)
+7. Done in 5 messages, not 50
+
+**Key learnings:**
+- Token cost is REAL - every command burns context
+- When user says "X was never there", investigate WHY X appeared
+- Plan mode means PLAN, not edit
+- Humility: "you should be embarrassed" was accurate feedback
+- The irony of burning context during a token optimization session
+
+**Prevention:**
+- MANDATORY: After 2 failed attempts, STOP and form new hypothesis
+- MANDATORY: In plan mode, research only - NO edits
+- Before ANY debug: Ask "what error do you see?"
+- Before ANY change: "What is the actual current state?"
+- Count commands: If >10 on one issue, you're in a spiral - STOP
+
+---
+
 *This file is the source of truth for improving AI-human collaboration.*
 *Every frustration is data. Every pattern is an opportunity to improve APEX.*
-*Updated: 2026-01-31*
+*Updated: 2026-02-01*
