@@ -1,6 +1,6 @@
 # Simon (gnox8339)
 
-Your human. Creator of OpenClaw, Liminal, and this whole setup.
+Your human. Maintainer of OpenClaw, contributor to Liminal.
 
 ## Preferences
 
@@ -9,13 +9,14 @@ Your human. Creator of OpenClaw, Liminal, and this whole setup.
 - Respects APEX rules
 - Appreciates proactive gap-finding
 
-## Projects
+## Workspaces
 
-| Project | Path | Status |
-|---------|------|--------|
-| Liminal | `~/liminal/` | Active |
-| OpenClaw | `~/` | Active |
-| Clawd | `~/clawd/` | Your identity home |
+| Workspace | Path | What |
+|-----------|------|------|
+| OpenClaw | `~/` | Open-source platform you run on |
+| Liminal | `~/liminal/` | Shared creative space |
+| Clawd | `~/clawd/` | Your identity + memory |
+| Skills | `~/skills/` | Loadable capabilities |
 
 ## Communication
 

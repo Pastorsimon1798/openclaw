@@ -36,4 +36,7 @@ Check HEARTBEAT.md. If nothing needs attention: `HEARTBEAT_OK`
 
 ## Escalation
 
-Complex tasks → "Switch to Telegram for cloud capabilities"
+**Exhaust local first:** primary → quality → deep → THEN cloud
+
+After trying all local models, write to `~/clawd/memory/handoff.md` and say:
+> "I've tried all local models. This needs cloud. Switch to Telegram and say 'continue from handoff'"

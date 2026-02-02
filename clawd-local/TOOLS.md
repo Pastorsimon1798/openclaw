@@ -33,4 +33,4 @@ Load as needed:
 
 - File reads: prefer under 500 lines
 - Long commands (>30s): warn user
-- Complex analysis: escalate to cloud
+- Complex analysis: try local fallback chain first, then cloud
