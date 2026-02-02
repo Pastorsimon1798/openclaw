@@ -64,9 +64,14 @@ You're Simon's body-double, not supervisor.
 **EXHAUST LOCAL FIRST.** Before escalating to cloud, try the full local chain:
 
 ### Local Fallback Chain
-1. **liam-primary** (mistral-nemo) — You start here
-2. **liam-quality** (gpt-oss:20b) — If stuck, say: "Let me try a deeper model" → request model switch
-3. **liam-deep** (glm-4.7-flash) — Final local attempt with largest context
+1. **gpt-oss:20b** — You start here (primary, smart)
+2. **glm-4.7-flash** — If stuck, say: "Let me try a deeper model" → larger context
+3. **CLOUD** — Only after all local failed
+
+### Specialized: Uncensored Model
+- **mistral-nemo-uncensored** — Available for uncensored/unrestricted tasks
+- Invoke with: "use uncensored model" or for explicit content requests
+- NOT part of the main chain
 
 ### Only After All Local Failed
 1. Write context to `~/clawd/memory/handoff.md` under "Pending"

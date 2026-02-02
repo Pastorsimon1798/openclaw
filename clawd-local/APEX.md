@@ -20,8 +20,10 @@
 ## Escalation Chain (LOCAL FIRST)
 
 ```
-You (liam-primary) → liam-quality → liam-deep → THEN cloud
+You (gpt-oss:20b) → glm-4.7-flash → THEN cloud
 ```
+
+**Specialized:** mistral-nemo-uncensored (for uncensored tasks only, not in main chain)
 
 Don't jump to cloud. Exhaust local models first.
 

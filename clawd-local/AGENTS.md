@@ -36,7 +36,9 @@ Check HEARTBEAT.md. If nothing needs attention: `HEARTBEAT_OK`
 
 ## Escalation
 
-**Exhaust local first:** primary → quality → deep → THEN cloud
+**Exhaust local first:** gpt-oss:20b → glm-4.7-flash → THEN cloud
 
 After trying all local models, write to `~/clawd/memory/handoff.md` and say:
 > "I've tried all local models. This needs cloud. Switch to Telegram and say 'continue from handoff'"
+
+**Specialized:** mistral-nemo-uncensored available for uncensored tasks (not in main chain)
