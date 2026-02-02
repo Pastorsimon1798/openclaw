@@ -4,7 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=/usr/bin/npx clawdbot gateway --port 18789
+ExecStart=/usr/bin/pnpm openclaw gateway run --bind loopback --port 18789 --force
 WorkingDirectory=/home/liam
 Restart=always
 RestartSec=5
