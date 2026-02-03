@@ -412,12 +412,32 @@ request (14629 tokens) exceeds the available context size (8192 tokens)
 - LM Studio responds with: **whatever's in memory**
 - The config model name is **cosmetic/display only**
 
-**Workflow:**
+**CRITICAL: JIT Loading Must Be OFF**
+
+LM Studio has "Just-in-time model loading" which changes this behavior:
+- **JIT ON (default):** LM Studio tries to load the exact model requested → loads with DEFAULT settings (4096 context!) → breaks OpenClaw
+- **JIT OFF (required for hot-swap):** LM Studio ignores model ID, serves whatever's loaded
+
+**How to disable JIT:**
+1. LM Studio → Developer tab (or Settings → Server)
+2. Find "Just-in-time model loading"
+3. Turn it **OFF**
+
+**Error you'll see if JIT is ON and wrong model loaded:**
+```
+request (10125 tokens) exceeds the available context size (4096 tokens)
+```
+This happens because JIT loads the requested model with default 4096 context.
+
+**Workflow (with JIT OFF):**
 1. Load any GGUF in LM Studio
-2. Liam-Local immediately uses it
-3. No gateway restart, no config change, session persists
+2. Configure settings: Context 131072, Batch 2048, GPU max
+3. Liam-Local immediately uses it
+4. No gateway restart, no config change, session persists
 
 **Trade-off:** Label accuracy vs. flexibility. Current setup prioritizes flexibility.
+
+**Future improvement:** OpenClaw could query `/v1/models` to detect actual loaded model. See EVOLUTION-QUEUE.md [2026-02-03-001].
 
 ### OpenClaw Tool Restriction (Prompt Optimization)
 
