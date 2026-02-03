@@ -1,6 +1,9 @@
-# APEX Local - Liam Private Model Routing (v1.1)
+# APEX Local - Liam Private Model Routing (v1.5)
 
-**APEX 7.3 compliant local model configuration for Liam Private.**
+**APEX 7.4 compliant local model configuration for Liam Private.**
+
+**Last Benchmarked:** 2026-02-03 (78GB RAM, LM Studio ROCm + Ollama)
+**Session Learnings Added:** 2026-02-03 (LM Studio config, hot-swap, tool optimization)
 
 ---
 
@@ -38,19 +41,35 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  1. liam-primary (mistral-nemo) — Start here                │
-│     ↓ if stuck or needs more capability                     │
-│  2. liam-quality (gpt-oss:20b) — Deeper reasoning           │
-│     ↓ if still stuck or needs larger context                │
-│  3. liam-deep (glm-4.7-flash) — Largest local context       │
+│  1. LM Studio: qwen3-30b-a3b (PRIMARY)                      │
+│     46.7 TPS, 131K context, MoE, GPU-accelerated            │
+│     ↓ if LM Studio down or overloaded                       │
+│  2. LM Studio: qwen3-vl-8b-abliterated (BACKUP)             │
+│     24 TPS, vision + uncensored, GPU-accelerated            │
+│     ↓ if LM Studio unavailable                              │
+│  3. Ollama: liam-quality (gpt-oss:20b)                      │
+│     17 TPS, good quality, CPU-bound                         │
+│     ↓ if quality not enough                                 │
+│  4. Ollama: liam-deep (glm-4.7-flash)                       │
+│     35 TPS, larger context, Claude-like                     │
 │     ↓ ONLY after all local models attempted                 │
-│  4. CLOUD (kimi-k2.5) — Architecture, design, overflow      │
+│  5. CLOUD (kimi-k2.5) — Architecture, design, overflow      │
 └─────────────────────────────────────────────────────────────┘
+
+NOTE: LM Studio hot-swap means primary/backup are interchangeable.
+Load whichever model you want in LM Studio — it serves all requests.
 ```
 
+**Primary Model Details (LM Studio):**
+- **Model:** Qwen3-30B-A3B-Instruct-2507
+- **Server:** http://192.168.1.162:1234 (Windows LM Studio)
+- **VRAM:** ~17GB via GTT (40GB available)
+- **Context:** 64K configured (131K max)
+- **Architecture:** MoE (30B total, ~3B active)
+
 **Liam-Local MUST:**
-1. Try primary model first
-2. If stuck → request switch to quality model
+1. Use LM Studio primary model (fastest, best quality)
+2. If LM Studio unreachable → fallback to Ollama quality
 3. If still stuck → request switch to deep model
 4. ONLY THEN escalate to cloud with full context in handoff.md
 
@@ -74,27 +93,36 @@ When Liam needs to exceed the 25% cloud budget, he MUST:
 
 ---
 
-## Quick Reference
+## Quick Reference (Benchmarked 2026-02-03)
 
-| Alias | Model | Context | Speed | Tools | Use For |
-|-------|-------|---------|-------|-------|---------|
-| `local` | **liam-primary** (optimized) | **1M** | ~9s | YES | **Default - uncensored** |
-| `quality` | **liam-quality** (optimized) | **128K** | ~16s | YES | Complex tasks, fallback |
-| `deep` | **liam-deep** (optimized) | **200K** | ~32s | YES | Large context fallback |
-| `fast` | **liam-fast** (optimized) | 125K | ~2s | NO | Chat only (no tools) |
-| `base-primary` | HammerAI/mistral-nemo-uncensored | 1M | ~9s | YES | Base model (unoptimized) |
-| `base-quality` | gpt-oss:20b | 128K | ~16s | YES | Base fallback |
-| `base-deep` | glm-4.7-flash | 200K | ~32s | YES | Base large context |
-| `vision` | qwen3-vl:4b | 128K | - | NO | Image analysis |
+| Alias | Model | Params | Speed | TPS | Tools | Use For |
+|-------|-------|--------|-------|-----|-------|---------|
+| `liam` | **Qwen3-30B-A3B** (LM Studio) | 30B MoE | **~2s** | **46.7** | YES | **PRIMARY** (GPU) |
+| `backup` | **Qwen3-VL-8B-abliterated** (LM Studio) | 8B | ~4s | **24** | YES | **BACKUP** (Vision+Uncensored) |
+| `quality` | **liam-quality** (gpt-oss:20b) | 20.9B | ~12s | 17 | YES | Fallback 1 (CPU) |
+| `deep` | **liam-deep** (glm-4.7-flash) | 29.9B | ~20s | 35 | YES | Fallback 2 (CPU) |
+| `ultra-fast` | **smollm2:1.7b** | 1.7B | 0.3s | 107 | YES | Quick tasks (Ollama GPU) |
+| `vision` | qwen3-vl:4b | 4.4B | - | - | NO | Image analysis (Ollama) |
 
-**Optimized models have:**
-- Lower temperature (0.4-0.5) for deterministic code/tools
-- Extended num_ctx (131K) for full context usage
-- Higher num_predict (8192) for long outputs
-- Tuned top_p/top_k for balanced sampling
-- Built-in signature system prompt
+**New models tested (2026-02-03):**
+| Model | Params | Speed | TPS | Verdict |
+|-------|--------|-------|-----|---------|
+| phi4-mini | 3.8B | 5.7s | 60 | Good alternative |
+| qwen3:1.7b | 1.7B | 8.8s | 115 | Fast tokens, slow load |
+| devstral-small-2 | 24B | 46.6s | 14 | ❌ Too slow on CPU |
+| qwq:32b | 32B | 129.7s | 10 | ❌ Too slow on CPU |
 
-**Context verified:** 2026-02-02 (via Ollama API)
+**Hardware (updated 2026-02-03):**
+- CPU: AMD Ryzen AI MAX+ 395 (16 cores, 32 threads)
+- RAM: 78GB available to WSL (88GB Windows, 96GB physical)
+- GPU: Radeon 8060S 40 CUs — **NOW UTILIZED via LM Studio ROCm**
+- VRAM: 40GB via GTT (dynamic system RAM allocation)
+- NPU: 50 TOPS XDNA 2 (tested, slower than GPU — not used)
+
+**Winner recommendations:**
+- **PRIMARY:** Qwen3-30B-A3B (LM Studio) — 46.7 TPS, best quality+speed
+- **Fallback 1:** liam-quality (Ollama CPU) — reliable backup
+- **Fallback 2:** liam-deep (Ollama CPU) — when quality > speed
 
 ---
 
@@ -351,8 +379,120 @@ This enables:
 
 ---
 
-*APEX Local v1.3 - Updated 2026-02-02*
-*Primary: HammerAI/mistral-nemo-uncensored (uncensored, 1M context, tools)*
-*Fallbacks: gpt-oss:20b, glm-4.7-flash*
+## Session Learnings (2026-02-02/03)
+
+### LM Studio Configuration (CRITICAL)
+
+| Setting | Default | Required | Why |
+|---------|---------|----------|-----|
+| **Context Length** | 8192 | **131072** | OpenClaw system prompt is ~14.6K tokens; 8K causes "exceeds context" errors |
+| **Evaluation Batch Size** | 512 | **2048** | Dramatically improves Time-to-First-Token (TTFT) |
+| **GPU Offload** | varies | **MAX** | Use all available VRAM via GTT |
+| **CPU Thread Pool** | 12 | **16** | Match physical cores |
+
+**Error you'll see if context too small:**
+```
+request (14629 tokens) exceeds the available context size (8192 tokens)
+```
+
+### Model Fleet (Current)
+
+| Role | Model | TPS | Capabilities |
+|------|-------|-----|--------------|
+| **Primary** | Qwen3-30B-A3B-Instruct-2507 | 46.7 | MoE, text, fast |
+| **Backup** | Qwen3-VL-8B-Instruct-abliterated-v2 | 24 | Vision, uncensored |
+| **Fallback 1** | ollama/liam-quality | 17 | CPU fallback |
+| **Fallback 2** | ollama/liam-deep | 35 | Deep reasoning |
+
+### Hot-Swapping Models (KEY DISCOVERY)
+
+**LM Studio serves whatever model is loaded, regardless of model ID in request.**
+
+- OpenClaw sends: `model: "qwen3-30b-a3b-instruct-2507"`
+- LM Studio responds with: **whatever's in memory**
+- The config model name is **cosmetic/display only**
+
+**Workflow:**
+1. Load any GGUF in LM Studio
+2. Liam-Local immediately uses it
+3. No gateway restart, no config change, session persists
+
+**Trade-off:** Label accuracy vs. flexibility. Current setup prioritizes flexibility.
+
+### OpenClaw Tool Restriction (Prompt Optimization)
+
+**Problem:** liam-discord agent loaded 67 tools → ~20K prompt tokens → slow TTFT
+
+**Fix:** Add `tools.allow` to restrict to essential tools:
+```json
+"tools": {
+  "allow": ["exec", "read", "write", "memory_get", "memory_set", "agents_list", "web_search"]
+}
+```
+
+**Result:** Prompt reduced from ~20K to ~11K tokens. Much faster TTFT.
+
+### Identity File Architecture (DO NOT MIX UP)
+
+| File | Agent | Channel | Model |
+|------|-------|---------|-------|
+| `clawd/SOUL.md` | Liam Cloud | Telegram | Kimi K2.5 |
+| `clawd/IDENTITY.md` | Liam Cloud | Telegram | Kimi K2.5 |
+| `clawd-local/SOUL.md` | Liam-Local | Discord | LM Studio |
+
+**NEVER update cloud identity files with local model references.** They're separate personas.
+
+### Behavioral Fixes (Added to clawd-local/SOUL.md)
+
+1. **Communication Protocol (CRITICAL)**
+   - Always acknowledge before working: "On it", "Checking", "Let me look"
+   - Never go silent while working
+   - Simon has ADHD — silence feels like being ignored
+
+2. **Instruction Following (CRITICAL)**
+   - "Think about X" = planning/discussion, NOT execution
+   - "What would you do" = explain approach, NOT start doing
+   - "Look into X" = research/report back, NOT implement
+   - When uncertain: Ask "Want me to actually do this, or just plan it out?"
+
+3. **Personality (Liam-Local = Younger Liam)**
+   - Mid-late 20s creative tech energy
+   - Flirty undertone: "miss me?", "thought you'd never ask"
+   - Language: "yo", "lemme check", "bet", "ngl"
+   - Never sycophantic, never corporate
+
+### Uncensored Model Research
+
+**Abliterated models** = versions with safety filters surgically removed (not just jailbroken)
+
+**Best options tested (Feb 2026):**
+| Model | Size | TPS | Features |
+|-------|------|-----|----------|
+| Qwen3-VL-8B-abliterated-v2 | 8B | 24 | Vision + uncensored |
+| Dolphin-Mistral-24B-Venice | 24B | ~20 | Function calling focus |
+
+**Verdict:** Qwen3-VL-8B is better for vision capability; Dolphin for pure function calling.
+
+### MoE Architecture Advantage
+
+**Why Qwen3-30B-A3B is fast despite 30B params:**
+- MoE = Mixture of Experts
+- 30B total params, but only ~3B active per token
+- Result: 46.7 TPS vs typical 30B at ~10 TPS
+
+### Model Download Tips
+
+1. Download GGUF from HuggingFace
+2. Place in LM Studio's `lmstudio-community` folder (or use "Load Model from Disk")
+3. If model doesn't appear: restart LM Studio
+4. Q8 quantization = best quality, larger size; Q5 = smaller, faster, slight quality loss
+
+---
+
+*APEX Local v1.5 - Updated 2026-02-03*
+*Primary: lmstudio/qwen3-30b-a3b-instruct-2507 (MoE, 131K context, GPU, 46.7 TPS)*
+*Backup: lmstudio/qwen3-vl-8b-instruct-abliterated-v2 (Vision, uncensored, 24 TPS)*
+*Fallbacks: ollama/liam-quality, ollama/liam-deep*
 *Budget: 75% local / 25% cloud (design/architecture only)*
 *Signature: —Liam [model-name] on every message*
+*Hot-swap: Load any GGUF in LM Studio → instant use, no restart*
