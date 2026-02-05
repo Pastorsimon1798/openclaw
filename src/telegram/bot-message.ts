@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-nocheck — untyped function params throughout; needs full typing refactor (tracked)
 import { buildTelegramMessageContext } from "./bot-message-context.js";
 import { dispatchTelegramMessage } from "./bot-message-dispatch.js";
 
