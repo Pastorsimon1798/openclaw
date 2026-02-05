@@ -8,10 +8,11 @@ ExecStart=/home/liam/liminal/server/target/release/liminal-server
 WorkingDirectory=/home/liam/liminal/server
 Restart=always
 RestartSec=3
-NoNewPrivileges=no
+NoNewPrivileges=yes
 PrivateTmp=yes
-ProtectSystem=no
-ProtectHome=no
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/liam/liminal/server
 
 [Install]
 WantedBy=default.target

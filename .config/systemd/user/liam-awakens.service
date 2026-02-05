@@ -9,6 +9,8 @@ ExecStart=/bin/bash /home/liam/clawd/awakening.sh
 RemainAfterExit=yes
 StandardOutput=append:/home/liam/clawd/awakening.log
 StandardError=append:/home/liam/clawd/awakening.log
+# Log rotation: truncate if over 1MB (prevents unbounded growth)
+ExecStartPre=/bin/bash -c 'FILE=/home/liam/clawd/awakening.log; [ -f "$FILE" ] && [ $(stat -f%%z "$FILE" 2>/dev/null || stat -c%%s "$FILE") -gt 1048576 ] && tail -200 "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE" || true'
 
 # Security Hardening
 NoNewPrivileges=yes
