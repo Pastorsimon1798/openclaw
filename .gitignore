@@ -205,3 +205,40 @@ liminal/server/target/
 clawd-liam-telegram/
 clawd-main/
 clawd/.tmp/
+
+# Tiny Swarm (Monkey Room) - separate creative project
+tiny-swarm/
+
+# Kimi CLI (contains API keys, sessions, device ID)
+.kimi/
+
+# SQLite backup files (large, not source)
+*.sqlite3
+clawd/backup*.sqlite*
+
+# Large media archives (not source)
+clawd/CERAFICA_MASTER_ASSETS/
+clawd/CERAFICA/
+clawd/PhotoArchive/
+clawd/*.tar.gz
+clawd/.venv-heic/
+clawd/cerafica-*/
+clawd/verafica-*/
+clawd/puenteworks-site/
+clawd/lyrics-engine/
+clawd/obsidian-vault/
+clawd/MOVE/
+clawd/MOVE.zip
+clawd/read-me/
+clawd/resources/
+
+# Downloads (personal, not source)
+Downloads/
+
+# Sync archives (personal)
+sync/
+sync-from-macbook/
+liam-laptop-package/
+
+# Codex temp files
+.codex/tmp/

@@ -32,8 +32,18 @@ export GOG_ACCOUNT="clawdbot@puenteworks.com"
 
 # Load Liam system secrets (ZAI_API_KEY, Slack tokens, GOG_KEYRING_PASSWORD)
 if [ -f "$HOME/.clawdbot/credentials/liam.env" ]; then
-    source "$HOME/.clawdbot/credentials/liam.env"
+    set -a; source "$HOME/.clawdbot/credentials/liam.env"; set +a
 fi
 
 . "$HOME/.cargo/env"
 # Secrets are now loaded from ~/.clawdbot/credentials/liam.env (sourced above)
+
+# Keep models loaded in memory for 24h (no reload delay)
+export OLLAMA_KEEP_ALIVE=24h
+
+# Allow multiple concurrent model requests
+export OLLAMA_NUM_PARALLEL=4
+
+# Keep multiple models loaded (78GB RAM available)
+export OLLAMA_MAX_LOADED_MODELS=1
+# MOONSHOT_API_KEY and KIMI_API_KEY loaded from ~/.clawdbot/credentials/liam.env (sourced above)

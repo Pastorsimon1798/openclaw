@@ -8,6 +8,7 @@ ExecStart="/usr/bin/node" "/home/liam/dist/index.js" gateway --port 18789
 Restart=always
 RestartSec=5
 KillMode=process
+EnvironmentFile=/home/liam/.openclaw/credentials/gateway.env
 Environment=HOME=/home/liam
 Environment="PATH=/home/liam/.local/bin:/home/liam/.npm-global/bin:/home/liam/bin:/home/liam/.nvm/current/bin:/home/liam/.fnm/current/bin:/home/liam/.volta/bin:/home/liam/.asdf/shims:/home/liam/.local/share/pnpm:/home/liam/.bun/bin:/usr/local/bin:/usr/bin:/bin"
 Environment=OPENCLAW_GATEWAY_PORT=18789
@@ -15,6 +16,7 @@ Environment="OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service"
 Environment=OPENCLAW_SERVICE_MARKER=openclaw
 Environment=OPENCLAW_SERVICE_KIND=gateway
 Environment=OPENCLAW_SERVICE_VERSION=2026.1.30
+# MOONSHOT_API_KEY and KIMI_API_KEY loaded from EnvironmentFile above
 
 [Install]
 WantedBy=default.target
