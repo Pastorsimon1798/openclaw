@@ -26,7 +26,7 @@ alert_telegram() {
 check_gateway() {
     # Check if systemd is managing the gateway
     local systemd_status
-    systemd_status=$(systemctl --user is-active clawdbot-gateway.service 2>/dev/null || echo "unknown")
+    systemd_status=$(systemctl --user is-active openclaw-gateway.service 2>/dev/null || echo "unknown")
     
     if [ "$systemd_status" = "active" ]; then
         log "OK: Gateway systemd service is active"
@@ -35,7 +35,7 @@ check_gateway() {
         alert_telegram "⚠️ Gateway systemd service failed! Check: journalctl --user -u clawdbot-gateway"
     elif [ "$systemd_status" = "inactive" ]; then
         log "WARN: Gateway systemd service inactive"
-        alert_telegram "⚠️ Gateway is stopped. Start with: systemctl --user start clawdbot-gateway.service"
+        alert_telegram "⚠️ Gateway is stopped. Start with: systemctl --user start openclaw-gateway.service"
     else
         log "WARN: Gateway systemd status unknown: $systemd_status"
     fi
@@ -56,7 +56,7 @@ check_gateway() {
         
         if [ "$mem_mb" -gt "$MAX_MEMORY_MB" ]; then
             log "WARN: Gateway using ${mem_mb}MB (threshold: ${MAX_MEMORY_MB}MB)"
-            alert_telegram "⚠️ Liam memory high: ${mem_mb}MB. Consider: systemctl --user restart clawdbot-gateway.service"
+            alert_telegram "⚠️ Liam memory high: ${mem_mb}MB. Consider: systemctl --user restart openclaw-gateway.service"
         else
             log "OK: Gateway memory ${mem_mb}MB"
         fi
@@ -84,7 +84,7 @@ check_telegram_conflict() {
         local proc_count
         proc_count=$(pgrep -c -f "openclaw-gateway" 2>/dev/null || echo "0")
         if [ "$proc_count" -gt 1 ]; then
-            alert_telegram "⚠️ Multiple gateway processes ($proc_count) causing 409 conflicts! Fix: pkill -9 -f openclaw && systemctl --user restart clawdbot-gateway.service"
+            alert_telegram "⚠️ Multiple gateway processes ($proc_count) causing 409 conflicts! Fix: pkill -9 -f openclaw && systemctl --user restart openclaw-gateway.service"
         fi
     fi
 }

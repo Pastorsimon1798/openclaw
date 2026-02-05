@@ -22,6 +22,8 @@ PrivateTmp=yes
 ProtectSystem=full
 ProtectHome=read-only
 ReadOnlyPaths=/home/liam/clawdbot/downloads /home/liam/clawdbot/models
+# NOTE: kroko-voice paths still reference clawdbot/downloads and clawdbot/models
+# because the actual binaries/models live there. These are data paths, not service names.
 
 
 [Install]

@@ -1,7 +1,7 @@
 [Unit]
 Description=Liam Self-Awakening Verification
-After=network-online.target clawdbot-gateway.service kroko-voice.service
-Wants=clawdbot-gateway.service kroko-voice.service
+After=network-online.target openclaw-gateway.service kroko-voice.service
+Wants=openclaw-gateway.service kroko-voice.service
 
 [Service]
 Type=oneshot
@@ -15,7 +15,7 @@ NoNewPrivileges=yes
 PrivateTmp=yes
 ProtectSystem=full
 ProtectHome=read-only
-ReadWritePaths=/home/liam/clawd /home/liam/clawdbot/logs
+ReadWritePaths=/home/liam/clawd
 
 
 [Install]
